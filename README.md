@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a custom analytical tool designed to score the quality of play for the New York Mets plabeyond standard Wins and Losses. It utilizes the MLB Stats API, and the Python package `MLB-StatsAPI` to process Box Score and Play-by-Play data, applying a complex, situational point system to measure team momentum, clutch performance, and defensive excellence. The final goal is to create a Full-Stack application that visualizes these custom scores and potentially correlates them with advanced metrics like WAR.
+This project is a custom analytical tool designed to score the quality of play for the New York Mets beyond standard Wins and Losses. It utilizes the MLB Stats API, and the Python package `MLB-StatsAPI` to process Box Score and Play-by-Play data, applying a complex, situational point system to measure team momentum, clutch performance, and defensive excellence. The final goal is to create a Full-Stack application that visualizes these custom scores and potentially correlates them with advanced metrics like WAR.
 
 ## 🛠️ Technical Stack (MVP)
 
@@ -27,25 +27,19 @@ This project gets a schedule for the given team, in one instance it is the New Y
 4. Persist: Store the game ID and the final point breakdown into the database.
 
 ### Usages
-- From the function `statsapi.last_game(teamID)` then use this in the function right below
+- Used `statsapi.last_game(teamID)` and `statsapi.get('game', {'gamePk': last_game_id})` to get the latest game of the team being analyzed.
 
-- From the function `statsapi.boxscore(gamenumber)`
+- Used `statsapi.boxscore_data(gamenumber)` to get both the batting totals and the pitching totals of the box score.
 
-- `homePitchers`
+- Used `homePitchingTotals` and `awayPitchingTotals` for basic pitching stats.
 
-- `homeBattingNotes`
-
-- `homePitchingTotals`
-
-- `homeBattingTotals`
-
-- `teamStats`
-
-- `{'title': 'FIELDING', 'fieldList': [{'label': 'DP', 'value': '2 (Baty-McNeil-Alonso; Lindor-McNeil-Alonso).'}]}], 'note': []}`
+- Used `homeBattingTotals` and `awayBattingTotals` for basic batting stats.
 
 ## 💯 Custom Point System
 
-The scoring system is divided into five main categories: Basic Stats (Totals), Situational Play, Unusual and Miraculous, Deductions, and Carry Over.
+The scoring system is divided into five main categories: Basic Stats (Totals), Situational Play, Unusual and Miraculous, Deductions, and Carry Over. Then we would make a correlation to how well the player did by looking at advanced stats and comparing the numbers.
+
+Why would we use this to find the value a player provides to a team to a successful season, this point system would add value to a team’s value together. Baseball is a team sport, every player needs to work together to produce quality baseball. You could measure a player’s performance by seeing how many points they can get like a grade rubric. You can also calculate the difference between a player’s WAR and how many points a player gets a team per game. These points are more about quantifying the advanced stats of a player then really getting the most points. Over an entire 162 game season you can look at statistical trends of the point system.
 
 ### I. BASIC STATS (TOTALS)
 
