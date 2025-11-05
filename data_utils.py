@@ -40,6 +40,7 @@ def get_lineups_from_boxscore(game_id):
         player_map = boxscore.get(team, {}).get('players', {})
 
         batting_entries = boxscore.get(f'{team}Batters', [])
+        pitching_entries = boxscore.get(f'{team}Pitchers', [])
         
         valid_batters = [
             p for p in batting_entries 
@@ -48,27 +49,48 @@ def get_lineups_from_boxscore(game_id):
 
         valid_batters.sort(key=lambda p: p['battingOrder'])
         
-        lineup = []
-        for player in valid_batters:
-            player_id = player['personId']
-            player_map_key = f'ID{player_id}'
+        combined_players = {}
 
-            full_details = player_map.get(player_map_key, {})
+        for player in valid_batters:
+            combined_players[player['personId']] = {
+                'stats': player,
+                'is_pitcher': False,
+                'sort_key': int(player['battingOrder']) // 100 
+            }
+
+        for player in pitching_entries:
+            player_id = player['personId']
+
+            if not player_id or not isinstance(player_id, int) or player_id == 0:
+                continue
             
-            full_name = full_details.get('person', {}).get('fullName', player.get('namefield', 'Unknown'))
+            if player_id not in combined_players:
+                # Assign a high sort key (99) to place pitchers at the end of the list
+                combined_players[player_id] = {
+                    'stats': player,
+                    'is_pitcher': True,
+                    'sort_key': 99 
+                }
+        
+        final_list = []
+        for player_id, data in combined_players.items():
+            player_map_key = f'ID{player_id}'
+            full_details = player_map.get(player_map_key, {})
+            stats = data['stats']
+            
+            full_name = full_details.get('person', {}).get('fullName', stats.get('namefield', 'Unknown'))
             position_code = extract_position_code(full_details)
-            lineup.append({
-                'batting_spot': (
-                    int(player['battingOrder']) // 100 
-                    if player.get('battingOrder') and player['battingOrder'].isdigit() 
-                    else 0
-                ),
+
+            final_list.append({
+                'batting_spot': data['sort_key'],
                 'name': full_name,
-                'mlb_id': player_id,
                 'position': position_code,
-                'game_stats': player,            
+                'mlb_id': player_id,
+                'game_stats': stats,
             })
 
+        final_list.sort(key=lambda player: player['batting_spot'])
+        lineup = [player for player in final_list]
         all_lineups[team] = lineup
     
     return all_lineups
