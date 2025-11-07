@@ -42,20 +42,32 @@ def calculate_basic_team_points(boxscore, playbyplay, location):
     print(f"Basic Batting Points: {basic_batting_points}")
     return basic_batting_points
 
-def calculate_team_totals(final_points_map):
+def calculate_team_totals(final_points_map, lineups):
     """Aggregates individual player scores into total team scores."""
     team_totals = defaultdict(float)
 
-    for data in final_points_map.values():
-        team_name = data.get('team')
+    team_map = {}
+    for location, players in lineups.items():
+        team_key = f"{location.capitalize()} Total"
+        for player in players:
+            team_map[player['mlb_id']] = team_key
+
+    for mlb_id, data in final_points_map.items():
+        if not isinstance(mlb_id, int):
+             continue
+
+        if not isinstance(data, dict):
+             continue 
+
+        team_key = team_map.get(mlb_id)
         total_points = data.get('total_points', 0.0)
 
-        if team_name:
-            team_totals[team_name] += total_points
+        if team_key:
+             team_totals[team_key] += total_points
 
     return team_totals
 
-def calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_totals, TEAM_LOCATION):
+def calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_totals, TEAM_LOCATION, team_total_key):
     """Awards +1 point to the team total of the pitchers get 16 or more strikeouts"""
     BONUS_POINTS = 1.0
     MIN_STRIKEOUTS = 16
@@ -74,13 +86,44 @@ def calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_
                 break 
 
     if team_strikeouts >= MIN_STRIKEOUTS:
-        if 'Total Points' not in team_totals:
-            team_totals['Total Points'] = 0.0
+        if team_total_key not in team_totals:
+            team_totals[team_total_key] = 0.0
 
-        team_totals['Total Points'] += BONUS_POINTS
+        team_totals[team_total_key] += BONUS_POINTS
         
         print(f"✅ TEAM STRIKEOUT BONUS: +{BONUS_POINTS} added to team total for recording {team_strikeouts} strikeouts.")
     else:
         print(f"❌ TEAM STRIKEOUT CHECK: {team_strikeouts} strikeouts recorded, falling short of the {MIN_STRIKEOUTS} minimum.")
     
+    return team_totals
+
+def calculate_bullpen_zero_runs_bonus(final_points_map, lineups, team_totals, starters, TEAM_LOCATION, team_total_key):
+    BONUS_POINTS = 5.0
+
+    if TEAM_LOCATION not in ['home', 'away']:
+        return team_totals
+    
+    team_bullpen_er = 0
+    starter_id = starters.get(TEAM_LOCATION)
+
+    for player in lineups[TEAM_LOCATION]:
+        mlb_id = player.get('mlb_id')
+        position = player.get('position')
+        
+        if position == 'P' and mlb_id == starter_id:
+            continue
+
+        player_data = final_points_map.get(mlb_id, {})
+
+        for item in player_data.get('breakdown', []):
+            if item.get('rule_name') == 'Earned Runs':
+                team_bullpen_er += item.get('value', 0)
+                break
+
+    if team_bullpen_er == 0:
+        team_totals[team_total_key] += BONUS_POINTS
+        print(f"✅ BULLPEN ZERO RUNS BONUS: +{BONUS_POINTS} added to team total for recording {team_bullpen_er} earned runs.")
+    else:
+        print(f"❌ BULLPEN ZERO RUNS CHECK: {team_bullpen_er} earned runs recorded, falling short of the 0 minimum.")
+
     return team_totals

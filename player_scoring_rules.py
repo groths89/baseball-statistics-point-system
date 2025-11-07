@@ -316,5 +316,80 @@ def calculate_starter_pitches_complete_game_points_for_player(lineups, player_po
             
     return player_points_map
 
+def calculate_save_points_for_player(lineups, final_points_map):
+    SAVE_POINTS = 3.0
+    CLEAN_SAVE_POINTS = 5.0
+
+    for team in ['away', 'home']:
+        for player in lineups.get(team, []):
+            mlb_id = player['mlb_id']
+            stats = player['game_stats']
+
+            pitching_note = stats.get('pitching', {}).get('note', '')
+
+            if 'S' not in pitching_note:
+                continue
+
+            pitching_stats = stats.get('pitching', {})
+
+            hits_allowed = int(pitching_stats.get('h', 1) or 1)
+            walks_allowed = int(pitching_stats.get('bb', 1) or 1)
+
+            points_awarded = 0.0
+            rule_name = ""
+
+            if hits_allowed == 0 and walks_allowed == 0:
+                points_awarded = CLEAN_SAVE_POINTS
+                rule_name = "Save without a hit or walk"
+            else:
+                points_awarded = SAVE_POINTS
+                rule_name = "Save"
+
+            final_points_map[mlb_id]['total_points'] += points_awarded
+            final_points_map[mlb_id]['breakdown'].append({
+                'rule_category': 'Pitching',
+                'rule_name': rule_name,
+                'value': f"{hits_allowed} H, {walks_allowed} BB",
+                'points': points_awarded,
+            })
+
+            return final_points_map
+        
+    return final_points_map
+
+def track_earned_runs_for_player(lineups, player_points_map):
+    """
+    Tracks the count of Earned Runs (ER) allowed by every pitcher 
+    and adds it to their breakdown for reporting/future rule use.
+    """
+    for team in ['away', 'home']:
+        for player in lineups.get(team, []):
+            mlb_id = player.get('mlb_id')
+            stats = player.get('game_stats')
+            position = player.get('position')
+
+            if position != 'P':
+                continue
+
+            if mlb_id not in player_points_map:
+                player_points_map[mlb_id] = {
+                    'total_points': 0.0,
+                    'breakdown': []
+                }
+
+            try:
+                earned_runs = int(stats.get('er', '0') or '0')
+            except ValueError:
+                earned_runs = 0
+
+            if earned_runs >= 0:
+                player_points_map[mlb_id]['breakdown'].append({
+                    'rule_category': 'Pitching',
+                    'rule_name': 'Earned Runs',
+                    'value': earned_runs,
+                    'points': 0.0
+                })
+
+    return player_points_map
 
     

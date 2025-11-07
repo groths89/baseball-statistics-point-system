@@ -3,8 +3,13 @@ import os
 import traceback
 import json
 
-from team_scoring import calculate_basic_team_points, calculate_team_totals, calculate_team_strikeout_for_pitchers_bonus
-from data_utils import get_lineups_from_boxscore, initialize_player_points_map
+from team_scoring import (
+    calculate_basic_team_points, 
+    calculate_team_totals, 
+    calculate_team_strikeout_for_pitchers_bonus,
+    calculate_bullpen_zero_runs_bonus
+)
+from data_utils import get_lineups_from_boxscore, get_starters_from_boxscore, initialize_player_points_map
 from player_scoring_rules import (
     calculate_solo_homerun_points_for_player, 
     calculate_total_hits_points_for_player, 
@@ -14,7 +19,9 @@ from player_scoring_rules import (
     calculate_starter_ip_points_for_player, 
     calculate_starter_two_runs_or_less_points_for_player, 
     calculate_starter_pitches_complete_game_points_for_player,
-    calculate_strikeouts_points_for_pitcher
+    calculate_strikeouts_points_for_pitcher,
+    calculate_save_points_for_player,
+    track_earned_runs_for_player
 )
 
 
@@ -50,8 +57,12 @@ elif game_boxscore_data['teamInfo']['away']['id'] == TEAM_ID:
 else:
     print(f"WARNING: Target Team ID {TEAM_ID} did not play in game {last_game_id}. Displaying all players.")
     TARGET_TEAM_LOCATION = 'all'
+
+team_total_key = f"{TEAM_LOCATION.capitalize()} Total"
+
 try:
     # 1. Data Fetching
+    starters = get_starters_from_boxscore(game_boxscore_data)
     lineups = get_lineups_from_boxscore(last_game_id)
     final_points_map = initialize_player_points_map(lineups)
 
@@ -62,19 +73,26 @@ try:
     final_points_map = calculate_total_runs_points_for_player(lineups, final_points_map)
     final_points_map = calculate_total_walks_points_for_player(lineups, final_points_map)
 
+
     # 3. Run all of the individual pitching points
     final_points_map = calculate_starter_ip_points_for_player(lineups, final_points_map, game_boxscore_data)
     final_points_map = calculate_starter_two_runs_or_less_points_for_player(lineups, final_points_map, game_boxscore_data)
     final_points_map = calculate_starter_pitches_complete_game_points_for_player(lineups, final_points_map, game_boxscore_data)
     final_points_map = calculate_strikeouts_points_for_pitcher(lineups, final_points_map)
+    final_points_map = track_earned_runs_for_player(lineups, final_points_map)
+    final_points_map = calculate_save_points_for_player(final_points_map, game_boxscore_data)
+
 
     # 3. Calculating all of the team totals together
-    team_totals = calculate_team_totals(final_points_map)
-    team_totals = calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_totals, TEAM_LOCATION)
+    team_totals = calculate_team_totals(final_points_map, lineups)
+    team_totals = calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_totals, TEAM_LOCATION, team_total_key)
+    team_totals = calculate_bullpen_zero_runs_bonus(final_points_map, lineups, team_totals, starters, TEAM_LOCATION, team_total_key)
+
+    print(team_totals)
 
     print(f"{TEAM_LOCATION.capitalize()} Team Totals: {team_totals[TEAM_LOCATION]}")
 
-    with open(os.path.join(PROJECT_DIR, str(statsapi.last_game(TEAM_ID) ) + ".txt"), "w+", encoding="utf-8") as textfile:
+    with open(os.path.join(PROJECT_DIR, str(last_game_id) + ".txt"), "w+", encoding="utf-8") as textfile:
         line = f"The game is: {last_game_id}"
         line += f"\nThe home team is: {game_boxscore_data['teamInfo']['home']['teamName']}"
         line += f"\nThe away team is: {game_boxscore_data['teamInfo']['away']['teamName']}"
@@ -116,9 +134,11 @@ try:
 
         line += f"| {'Team'[:W_HT]:<{W_HT}} | {'Total Points':<{W_HP}} |" + "\n"
         line += team_separator + "\n"
-        for team, total_points in team_totals.items():
-            line += f"| {game_boxscore_data['teamInfo'][team]['teamName'][:W_TT]:<{W_TT}}{team.upper():<{W_TT}} | {total_points:>{W_TP}} |" + "\n"
-            line += team_separator + "\n"
+        for team_location in teams_to_loop:
+            for team, total_points in team_totals.items():
+                print(f"Team: {team}, Total Points: {total_points}")
+                line += f"| {game_boxscore_data['teamInfo'][team_location]['teamName'][:W_TT]:<{W_TT}}{team.upper():<{W_TT}} | {total_points:>{W_TP}} |" + "\n"
+                line += team_separator + "\n"
         line += "\n"
 
 

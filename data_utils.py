@@ -94,3 +94,12 @@ def get_lineups_from_boxscore(game_id):
         all_lineups[team] = lineup
     
     return all_lineups
+
+def get_starters_from_boxscore(boxscore_data):
+    starters = {}
+    try:
+        starters['home'] = boxscore_data.get('homePitchers', [{}])[0].get('personId')
+        starters['away'] = boxscore_data.get('awayPitchers', [{}])[0].get('personId')
+    except (IndexError, AttributeError):
+        return {}
+    return starters
