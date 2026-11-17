@@ -1,0 +1,32 @@
+Game 745788 (2024-08-13): Mets vs Athletics  4-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Jesse Winker              | RF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| J.D. Martinez             | DH       |      1.0 | Runs (1): +1.0
+| Mark Vientos              | DH       |      3.5 | Hits (1): +0.5 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | 2B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Jose Iglesias             | 3B       |      1.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Paul Blackburn            | P        |      1.0 | Pickoff (1): +1.0
+| José Buttó                | P        |      1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Reliever Walks First Batter (1): -1.0
+| Ryne Stanek               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Phil Maton                | P        |      0.0 | 
+| Edwin Díaz                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (13): -4.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         14.5
+  Carry over into next game: 0.0

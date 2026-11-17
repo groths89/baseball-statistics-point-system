@@ -1,0 +1,30 @@
+Game 823633 (2026-04-29): Mets vs Nationals  2-14 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Juan Soto                 | DH       |      3.5 | Hits (3): +1.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| MJ Melendez               | LF       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Austin Slater             | LF       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | 2B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      1.0 | Hits (2): +1.0
+| Carson Benge              | RF       |      0.0 | 
+| Marcus Semien             | 2B       |      3.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Luis Torrens              | 1B       |      0.0 | 
+| Ronny Mauricio            | SS       |      0.0 | 
+| David Peterson            | P        |     -1.0 | Starter Under 4 IP (3.2 IP): -1.0
+| Sean Manaea               | P        |      0.0 | 
+| Carl Edwards Jr.          | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+
+### Team Totals ###
+  Player points: 11.0
+  Team points:   -6.0  (includes 0.0 carried over)
+  TOTAL:         5.0
+  Carry over into next game: 0.0

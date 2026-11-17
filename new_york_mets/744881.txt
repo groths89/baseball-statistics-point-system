@@ -1,0 +1,32 @@
+Game 744881 (2024-09-11): Mets @ Blue Jays  6-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0
+| Jose Iglesias             | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      1.0 | Walks (1): +1.0
+| Eddy Alvarez              | 2B       |      1.0 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| J.D. Martinez             | DH       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Starling Marte            | RF       |      3.0 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Francisco Alvarez         | C        |     10.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Harrison Bader            | CF       |      0.0 | 
+| Jesse Winker              | LF       |      0.0 | 
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Sean Manaea               | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (6.2 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Danny Young               | P        |      0.0 | 
+| Ryne Stanek               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (8): -1.0
+
+### Team Totals ###
+  Player points: 39.0
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         37.0
+  Carry over into next game: 0.0

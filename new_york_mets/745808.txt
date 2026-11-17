@@ -1,0 +1,34 @@
+Game 745808 (2024-06-26): Mets vs Yankees  12-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Jose Iglesias             | SS       |      0.0 | 
+| Brandon Nimmo             | LF       |      4.0 | Runs (2): +2.0 | Walks (2): +2.0
+| Ben Gamel                 | LF       |      0.0 | 
+| J.D. Martinez             | DH       |      1.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0
+| Pete Alonso               | 1B       |      6.5 | Hits (1): +0.5 | Runs (3): +3.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Francisco Alvarez         | C        |     13.5 | Hits (3): +1.5 | Runs (3): +3.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | RF       |     13.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Mark Vientos              | 3B       |      2.5 | Hits (1): +0.5 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Error (1): -1.0
+| Jeff McNeil               | 2B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Harrison Bader            | CF       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Sean Manaea               | P        |      8.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 0 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Danny Young               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Adrian Houser             | P        |      4.0 | Save (2 H, 1 BB): +3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 63.0
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         69.0
+  Carry over into next game: 0.0

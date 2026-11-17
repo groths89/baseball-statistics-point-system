@@ -1,0 +1,31 @@
+Game 823589 (2026-08-17): Mets vs Padres  2-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | LF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Outfield Assist (1): +1.0
+| Francisco Lindor          | SS       |      3.0 | Runs (1): +1.0 | Walks (2): +2.0
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0
+| Carson Benge              | RF       |      3.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0 | Outfield Assist (1): +1.0 | Outfield Assist (1): +1.0
+| Luis Robert Jr.           | CF       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Jared Young               | 1B       |      0.0 | 
+| Marcus Semien             | 2B       |      0.5 | Hits (1): +0.5
+| Jorge Polanco             | DH       |      0.5 | Hits (1): +0.5
+| Cristian Pache            | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Nolan McLean              | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jonathan Pintaro          | P        |      0.0 | 
+| Nate Lavender             | P        |      0.0 | 
+| Daniel Duarte             | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 25.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         30.5
+  Carry over into next game: 0.0

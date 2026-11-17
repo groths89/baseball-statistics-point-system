@@ -1,0 +1,34 @@
+Game 776598 (2025-08-25): Mets vs Phillies  13-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (2): +2.0 | Stolen Base (1): +1.0
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Starling Marte            | DH       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      9.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | 2B       |      3.0 | Runs (2): +2.0 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      6.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Tyrone Taylor             | CF       |      8.5 | Hits (3): +1.5 | Runs (3): +3.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jeff McNeil               | RF       |      9.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Sac Fly Scores Run (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Luis Torrens              | C        |      8.5 | Hits (3): +1.5 | Runs (2): +2.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Kodai Senga               | P        |      3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| José Castillo             | P        |      0.0 | 
+| Tyler Rogers              | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Ryan Helsley              | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (6): +2.0
+  Pitching     Bullpen Gives Up 0 Runs (5): +5.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 60.0
+  Team points:   11.0  (includes 0.0 carried over)
+  TOTAL:         71.0
+  Carry over into next game: 0.0

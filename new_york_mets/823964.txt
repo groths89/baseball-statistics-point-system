@@ -1,0 +1,29 @@
+Game 823964 (2026-04-13): Mets @ Dodgers  0-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Mark Vientos              | 1B       |      0.0 | 
+| Bo Bichette               | 3B       |      0.0 | 
+| Jorge Polanco             | DH       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Tommy Pham                | LF       |      0.0 | 
+| Marcus Semien             | 2B       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | RF       |      1.0 | Long At-Bat (10+ Pitches) (10): +1.0
+| David Peterson            | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Craig Kimbrel             | P        |      0.0 | 
+| Joey Gerber               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 7.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         12.5
+  Carry over into next game: 0.0

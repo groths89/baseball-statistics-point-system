@@ -1,0 +1,29 @@
+Game 823598 (2026-07-29): Mets vs Braves  0-1 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Bo Bichette               | 3B       |      0.0 | 
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Francisco Alvarez         | DH       |      0.0 | 
+| Tyrone Taylor             | LF       |      3.0 | Walks (1): +1.0 | Long At-Bat (10+ Pitches) (10): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | RF       |      0.5 | Hits (1): +0.5
+| Eric Wagaman              | 1B       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | C        |      0.0 | 
+| Christian Scott           | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0
+| A.J. Minter               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Cionel Pérez              | P        |      0.0 | 
+| Daniel Duarte             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 11.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         12.0
+  Carry over into next game: 0.0

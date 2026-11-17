@@ -1,0 +1,28 @@
+Game 822793 (2026-06-30): Mets @ Blue Jays  3-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Juan Soto                 | LF       |      2.0 | Walks (2): +2.0
+| Bo Bichette               | 3B       |      0.5 | Hits (1): +0.5
+| Francisco Lindor          | SS       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Jared Young               | 1B       |      0.5 | Hits (1): +0.5
+| A.J. Ewing                | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Francisco Alvarez         | DH       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brett Baty                | 2B       |      2.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0
+| Luis Torrens              | C        |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Nolan McLean              | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 0 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      0.0 | 
+| Luke Weaver               | P        |      0.0 | 
+| Devin Williams            | P        |      3.0 | Save (1 H, 0 BB): +3.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+
+### Team Totals ###
+  Player points: 29.5
+  Team points:   3.0  (includes 0.0 carried over)
+  TOTAL:         32.5
+  Carry over into next game: 0.0

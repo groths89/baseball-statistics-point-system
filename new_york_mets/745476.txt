@@ -1,0 +1,34 @@
+Game 745476 (2024-07-06): Mets @ Pirates  5-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (3): +1.5 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| J.D. Martinez             | DH       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Mark Vientos              | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Luis Torrens              | C        |      9.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | Hit Scores Run To Take The Lead (1): +1.0 | Error (1): -1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Tyrone Taylor             | RF       |      0.5 | Hits (1): +0.5
+| Jose Iglesias             | 3B       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      2.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0
+| David Peterson            | P        |      1.0 | Error (1): -1.0 | Pickoff (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| José Buttó                | P        |      0.0 | 
+| Reed Garrett              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Dedniel Núñez             | P        |      0.0 | 
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 29.5
+  Team points:   10.0  (includes 0.0 carried over)
+  TOTAL:         39.5
+  Carry over into next game: 0.0

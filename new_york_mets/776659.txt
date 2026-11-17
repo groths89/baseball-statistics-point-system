@@ -1,0 +1,30 @@
+Game 776659 (2025-08-20): Mets @ Nationals  4-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Juan Soto                 | RF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Starling Marte            | LF       |      0.5 | Hits (1): +0.5
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Cedric Mullins            | CF       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Kodai Senga               | P        |      0.0 | 
+| Tyler Rogers              | P        |      0.0 | 
+| Gregory Soto              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Passed Ball (1): -1.0
+
+### Team Totals ###
+  Player points: 18.0
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         24.0
+  Carry over into next game: 0.0

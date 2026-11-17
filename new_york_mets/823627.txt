@@ -1,0 +1,30 @@
+Game 823627 (2026-05-16): Mets vs Yankees  6-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      3.5 | Hits (3): +1.5 | Runs (2): +2.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Bo Bichette               | SS       |      4.0 | Runs (2): +2.0 | Walks (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Juan Soto                 | LF       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0 | Stolen Base (1): +1.0
+| Mark Vientos              | 1B       |      2.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| A.J. Ewing                | CF       |      0.5 | Hits (1): +0.5
+| Austin Slater             | DH       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| MJ Melendez               | DH       |      1.0 | Walks (1): +1.0
+| Brett Baty                | 3B       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Luis Torrens              | C        |      1.0 | Long At-Bat (10+ Pitches) (10): +1.0
+| Huascar Brazobán          | P        |     -1.0 | Starter Under 4 IP (1.1 IP): -1.0
+| David Peterson            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Luke Weaver               | P        |      0.0 | 
+| Devin Williams            | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+
+### Team Totals ###
+  Player points: 33.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         33.0
+  Carry over into next game: 0.0

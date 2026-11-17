@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  DEFAULT_TEAM_ID,
+  fmtDate,
+  fmtPts,
+  getBuzz,
+  getOutliers,
+  getSeasons,
+  getTeams,
+  tone,
+  type BuzzGame,
+  type OutlierGame,
+} from '../lib/api';
+
+export const prerender = false;
+
+const seasons = (await getSeasons()) ?? [];
+const requestedSeason = Number(Astro.url.searchParams.get('season'));
+const season = seasons.includes(requestedSeason) ? requestedSeason : seasons[0];
+const teams = (await getTeams(season)) ?? [];
+const requestedTeam = Number(Astro.url.searchParams.get('team'));
+const teamId = teams.some((team) => team.team_id === requestedTeam)
+  ? requestedTeam
+  : teams.some((team) => team.team_id === DEFAULT_TEAM_ID)
+    ? DEFAULT_TEAM_ID
+    : teams[0]?.team_id;
+const data = teamId ? await getOutliers(teamId, season, 8) : null;
+const buzz = teamId ? await getBuzz(teamId, season, 8) : null;
+const buzzLists: { key: string; title: string; sub: string; icon: string; rows: BuzzGame[] }[] = buzz
+  ? [
+      { key: 'loud', title: 'Most Covered Games', sub: 'The games with the most stories around them', icon: 'campaign', rows: buzz.most_covered },
+      { key: 'quiet', title: 'Quiet Standouts', sub: 'High-scoring games from the least covered quarter', icon: 'volume_off', rows: buzz.quiet_standouts },
+    ]
+  : [];
+const top = data?.quartiles.at(-1);
+const bottom = data?.quartiles[0];
+const lists: { key: string; title: string; sub: string; icon: string; rows: OutlierGame[] }[] = data
+  ? [
+      { key: 'gems', title: 'Hidden Gems', sub: 'Losses the points rate as strong performances', icon: 'diamond', rows: data.hidden_gems },
+      { key: 'smoke', title: 'Smoke & Mirrors', sub: 'Wins the points rate as weak performances', icon: 'cloud', rows: data.smoke_and_mirrors },
+    ]
+  : [];
+---
+
+<Layout title="Insights" season={season}>
+  <main class="insights-page">
+    <section class="context-bar">
+      <div class="context-inner">
+        <div class="context-copy">
+          <div class="context-icon" aria-hidden="true"><span class="material-symbols-outlined">insights</span></div>
+          <div>
+            <div class="status-line">
+              <span class="model-tag">Statcast Macro Model</span>
+              <span class="calibrated"><i></i> {data ? `${data.games}G Scored` : 'Awaiting scored games'}</span>
+            </div>
+            <h1>{season ?? 'Season'} Regular Season · Points vs. Final Score Audit</h1>
+          </div>
+        </div>
+        <form class="controls" method="get">
+          <label class="select-control">
+            <span>Season:</span>
+            <select name="season" aria-label="Select season" onchange="this.form.submit()">
+              {seasons.map((item) => <option value={item} selected={item === season}>{item} Regular Season</option>)}
+            </select>
+          </label>
+          <label class="select-control">
+            <span>Team:</span>
+            <select name="team" aria-label="Select team" onchange="this.form.submit()">
+              {teams.map((item) => (
+                <option value={item.team_id} selected={item.team_id === teamId}>
+                  {item.team_name} · {item.wins}-{item.games - item.wins}
+                </option>
+              ))}
+            </select>
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <div class="dashboard">
+      {!data ? (
+        <section class="card empty">No scored games for this selection.</section>
+      ) : (
+        <>
+          <section class="overview-grid">
+            <article class="metric-card">
+              <div class="metric-top">
+                <div>
+                  <span class="small-label">Top-Quartile Win Rate</span>
+                  <p class="metric-value">{top?.win_pct.toFixed(0)}<small>%</small></p>
+                </div>
+                <span class="metric-icon green"><span class="material-symbols-outlined">trending_up</span></span>
+              </div>
+              <p class="metric-detail">{top?.wins}-{(top?.games ?? 0) - (top?.wins ?? 0)} in the games with the most points.</p>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top">
+                <div>
+                  <span class="small-label">Bottom-Quartile Win Rate</span>
+                  <p class="metric-value">{bottom?.win_pct.toFixed(0)}<small>%</small></p>
+                </div>
+                <span class="metric-icon red"><span class="material-symbols-outlined">trending_down</span></span>
+              </div>
+              <p class="metric-detail">{bottom?.wins}-{(bottom?.games ?? 0) - (bottom?.wins ?? 0)} in the games with the fewest points.</p>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top">
+                <div>
+                  <span class="small-label">Correlation With Run Differential</span>
+                  <p class="metric-value">{data.correlation_run_diff?.toFixed(2) ?? '—'} <small>r</small></p>
+                </div>
+                <span class="metric-icon blue"><span class="material-symbols-outlined">query_stats</span></span>
+              </div>
+              <p class="metric-detail">Runs feed the points, so a high value is expected. Win correlation: {data.correlation_win?.toFixed(2) ?? '—'}.</p>
+            </article>
+          </section>
+
+          <section class="card">
+            <div class="section-title"><i class="red-dot"></i><h2>Win Rate by Points Quartile</h2></div>
+            <p class="sub">Games ranked by total points and split into four equal groups. The more points, the more often the team won.</p>
+            <div class="quartiles">
+              {data.quartiles.map((q) => (
+                <div class="q">
+                  <div class="bar"><i style={`height:${q.win_pct}%`}></i></div>
+                  <b>{q.win_pct.toFixed(0)}%</b>
+                  <span>{q.label}</span>
+                  <small>{q.wins}-{q.games - q.wins}</small>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div class="columns">
+            {lists.map((list) => (
+              <section class="card">
+                <div class="section-title"><span class={`material-symbols-outlined ${list.key}`}>{list.icon}</span><h2>{list.title}</h2></div>
+                <p class="sub">{list.sub}</p>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr><th>Date</th><th>Opponent</th><th>Result</th><th class="num">Points</th><th class="num">Pctl</th></tr>
+                    </thead>
+                    <tbody>
+                      {list.rows.map((g) => (
+                        <>
+                          <tr>
+                            <td><a href={`/game/${g.team_id}/${g.game_id}`}>{fmtDate(g.game_date)}</a></td>
+                            <td>{g.home_away === 'away' ? '@' : 'vs'} {g.opponent}</td>
+                            <td><span class={`result ${g.won ? 'pos' : 'neg'}`}>{g.won ? 'W' : 'L'}</span> {g.runs_for}-{g.runs_against}</td>
+                            <td class={`num ${tone(g.total_points)}`}>{fmtPts(g.total_points)}</td>
+                            <td class="num">{g.points_percentile}</td>
+                          </tr>
+                          {g.headline && (
+                            <tr class="headline-row">
+                              <td colspan="5"><span class="material-symbols-outlined">newspaper</span><a href={g.headline_url ?? '#'} target="_blank" rel="noopener noreferrer">{g.headline}</a></td>
+                            </tr>
+                          )}
+                        </>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            ))}
+          </div>
+
+          <section class="card">
+            <div class="section-title"><span class="material-symbols-outlined loud">campaign</span><h2>Media Buzz vs. Points</h2></div>
+            {!buzz ? (
+              <p class="sub">No media collected for this selection yet. Run <code>python media.py --season {season}</code>.</p>
+            ) : (
+              <>
+                <p class="sub">
+                  Stories published around each game, compared with its points. Correlation of coverage with points is r = {buzz.correlation_points?.toFixed(2) ?? '—'}
+                  and with margin of victory r = {buzz.correlation_abs_run_diff?.toFixed(2) ?? '—'}; values near zero mean coverage follows the story, not the performance.
+                  Wins average {buzz.avg_news_wins?.toFixed(1) ?? '—'} stories, losses {buzz.avg_news_losses?.toFixed(1) ?? '—'}.
+                  Based on {buzz.covered_games} of {buzz.games} games.
+                </p>
+                <div class="columns inner">
+                  {buzzLists.map((list) => (
+                    <div>
+                      <h3><span class={`material-symbols-outlined ${list.key}`}>{list.icon}</span>{list.title}</h3>
+                      <p class="sub tight">{list.sub}</p>
+                      <div class="table-wrap">
+                        <table>
+                          <thead>
+                            <tr><th>Date</th><th>Opponent</th><th>Result</th><th class="num">Stories</th><th class="num">Points</th></tr>
+                          </thead>
+                          <tbody>
+                            {list.rows.map((g) => (
+                              <>
+                                <tr>
+                                  <td><a href={`/game/${g.team_id}/${g.game_id}`}>{fmtDate(g.game_date)}</a></td>
+                                  <td>{g.home_away === 'away' ? '@' : 'vs'} {g.opponent}</td>
+                                  <td><span class={`result ${g.won ? 'pos' : 'neg'}`}>{g.won ? 'W' : 'L'}</span> {g.runs_for}-{g.runs_against}</td>
+                                  <td class="num">{g.news_count} <small>({g.outlets} outlets)</small></td>
+                                  <td class={`num ${tone(g.total_points)}`}>{fmtPts(g.total_points)}</td>
+                                </tr>
+                                {g.headline && (
+                                  <tr class="headline-row">
+                                    <td colspan="5"><span class="material-symbols-outlined">newspaper</span><a href={g.headline_url ?? '#'} target="_blank" rel="noopener noreferrer">{g.headline}</a></td>
+                                  </tr>
+                                )}
+                              </>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </section>
+        </>
+      )}
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .insights-page {
+    --canvas: #f7f9ff;
+    --surface: #fff;
+    --surface-low: #edf4ff;
+    --surface-mid: #e3effe;
+    --surface-high: #dee9f8;
+    --ink: #111d27;
+    --muted-ink: #5b403d;
+    --red: #d22d2d;
+    --green: #006444;
+    --green-bright: #007f58;
+    --blue: #005faf;
+  }
+  :global(html[data-theme='dark']) .insights-page {
+    --canvas: #0d1b2a;
+    --surface: #132238;
+    --surface-low: #1b263b;
+    --surface-mid: #1b263b;
+    --surface-high: #27384f;
+    --ink: #f8f9fa;
+    --muted-ink: #a8b3c2;
+    --red: #e63946;
+    --green: #2ec4b6;
+    --green-bright: #2ec4b6;
+    --blue: #98cdf2;
+  }
+  .insights-page { min-height: calc(100vh - 48px); background: var(--canvas); color: var(--ink); font-family: Inter, sans-serif; }
+  .insights-page * { box-sizing: border-box; }
+  .context-bar { background: color-mix(in srgb, var(--surface) 96%, transparent); box-shadow: 0 1px 5px rgba(17, 29, 39, .08); }
+  .context-inner { width: min(100% - 3rem, 1400px); min-height: 76px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .7rem 0; flex-wrap: wrap; }
+  .context-copy { min-width: 0; display: flex; align-items: center; gap: .75rem; }
+  .context-icon { width: 40px; height: 40px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 4px; background: rgba(210, 45, 45, .1); color: var(--red); }
+  .status-line, .controls, .section-title, .metric-top { display: flex; align-items: center; }
+  .status-line { gap: .5rem; flex-wrap: wrap; }
+  .model-tag, .calibrated, .small-label, .select-control > span { font: 700 9px 'Space Grotesk', sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+  .model-tag { padding: 2px 5px; border-radius: 3px; background: var(--surface-high); color: var(--muted-ink); }
+  .calibrated { display: inline-flex; align-items: center; gap: .3rem; color: var(--green); }
+  .calibrated i { width: 6px; height: 6px; border-radius: 50%; background: var(--green-bright); }
+  .context-copy h1 { margin: .2rem 0 0; font: 600 16px/1.35 'Space Grotesk', sans-serif; letter-spacing: -.02em; }
+  .controls { gap: .5rem; flex-wrap: wrap; }
+  .select-control { display: flex; align-items: center; gap: .35rem; min-height: 30px; padding: .2rem .5rem; border-radius: 3px; background: var(--surface-low); }
+  .select-control > span { color: var(--muted-ink); white-space: nowrap; }
+  .select-control select { max-width: 290px; min-width: 120px; border: 0; outline: 0; background: transparent; color: var(--ink); font: 600 11px Inter, sans-serif; }
+  .dashboard { width: min(100% - 3rem, 1400px); margin: 0 auto; padding: 1.5rem 0 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .overview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .card, .metric-card { min-width: 0; border-radius: 4px; background: var(--surface); box-shadow: 0 1px 5px rgba(17, 29, 39, .07); padding: 1rem; }
+  .metric-card { min-height: 130px; display: flex; flex-direction: column; justify-content: space-between; gap: .85rem; }
+  .metric-top { justify-content: space-between; align-items: flex-start; gap: .5rem; }
+  .small-label { color: var(--muted-ink); }
+  .metric-value { margin: .35rem 0 0; font: 700 32px/1 'Space Grotesk', sans-serif; letter-spacing: -.03em; }
+  .metric-value small { font-size: 12px; color: var(--muted-ink); letter-spacing: 0; }
+  .metric-detail { margin: 0; color: var(--muted-ink); font-size: 11px; line-height: 1.5; }
+  .metric-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 4px; }
+  .metric-icon.green { background: color-mix(in srgb, var(--green-bright) 12%, var(--surface)); color: var(--green); }
+  .metric-icon.red { background: rgba(210, 45, 45, .1); color: var(--red); }
+  .metric-icon.blue { background: var(--surface-high); color: var(--blue); }
+  .section-title { gap: .45rem; }
+  .section-title h2 { margin: 0; font: 600 16px/1.35 'Space Grotesk', sans-serif; letter-spacing: -.02em; }
+  .red-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
+  .section-title .material-symbols-outlined { font-size: 20px; }
+  .gems { color: var(--green); }
+  .smoke { color: var(--red); }
+  .loud { color: var(--blue); }
+  .quiet { color: var(--muted-ink); }
+  .columns.inner { gap: 1.25rem; }
+  h3 { display: flex; align-items: center; gap: .4rem; margin: 0; font: 600 13px 'Space Grotesk', sans-serif; }
+  h3 .material-symbols-outlined { font-size: 18px; }
+  .sub.tight { margin: .2rem 0 .6rem; }
+  code { background: var(--surface-low); padding: 1px 5px; border-radius: 3px; }
+  td small { color: var(--muted-ink); font-size: 9px; }
+  .sub { margin: .35rem 0 1rem; color: var(--muted-ink); font-size: 12px; }
+  .quartiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center; }
+  .bar { height: 110px; background: var(--surface-low); border-radius: 3px; display: flex; align-items: flex-end; overflow: hidden; }
+  .bar i { display: block; width: 100%; background: var(--red); }
+  .q b { display: block; margin-top: .4rem; font: 700 18px 'Space Grotesk', sans-serif; }
+  .q span, .q small { display: block; color: var(--muted-ink); font-size: 10px; }
+  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; text-align: left; }
+  th { height: 32px; padding: 0 7px; background: var(--surface-mid); border-bottom: 1px solid var(--surface-high); font: 700 9px 'Space Grotesk', sans-serif; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+  td { height: 36px; padding: 5px 7px; border-bottom: 1px solid color-mix(in srgb, var(--surface-high) 85%, transparent); color: var(--muted-ink); font-size: 11px; white-space: nowrap; }
+  tbody tr:hover { background: var(--surface-low); }
+  .num { text-align: right; }
+  td a { color: var(--blue); text-decoration: none; font-weight: 600; }
+  td a:hover { text-decoration: underline; }
+  .pos { color: var(--green); font-weight: 700; }
+  .neg { color: var(--red); font-weight: 700; }
+  .headline-row td { height: auto; white-space: normal; padding: 0 7px 8px; font-size: 11px; }
+  .headline-row td .material-symbols-outlined { font-size: 14px; vertical-align: -3px; margin-right: 4px; }
+  .headline-row a { font-weight: 500; }
+  .empty { color: var(--muted-ink); }
+  @media (max-width: 900px) {
+    .overview-grid, .columns { grid-template-columns: 1fr; }
+  }
+</style>

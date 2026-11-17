@@ -1,0 +1,28 @@
+Game 746519 (2024-08-06): Mets @ Rockies  3-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      5.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0
+| J.D. Martinez             | DH       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Mark Vientos              | 3B       |     -1.0 | Error (1): -1.0
+| Jose Iglesias             | 2B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Luis Torrens              | C        |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Jesse Winker              | PH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0 | Error (1): -1.0
+| Tyrone Taylor             | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Luis Severino             | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Alex Young                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 19.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         21.5
+  Carry over into next game: 0.0

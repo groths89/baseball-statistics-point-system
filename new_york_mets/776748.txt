@@ -1,0 +1,29 @@
+Game 776748 (2025-08-14): Mets vs Braves  3-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |     10.5 | Hits (3): +1.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Stolen Base (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      2.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0
+| Pete Alonso               | 1B       |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Cedric Mullins            | CF       |      0.0 | 
+| Ronny Mauricio            | DH       |      0.0 | 
+| Brett Baty                | 3B       |      1.0 | Walks (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Starling Marte            | PH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Kodai Senga               | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tyler Rogers              | P        |      0.0 | 
+| Ryan Helsley              | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 28.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         28.0
+  Carry over into next game: 0.0

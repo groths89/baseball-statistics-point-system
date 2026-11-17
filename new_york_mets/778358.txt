@@ -1,0 +1,30 @@
+Game 778358 (2025-04-11): Mets @ Athletics  7-6 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Runs (1): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      9.5 | Hits (3): +1.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | Sac Fly Scores Run (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Starling Marte            | DH       |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Brandon Nimmo             | LF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 3B       |      1.0 | Walks (1): +1.0
+| Luisangel Acuña           | 2B       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      0.5 | Hits (1): +0.5
+| Jose Siri                 | CF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Griffin Canning           | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| A.J. Minter               | P        |      0.0 | 
+| Edwin Díaz                | P        |      1.0 | Save (1 H, 2 BB): +3.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 35.5
+  Team points:   -4.0  (includes 0.0 carried over)
+  TOTAL:         31.5
+  Carry over into next game: 0.0

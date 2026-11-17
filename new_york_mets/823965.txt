@@ -1,0 +1,26 @@
+Game 823965 (2026-04-14): Mets @ Dodgers  1-2 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Jorge Polanco             | DH       |      0.0 | 
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      1.0 | Walks (1): +1.0
+| Brett Baty                | RF       |      0.0 | 
+| Mark Vientos              | 1B       |      0.0 | 
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Nolan McLean              | P        |      9.0 | Starter 2 Runs or Less (min 5 IP) (7.0 IP, 1 R): +5.0 | Starter 7+ IP (7.0 IP): +5.0 | Error (1): -1.0
+| Brooks Raley              | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    No Runs For 6+ Innings (8): -1.0
+
+### Team Totals ###
+  Player points: 18.0
+  Team points:   -3.0  (includes 0.0 carried over)
+  TOTAL:         15.0
+  Carry over into next game: 0.0

@@ -1,0 +1,31 @@
+Game 777982 (2025-05-10): Mets vs Cubs  5-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Juan Soto                 | RF       |      0.0 | 
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Stolen Base (1): +1.0
+| Mark Vientos              | DH       |      3.0 | Hits (2): +1.0 | Runs (2): +2.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Brett Baty                | 3B       |     19.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (2 on): +2.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Francisco Alvarez         | C        |     -1.0 | Error (1): -1.0
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | PH       |      3.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| José Azócar               | PR       |      0.0 | 
+| Tylor Megill              | P        |      1.0 | Pickoff (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Génesis Cabrera           | P        |      0.0 | 
+| Max Kranick               | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+
+### Team Totals ###
+  Player points: 31.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         30.0
+  Carry over into next game: 0.0

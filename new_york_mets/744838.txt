@@ -1,0 +1,32 @@
+Game 744838 (2024-07-02): Mets @ Nationals  7-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Error (1): -1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Brandon Nimmo             | LF       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Mark Vientos              | 3B       |      5.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Ben Gamel                 | RF       |      2.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      9.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Error (1): -1.0
+| Francisco Alvarez         | C        |     -1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0 | Struck Out 4+ Times (4): -4.0
+| Luis Torrens              | DH       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | CF       |      1.0 | Runs (1): +1.0
+| Jose Iglesias             | 3B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Sean Manaea               | P        |     10.0 | Starter 2 Runs or Less (min 5 IP) (7.0 IP, 2 R): +5.0 | Starter 7+ IP (7.0 IP): +5.0
+| José Buttó                | P        |      0.0 | 
+| Dedniel Núñez             | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (14): -5.0
+
+### Team Totals ###
+  Player points: 39.5
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         45.5
+  Carry over into next game: 0.0

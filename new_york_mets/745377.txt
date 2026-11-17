@@ -1,0 +1,30 @@
+Game 745377 (2024-08-24): Mets @ Padres  7-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |     17.0 | Hits (2): +1.0 | Runs (2): +2.0 | Grand Slam (3 on): +4.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (4): +8.0
+| Mark Vientos              | 3B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Jesse Winker              | LF       |      1.0 | Walks (1): +1.0
+| Harrison Bader            | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Starling Marte            | RF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Francisco Alvarez         | C        |      1.0 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |      1.0 | Runs (1): +1.0
+| David Peterson            | P        |     10.0 | Starter 2 Runs or Less (min 5 IP) (7.1 IP, 1 R): +5.0 | Starter 7+ IP (7.1 IP): +5.0
+| Dedniel Núñez             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (1): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+
+### Team Totals ###
+  Player points: 40.5
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         44.5
+  Carry over into next game: 0.0

@@ -1,0 +1,30 @@
+Game 777004 (2025-07-25): Mets @ Giants  8-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Long At-Bat (10+ Pitches) (10): +1.0 | Stolen Base (1): +1.0
+| Francisco Lindor          | SS       |      7.5 | Hits (3): +1.5 | Runs (3): +3.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Juan Soto                 | RF       |      7.0 | Hits (2): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Pete Alonso               | 1B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Jeff McNeil               | DH       |      2.0 | Walks (1): +1.0 | Advances On Passed Ball (1): +1.0
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Ronny Mauricio            | 3B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Luisangel Acuña           | 2B       |      1.0 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      2.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Clay Holmes               | P        |      8.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Rico Garcia               | P        |      0.0 | 
+| José Castillo             | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+
+### Team Totals ###
+  Player points: 41.0
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         47.0
+  Carry over into next game: 0.0

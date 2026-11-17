@@ -1,0 +1,29 @@
+Game 745182 (2024-05-06): Mets @ Cardinals  4-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Outfield Assist (1): +1.0
+| Starling Marte            | RF       |      0.0 | 
+| Francisco Lindor          | SS       |      5.0 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| DJ Stewart                | LF       |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5
+| J.D. Martinez             | DH       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| Joey Wendle               | 2B       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Tomás Nido                | C        |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Sean Manaea               | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jake Diekman              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+
+### Team Totals ###
+  Player points: 32.0
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         37.0
+  Carry over into next game: 0.0

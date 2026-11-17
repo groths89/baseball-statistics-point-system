@@ -1,0 +1,59 @@
+---
+import type { MediaItem } from '../lib/api';
+
+interface Props {
+  items: MediaItem[];
+}
+
+const { items } = Astro.props;
+const groups = [
+  { kind: 'recap', label: 'Recap', icon: 'article' },
+  { kind: 'news', label: 'In the news', icon: 'newspaper' },
+  { kind: 'highlight', label: 'Highlights', icon: 'play_circle' },
+] as const;
+---
+
+{items.length > 0 && (
+  <section class="media">
+    <div class="head">
+      <div class="title"><i class="dot"></i><h2>Around the game</h2></div>
+      <span class="count">{items.length} items</span>
+    </div>
+    <div class="groups">
+      {groups.map((group) => {
+        const rows = items.filter((item) => item.kind === group.kind);
+        return rows.length > 0 && (
+          <div class="group">
+            <h3><span class="material-symbols-outlined">{group.icon}</span>{group.label}</h3>
+            <ul>
+              {rows.map((item) => (
+                <li>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                  {item.publisher && <small>{item.publisher}</small>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+)}
+
+<style>
+  .media { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .title { display: flex; align-items: center; gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--link); }
+  h2 { margin: 0; font-family: var(--font-head); font-size: 16px; }
+  .count { color: var(--muted); font-size: 11px; }
+  .groups { display: grid; gap: 16px; }
+  @media (min-width: 1024px) { .groups { grid-template-columns: repeat(3, 1fr); } }
+  h3 { display: flex; align-items: center; gap: 6px; margin: 0 0 8px; color: var(--muted); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; }
+  h3 .material-symbols-outlined { font-size: 16px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  li { display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
+  li a { color: var(--link); text-decoration: none; }
+  li a:hover { text-decoration: underline; }
+  small { color: var(--muted); font-size: 11px; }
+</style>

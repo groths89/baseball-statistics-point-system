@@ -1,0 +1,32 @@
+Game 776288 (2025-09-17): Mets vs Padres  4-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Juan Soto                 | RF       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Outfield Assist (1): +1.0
+| Pete Alonso               | 1B       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Starling Marte            | DH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Brett Baty                | 3B       |      3.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Cedric Mullins            | CF       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Mark Vientos              | PH       |      0.0 | 
+| David Peterson            | P        |      0.0 | 
+| Dom Hamel                 | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Gregory Soto              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryan Helsley              | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Passed Ball (1): -1.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 28.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         30.5
+  Carry over into next game: 0.0

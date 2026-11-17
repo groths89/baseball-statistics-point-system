@@ -1,0 +1,31 @@
+Game 745782 (2024-08-20): Mets vs Orioles  5-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5 | Runs (1): +1.0 | Error (1): -1.0
+| J.D. Martinez             | DH       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| Jesse Winker              | RF       |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Francisco Alvarez         | C        |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Jose Quintana             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Danny Young               | P        |     -1.0 | Error (1): -1.0
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   2.0  (includes 2.0 carried over)
+  TOTAL:         18.5
+  Carry over into next game: 0.0

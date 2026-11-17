@@ -1,0 +1,31 @@
+Game 745772 (2024-09-17): Mets vs Nationals  10-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Jose Iglesias             | 2B       |      4.5 | Hits (3): +1.5 | Runs (2): +2.0 | 2 Out Hit (1): +1.0
+| Eddy Alvarez              | 2B       |      1.0 | Walks (1): +1.0
+| Starling Marte            | RF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |     13.5 | Hits (3): +1.5 | Runs (2): +2.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Mark Vientos              | 3B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Tyrone Taylor             | LF       |      2.0 | Hits (2): +1.0 | Stolen Base (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Harrison Bader            | CF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Luisangel Acuña           | SS       |      4.5 | Hits (3): +1.5 | Runs (3): +3.0 | Solo Homerun (0 on): +1.0 | Error (1): -1.0
+| Tylor Megill              | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adam Ottavino             | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Alex Young                | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 40.0
+  Team points:   9.0  (includes 2.0 carried over)
+  TOTAL:         49.0
+  Carry over into next game: 0.0

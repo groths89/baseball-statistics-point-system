@@ -1,0 +1,28 @@
+Game 823586 (2026-08-18): Mets vs Padres  2-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Bo Bichette               | 3B       |      1.0 | Hits (2): +1.0
+| Luis Robert Jr.           | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Carson Benge              | RF       |      0.0 | 
+| Francisco Alvarez         | DH       |      1.0 | Walks (1): +1.0
+| Christopher Morel         | 1B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Marcus Semien             | 2B       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| A.J. Ewing                | LF       |      2.0 | Walks (1): +1.0 | Outfield Assist (1): +1.0
+| Luis Torrens              | C        |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Jared Young               | PH       |      0.0 | 
+| Zac Thornton              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jack Weisenburger         | P        |      0.0 | 
+| Jefry Yan                 | P        |      0.0 | 
+| Dedniel Núñez             | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+
+### Team Totals ###
+  Player points: 15.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         14.0
+  Carry over into next game: 0.0

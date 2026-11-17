@@ -1,0 +1,32 @@
+Game 777528 (2025-06-13): Mets vs Rays  5-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Brandon Nimmo             | LF       |      1.0 | Runs (1): +1.0
+| Juan Soto                 | RF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | CF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Starling Marte            | DH       |      7.5 | Hits (3): +1.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Brett Baty                | 2B       |      1.0 | Walks (1): +1.0
+| Luisangel Acuña           | PR       |      0.0 | 
+| Ronny Mauricio            | 3B       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Clay Holmes               | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Paul Blackburn            | P        |      0.0 | 
+| Max Kranick               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Justin Garza              | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Deduction    Team Struck Out 10+ Times (13): -4.0
+
+### Team Totals ###
+  Player points: 33.5
+  Team points:   3.0  (includes 0.0 carried over)
+  TOTAL:         36.5
+  Carry over into next game: 0.0

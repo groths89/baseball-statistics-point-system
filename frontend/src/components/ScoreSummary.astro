@@ -1,0 +1,248 @@
+---
+import { fmtPts, ordinal, tone, type Breakdown } from '../lib/api';
+
+interface Props {
+  data: Breakdown;
+}
+
+const { game, points } = Astro.props.data;
+const mine = game.team;
+const theirs = game.opponent;
+const away = mine.side === 'away' ? mine : theirs;
+const home = mine.side === 'away' ? theirs : mine;
+const teamWon = game.won;
+const plays = Astro.props.data.play_log;
+const peak = plays.reduce<(typeof plays)[number] | null>((m, p) => (!m || Math.abs(p.impact) > Math.abs(m.impact) ? p : m), null);
+const high = plays.filter((p) => Math.abs(p.impact) >= 3).length;
+const miracles = plays.filter((p) => p.category_keys.includes('miracles')).length;
+const byInning = new Map<string, number>();
+plays.forEach((p) => byInning.set(`${p.half} ${ordinal(p.inning)}`, (byInning.get(`${p.half} ${ordinal(p.inning)}`) ?? 0) + p.impact));
+const best = [...byInning.entries()].sort((a, b) => b[1] - a[1])[0];
+const hel = (t: { hits?: number | null; errors?: number | null; lob?: number | null }) =>
+  t.hits == null ? '' : `${t.hits} H • ${t.errors ?? 0} E • ${t.lob ?? 0} LOB`;
+const env = {
+  events: plays.length,
+  high,
+  miracles,
+  bestInning: best ? `${best[0]} (${fmtPts(best[1])})` : '—',
+  label:
+    points.avg_li === null ? 'N/A' : points.avg_li >= 1.2 ? 'High Leverage' : points.avg_li < 0.85 ? 'Low Leverage' : 'Moderate',
+};
+---
+
+<section class="bar">
+  <div class="cell score">
+    <div class="team" class:list={{ dim: !(away.runs > home.runs) }}>
+      <div>
+        <span class="abbr">{away.abbr}</span>
+        <span class="rec">({away.record})</span>
+        <div class="hel">{hel(away)}</div>
+      </div>
+      <span class="runs">{away.runs}</span>
+    </div>
+    <span class="final">Final</span>
+    <div class="team right" class:list={{ dim: !(home.runs > away.runs) }}>
+      <span class="runs">{home.runs}</span>
+      <div>
+        <span class="rec">({home.record})</span>
+        <span class="abbr">{home.abbr}</span>
+        <div class="hel">{hel(home)}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cell">
+    <div class="k">
+      <span>DiamondPoints Total</span>
+      <span class:list={['res', teamWon ? 'pos' : 'neg']}>{mine.abbr} {teamWon ? 'WIN' : 'LOSS'}</span>
+    </div>
+    <div class="v">
+      <span class={tone(points.total)}>{fmtPts(points.total)} <small>PTS</small></span>
+      <span class="vs">
+        {points.opponent_total !== null ? `vs ${theirs.abbr} ${fmtPts(points.opponent_total)}` : `Avg ${fmtPts(points.season_avg)}`}
+      </span>
+    </div>
+    <div class="s">
+      {
+        points.margin !== null ? (
+          <>Margin: <b>{fmtPts(points.margin)} Net Pts</b></>
+        ) : (
+          <>
+            Rank <b>#{points.season_rank}</b> of {points.season_games} games • {fmtPts(points.total - points.season_avg)} vs avg
+          </>
+        )
+      }
+    </div>
+    <div class="s">Player <b>{fmtPts(points.player_points)}</b> • Team <b>{fmtPts(points.team_points)}</b></div>
+  </div>
+
+  <div class="cell">
+    <div class="k">
+      <span>Leverage Environment</span>
+      <span class="amber">{env.label}</span>
+    </div>
+    <div class="v">
+      <span>{points.avg_li !== null ? points.avg_li.toFixed(2) : '—'} <small>avg LI</small></span>
+      {points.peak_li !== null && <span class="vs">(Peak {points.peak_li.toFixed(2)} • {points.peak_li_inning})</span>}
+    </div>
+    <div class="s">Peak leverage: <b>{points.peak_li_player ?? '—'}</b> • Best inning: <b>{env.bestInning}</b></div>
+    <div class="s">High-impact plays (≥3): <b>{env.high}</b> • Miracles: <b>{env.miracles}</b></div>
+  </div>
+
+  <div class="cell last">
+    <div class="k"><span>Carry-Over</span><span class:list={['res', points.carry_out > 0 ? 'pos' : '']}>{points.carry_out > 0 ? 'Earned' : 'None earned'}</span></div>
+    <div class="v">
+      <span class={tone(points.carry_in)}>{fmtPts(points.carry_in)} <small>PTS in</small></span>
+    </div>
+    <div class="s">
+      Out to {game.next_game_id ? <>next game <b>G# {game.next_game_id}</b></> : 'next game'}: <b>{fmtPts(points.carry_out)}</b>
+    </div>
+    <div class="s">{points.carry_reason ? `Source: ${points.carry_reason}` : 'Carried into this game from the previous one'}</div>
+  </div>
+</section>
+
+<style>
+  .bar {
+    display: grid;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    gap: 16px;
+  }
+  @media (min-width: 768px) {
+    .bar {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bar {
+      grid-template-columns: 1.5fr 1.2fr 1.2fr 1fr;
+      gap: 0;
+    }
+  }
+  .cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+  @media (min-width: 768px) {
+    .cell {
+      padding: 0 16px;
+      border-right: 1px solid var(--border);
+    }
+    .cell:first-child {
+      padding-left: 0;
+    }
+    .cell.last {
+      border-right: 0;
+    }
+  }
+  .score {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .team {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .team.right {
+    text-align: right;
+  }
+  .team.dim .abbr,
+  .team.dim .runs {
+    color: var(--muted);
+  }
+  .abbr {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  .rec {
+    white-space: nowrap;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .hel {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+  .team.right > div {
+    text-align: right;
+  }
+  .runs {
+    font-family: var(--font-head);
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .final {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .k {
+    display: flex;
+    justify-content: space-between;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .res {
+    font-weight: 700;
+  }
+  .v {
+    display: flex;
+    align-items: baseline;
+    gap: 4px 12px;
+    flex-wrap: wrap;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .v > *,
+  .k > * {
+    white-space: nowrap;
+  }
+  .v small {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .vs {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .s {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .s b {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .amber {
+    color: #f5b942;
+    font-weight: 700;
+  }
+  .pos {
+    color: var(--pos);
+  }
+  .neg {
+    color: var(--neg);
+  }
+</style>

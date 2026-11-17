@@ -1,0 +1,28 @@
+Game 778068 (2025-05-04): Mets @ Cardinals  4-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Juan Soto                 | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Mark Vientos              | 3B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Starling Marte            | RF       |      9.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| José Azócar               | RF       |      0.0 | 
+| Francisco Alvarez         | C        |      5.5 | Hits (1): +0.5 | Walks (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Tyrone Taylor             | CF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Tylor Megill              | P        |      0.0 | 
+| Max Kranick               | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Edwin Díaz                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 28.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         27.0
+  Carry over into next game: 0.0

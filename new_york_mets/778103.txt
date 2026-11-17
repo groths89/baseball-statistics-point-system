@@ -1,0 +1,30 @@
+Game 778103 (2025-05-01): Mets vs D-backs  2-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Jesse Winker              | DH       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.0 | 
+| Luis Torrens              | C        |      3.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Kodai Senga               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Génesis Cabrera           | P        |      0.0 | 
+| Max Kranick               | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Ty Adcock                 | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (13): -4.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   -3.0  (includes 0.0 carried over)
+  TOTAL:         13.5
+  Carry over into next game: 0.0

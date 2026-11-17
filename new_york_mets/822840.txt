@@ -1,0 +1,30 @@
+Game 822840 (2026-09-22): Mets @ Rangers  6-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Juan Soto                 | LF       |      6.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Mark Vientos              | 1B       |      0.0 | 
+| Brett Baty                | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Carson Benge              | RF       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Marcus Semien             | 2B       |      1.0 | Runs (1): +1.0
+| Francisco Alvarez         | DH       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| A.J. Ewing                | CF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Luis Torrens              | C        |      2.0 | Sac Fly Scores Run (1): +2.0
+| Sean Manaea               | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Nate Lavender             | P        |      0.0 | 
+| Dedniel Núñez             | P        |      0.0 | 
+| Kodai Senga               | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Passed Ball (1): -1.0
+
+### Team Totals ###
+  Player points: 35.0
+  Team points:   3.0  (includes 0.0 carried over)
+  TOTAL:         38.0
+  Carry over into next game: 0.0

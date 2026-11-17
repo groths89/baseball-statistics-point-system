@@ -1,0 +1,29 @@
+Game 776478 (2025-09-03): Mets @ Tigers  2-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Stolen Base (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      4.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | CF       |      3.5 | Hits (1): +0.5 | Walks (2): +2.0 | Outfield Assist (1): +1.0
+| Starling Marte            | DH       |      0.0 | 
+| Brett Baty                | 2B       |      0.0 | 
+| Hayden Senger             | C        |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Clay Holmes               | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Gregory Soto              | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryan Helsley              | P        |     -1.0 | Wild Pitch (1): -1.0
+| Justin Hagenman           | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 20.0
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         24.0
+  Carry over into next game: 0.0

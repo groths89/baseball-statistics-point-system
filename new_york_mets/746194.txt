@@ -1,0 +1,31 @@
+Game 746194 (2024-08-03): Mets @ Angels  4-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| J.D. Martinez             | DH       |      8.0 | Hits (2): +1.0 | Runs (1): +1.0 | Grand Slam (3 on): +4.0 | 2 Out Hit (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Jesse Winker              | RF       |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Mark Vientos              | 3B       |      4.5 | Hits (1): +0.5 | Walks (1): +1.0 | Long At-Bat And Reaches Base (11): +3.0
+| Jose Iglesias             | 3B       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Jeff McNeil               | 2B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| David Peterson            | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 2 R): +5.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Alex Young                | P        |      0.0 | 
+| Adam Ottavino             | P        |     -1.0 | Wild Pitch (1): -1.0
+| Danny Young               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 28.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         29.0
+  Carry over into next game: 0.0

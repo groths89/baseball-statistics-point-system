@@ -1,0 +1,31 @@
+Game 823584 (2026-08-26): Mets vs Brewers  1-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | CF       |      2.5 | Hits (1): +0.5 | Stolen Base (1): +1.0 | Stolen Base (1): +1.0
+| Francisco Lindor          | SS       |      0.0 | 
+| Cristian Pache            | LF       |      0.0 | 
+| Bo Bichette               | 3B       |      1.0 | Walks (1): +1.0
+| Christopher Morel         | 3B       |      0.0 | 
+| Carson Benge              | RF       |      0.5 | Hits (1): +0.5
+| Jared Young               | 1B       |      0.5 | Hits (1): +0.5
+| Luis Robert Jr.           | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | SS       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0
+| Marcus Semien             | 2B       |      3.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Robert Stock              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Chayce McDermott          | P        |     -1.0 | Wild Pitch (1): -1.0
+| Jefry Yan                 | P        |      0.0 | 
+| Dedniel Núñez             | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 19.5
+  Team points:   3.0  (includes 2.0 carried over)
+  TOTAL:         22.5
+  Carry over into next game: 0.0

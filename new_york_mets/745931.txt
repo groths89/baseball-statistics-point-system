@@ -1,0 +1,32 @@
+Game 745931 (2024-09-28): Mets @ Brewers  0-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | DH       |      0.0 | 
+| Jose Iglesias             | 2B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.0 | 
+| Pete Alonso               | 1B       |      0.0 | 
+| Starling Marte            | RF       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | C        |      0.0 | 
+| Tyrone Taylor             | CF       |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Luisangel Acuña           | SS       |      3.0 | Long At-Bat (10+ Pitches) (12): +3.0
+| Jose Quintana             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Phil Maton                | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Ryne Stanek               | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Danny Young               | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Team Pitchers 16+ Strikeouts (18): +1.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 8.0
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         6.0
+  Carry over into next game: 0.0

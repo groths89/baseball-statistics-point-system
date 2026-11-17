@@ -1,0 +1,31 @@
+Game 746154 (2024-04-21): Mets @ Dodgers  0-10 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Starling Marte            | RF       |      0.0 | 
+| Tyrone Taylor             | RF       |      0.0 | 
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Joey Wendle               | SS       |      0.0 | 
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| Zack Short                | PH       |      0.0 | 
+| DJ Stewart                | DH       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5
+| Tomás Nido                | C        |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Adrian Houser             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Grant Hartwig             | P        |      0.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| Michael Tonkin            | P        |     -1.0 | Wild Pitch (1): -1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 8.5
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         3.5
+  Carry over into next game: 0.0

@@ -1,0 +1,32 @@
+Game 745783 (2024-08-15): Mets vs Athletics  6-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Mark Vientos              | 3B       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0 | Solo Homerun (0 on): +1.0
+| J.D. Martinez             | DH       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Jesse Winker              | LF       |      1.0 | Outfield Assist (1): +1.0
+| Tyrone Taylor             | LF       |      1.5 | Hits (1): +0.5 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      4.0 | Runs (2): +2.0 | Walks (2): +2.0
+| Jose Iglesias             | 2B       |      3.0 | Hits (2): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Jeff McNeil               | RF       |      4.5 | Hits (1): +0.5 | Long At-Bat And Reaches Base (11): +3.0 | Long At-Bat (10+ Pitches) (10): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Luis Torrens              | C        |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Ben Gamel                 | RF       |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Jose Quintana             | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |     -2.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| Reed Garrett              | P        |      0.0 | 
+| Phil Maton                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryne Stanek               | P        |     -1.0 | Wild Pitch (1): -1.0
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (11): -7.0
+
+### Team Totals ###
+  Player points: 33.5
+  Team points:   -7.0  (includes 0.0 carried over)
+  TOTAL:         26.5
+  Carry over into next game: 0.0

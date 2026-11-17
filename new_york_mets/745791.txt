@@ -1,0 +1,29 @@
+Game 745791 (2024-07-29): Mets vs Twins  15-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| J.D. Martinez             | DH       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Ben Gamel                 | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      6.0 | Hits (2): +1.0 | Runs (3): +3.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0
+| Jesse Winker              | RF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Tyrone Taylor             | RF       |      3.0 | Hits (2): +1.0 | Runs (2): +2.0
+| Mark Vientos              | 3B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Jeff McNeil               | 2B       |      9.0 | Hits (2): +1.0 | Runs (2): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Sac Fly Scores Run (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Luis Torrens              | C        |      9.5 | Hits (3): +1.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Harrison Bader            | CF       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0
+| Jose Quintana             | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| José Buttó                | P        |      4.0 | Save (4 H, 1 BB): +3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+
+### Team Totals ###
+  Player points: 60.5
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         66.5
+  Carry over into next game: 0.0

@@ -1,0 +1,28 @@
+Game 747064 (2024-09-30): Mets @ Braves  0-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Jose Iglesias             | 3B       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Starling Marte            | DH       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | RF       |      1.0 | Outfield Assist (1): +1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Eddy Alvarez              | SS       |      0.0 | 
+| Joey Lucchesi             | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |     -2.0 | Error (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| Adam Ottavino             | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 8.5
+  Team points:   -4.0  (includes 0.0 carried over)
+  TOTAL:         4.5
+  Carry over into next game: 0.0

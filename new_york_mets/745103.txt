@@ -1,0 +1,34 @@
+Game 745103 (2024-05-05): Mets @ Rays  6-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Starling Marte            | RF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (2): +2.0 | Outfield Assist (1): +1.0
+| Francisco Lindor          | SS       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| DJ Stewart                | DH       |      1.0 | Walks (1): +1.0
+| J.D. Martinez             | PH       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Tyrone Taylor             | DH       |      0.0 | 
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Harrison Bader            | CF       |      2.5 | Hits (1): +0.5 | Runs (2): +2.0
+| Brett Baty                | 3B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Omar Narváez              | C        |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Tomás Nido                | C        |      1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Luis Severino             | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jorge López               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Sean Reid-Foley           | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |     -2.0 | Blown Save (BS, 1): -2.0
+| Jake Diekman              | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (9): -5.0
+
+### Team Totals ###
+  Player points: 23.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         22.0
+  Carry over into next game: 0.0

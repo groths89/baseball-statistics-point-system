@@ -1,0 +1,31 @@
+Game 778530 (2025-03-29): Mets @ Astros  1-2 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      2.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Jesse Winker              | DH       |      0.0 | 
+| Starling Marte            | DH       |      0.0 | 
+| Luis Torrens              | C        |      2.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Luisangel Acuña           | 2B       |      1.0 | Stolen Base (1): +1.0
+| Brett Baty                | 2B       |      0.0 | 
+| Hayden Senger             | C        |      0.0 | 
+| Jose Siri                 | CF       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Griffin Canning           | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 2 R): +5.0
+| José Buttó                | P        |      0.0 | 
+| Max Kranick               | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   9.0  (includes 0.0 carried over)
+  TOTAL:         25.5
+  Carry over into next game: 0.0

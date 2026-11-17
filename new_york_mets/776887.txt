@@ -1,0 +1,29 @@
+Game 776887 (2025-08-03): Mets vs Giants  4-12 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Outfield Assist (1): +1.0
+| Tyrone Taylor             | PH       |      0.0 | 
+| Francisco Lindor          | SS       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Error (1): -1.0
+| Juan Soto                 | RF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Starling Marte            | DH       |      0.0 | 
+| Jeff McNeil               | 2B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Mark Vientos              | 3B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | Advances On Passed Ball (1): +1.0
+| Cedric Mullins            | CF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |     10.0 | Hits (2): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Frankie Montas            | P        |      0.0 | 
+| Austin Warren             | P        |      0.0 | 
+| Ryne Stanek               | P        |     -1.0 | Wild Pitch (1): -1.0
+| Luis Torrens              | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 24.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         25.0
+  Carry over into next game: 0.0

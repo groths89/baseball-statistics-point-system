@@ -1,0 +1,115 @@
+---
+import { fmtDate, type Breakdown } from '../lib/api';
+
+interface Props {
+  data: Breakdown;
+}
+
+const { game } = Astro.props.data;
+const teamId = game.team.team_id;
+const away = game.team.side === 'away' ? game.team : game.opponent;
+const home = game.team.side === 'away' ? game.opponent : game.team;
+const status = `Final (${game.innings ?? 9} Inn)`;
+const place = [
+  game.venue,
+  game.attendance ? `Attendance: ${game.attendance.toLocaleString('en-US')}` : null,
+  game.temp ? `Temp: ${game.temp}°F` : null,
+].filter(Boolean);
+---
+
+<div class="sub">
+  <div class="row">
+    <div class="left">
+      <span class="k">Game:</span>
+      <div class="pick">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+        <span>{fmtDate(game.game_date)}:</span>
+        <strong>{away.abbr} {away.runs} @ {home.abbr} {home.runs}</strong>
+        <span class="final">{status}</span>
+      </div>
+      {place.length > 0 && <span class="place">{place.join(' • ')}</span>}
+    </div>
+    <div class="nav">
+      {game.prev_game_id ? <a href={`/game/${teamId}/${game.prev_game_id}`}>&lt; Prev Game</a> : <span class="off">&lt; Prev Game</span>}
+      <span class="id">G# {game.game_id}</span>
+      {game.next_game_id ? <a href={`/game/${teamId}/${game.next_game_id}`}>Next Game &gt;</a> : <span class="off">Next Game &gt;</span>}
+    </div>
+  </div>
+</div>
+
+<style>
+  .sub {
+    background: var(--subbar-bg);
+    border-top: 1px solid var(--border);
+    padding: 8px 1rem;
+    font-size: 12px;
+  }
+  @media (min-width: 1024px) {
+    .sub {
+      padding: 8px 1.5rem;
+    }
+  }
+  .row {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .left,
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  .k {
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  .pick {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .pick svg {
+    color: #fbbf24;
+  }
+  .final {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--pos);
+    background: var(--pill-bg);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  .place,
+  .nav {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .nav a,
+  .nav .off {
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--pill-bg);
+  }
+  .nav a:hover {
+    color: var(--text);
+  }
+  .off {
+    opacity: 0.4;
+  }
+</style>

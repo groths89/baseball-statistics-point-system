@@ -1,0 +1,30 @@
+Game 747162 (2024-08-27): Mets @ D-backs  8-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jesse Winker              | RF       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Harrison Bader            | CF       |      0.0 | 
+| J.D. Martinez             | DH       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | RF       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | 2B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Sean Manaea               | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Phil Maton                | P        |      0.0 | 
+| Danny Young               | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Adam Ottavino             | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+
+### Team Totals ###
+  Player points: 25.5
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         32.5
+  Carry over into next game: 0.0

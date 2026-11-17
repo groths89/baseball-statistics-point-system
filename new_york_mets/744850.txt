@@ -1,0 +1,28 @@
+Game 744850 (2024-06-04): Mets @ Nationals  6-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Hits (2): +1.0
+| Pete Alonso               | 1B       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0
+| Brandon Nimmo             | LF       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| J.D. Martinez             | DH       |      0.5 | Hits (1): +0.5
+| Starling Marte            | RF       |      6.5 | Hits (1): +0.5 | Triples (1): +3.0 | Runs (2): +2.0 | Walks (1): +1.0
+| Mark Vientos              | 3B       |      2.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0
+| Harrison Bader            | CF       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jose Iglesias             | 2B       |      0.5 | Hits (1): +0.5
+| Tomás Nido                | C        |      0.5 | Hits (1): +0.5
+| DJ Stewart                | PH       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| David Peterson            | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.2 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Dedniel Núñez             | P        |      0.0 | 
+| Reed Garrett              | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 30.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         32.5
+  Carry over into next game: 0.0

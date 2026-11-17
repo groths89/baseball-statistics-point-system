@@ -1,0 +1,31 @@
+Game 745821 (2024-05-14): Mets vs Phillies  0-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      0.0 | 
+| Starling Marte            | RF       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Lindor          | SS       |      0.0 | 
+| Pete Alonso               | 1B       |      0.0 | 
+| J.D. Martinez             | DH       |      0.0 | 
+| Brett Baty                | 3B       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Joey Wendle               | 2B       |      0.0 | 
+| DJ Stewart                | PH       |      0.0 | 
+| Omar Narváez              | C        |      0.0 | 
+| Jeff McNeil               | PH       |      0.5 | Hits (1): +0.5
+| José Buttó                | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0
+| Yohan Ramírez             | P        |      1.0 | Wild Pitch (1): -1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Jake Diekman              | P        |      1.0 | Pickoff (1): +1.0
+| Jorge López               | P        |      1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Sean Reid-Foley           | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (8): -4.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 11.0
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         6.0
+  Carry over into next game: 0.0

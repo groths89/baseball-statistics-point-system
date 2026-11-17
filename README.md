@@ -10,7 +10,7 @@ This project is a custom analytical tool designed to score the quality of play f
 | ---------------- | ------------------------- | ---------- |
 | Data Acquisition | Python (statsapi) Library | Fetch game schedules, box scores, and play-by-play data.|
 | Backend/Logic    | Python        | Core scoring engine and data parsing logic. |
-| Data Persistence |  |  |
+| Data Persistence | SQLite (`new_york_mets/points.db`) | Stores each game's totals and every point event. |
 | API              |  |  |
 | Frontend/Visual  |  |  |
 
@@ -25,6 +25,87 @@ This project gets a schedule for the given team, in one instance it is the New Y
 3. Calculate Scores: Apply the scoring logic defined below.
 
 4. Persist: Store the game ID and the final point breakdown into the database.
+
+### Running it
+
+```
+pip install -r requirements.txt
+python ny_mets_points_system.py                    # latest completed game
+python ny_mets_points_system.py --game 776450      # one game
+python ny_mets_points_system.py --season 2025      # every completed regular season game, in order (carry over points flow game to game)
+python ny_mets_points_system.py --start 2025-09-01 --end 2025-09-14
+python ny_mets_points_system.py --summary          # stored results and average points per game
+```
+
+A report for each game is written to `new_york_mets/<gameId>.txt` and the results are saved to SQLite (`--no-save` to skip). Use `--team` to score another team.
+
+Code layout: `data_utils.py` (box score parsing), `player_scoring_rules.py` (box score rules), `situational_rules.py` (play-by-play rules), `team_scoring.py` (team rules and carry over), `game_scoring.py` (applies everything to a game), `storage.py` (SQLite), `report.py` (text report).
+
+### Moments (off-field events)
+
+```
+python moments.py add --date 2025-06-12 --headline "..." --type media --url https://... --note "..." --team 121
+python moments.py list
+python moments.py delete 1
+```
+
+The eight most covered games of each season are also pinned automatically (blue), so only off-field events that aren't in the headlines need a manual moment. Each moment shows as a pin on the Season Trends chart at the first game on or after its date, with that game's result and points. Omit `--team` for a moment that applies to every team.
+
+### Media (headlines around each game)
+
+```
+python media.py --season 2024                  # MLB recap/highlights + Google News for each scored game without media yet
+python media.py --game 745811 --team 121
+python media.py --start 2024-06-10 --end 2024-06-20 --source google --refresh
+```
+
+Needs no API keys. Only titles, links, publisher and time are saved (`media_items` table), never article text. The Google News story count (and number of outlets) is stored per game as its buzz and compared with points on the Insights page. Doubleheaders share a count because the search is by date. They show up under "Around the game" on each game page and as a headline under each game on the Insights page.
+
+### API
+
+```
+uvicorn api:app --reload        # docs at http://localhost:8000/docs
+```
+
+Read-only JSON over the SQLite database. Set `POINTS_DB` to use another database file and `CORS_ORIGINS` (comma separated) for your frontend's origin; the default is Astro's dev server, `http://localhost:4321`.
+
+| Endpoint | Purpose |
+| -------- | ------- |
+| `GET /teams?season=` | Teams with games, wins, total and average points |
+| `GET /games?team_id=&season=&start=&end=&sort=date\|points&limit=&offset=` | Game list |
+| `GET /games/{game_id}?team_id=` | One team's game: totals, category totals, player totals, every point event |
+| `GET /games/{game_id}/breakdown?team_id=` | Everything the Game Breakdown screen needs: five-category ledger, batter/pitcher tables with percentile grades, play log |
+| `GET /search?q=&team_id=&limit=` | Quick search: players by name, games by opponent/team/date |
+| `GET /players?team_id=&season=&min_games=&sort=total\|per_game&limit=&offset=` | Player leaderboard |
+| `GET /insights/outliers?team_id=&season=&limit=` | Insights: hidden gems (losses with high points), smoke and mirrors (wins with low points), and win rate by points quartile |
+| `GET /games/{game_id}/media?team_id=` | Recap, highlight videos and news headlines collected for a game |
+| `GET /insights/buzz?team_id=&season=&limit=` | Media coverage per game vs. points: correlations, most covered games, and high-scoring games that got little coverage |
+| `GET /teams/{team_id}/buzz-pins?season=&limit=` | The most covered games of a season (one per date), pinned automatically on Season Trends |
+| `GET /moments?team_id=&season=` | Off-field moments (media, culture, trades) pinned on the Season Trends timeline |
+| `GET /teams/{team_id}/trend?season=&window=` | Points per game with a rolling average |
+
+All endpoints work for any team stored in the database, so adding more teams only requires scoring them with `--team`.
+
+### Frontend (Astro)
+
+The `frontend/` folder is an Astro app (dark and light themes) that renders the Game Breakdown screen from the API. It needs Node >= 22.23.4.
+
+```bash
+uvicorn api:app --reload            # terminal 1, http://localhost:8000
+cd frontend && cp .env.example .env # set PUBLIC_API_URL if the API is elsewhere
+npm install && npm run dev          # terminal 2, http://localhost:4321
+```
+
+Pages are server-rendered, so a production build needs a deployment adapter (for Cloudflare, `@astrojs/cloudflare`), which is not set up yet. The opponent's points and the margin only appear once both teams in a game have been scored.
+
+### Interpretation notes and known gaps
+
+- "Starter gives up 2 runs or less" uses runs (not earned runs) and requires at least 5 IP.
+- "Team walks" applies at more than 5 walks. Strikeout deductions: 10 Ks = -1, each extra K = -1 more. Walk deduction: 5 walks = -1, each extra = -1 more.
+- Long at-bats: 10+ pitches = 1 + 1 per pitch past 10; if the batter reaches base it is 2 + 1 per pitch past 10 instead.
+- Double play that ends the inning is worth 3 (instead of 2) when a runner was in scoring position and no run scored on the play.
+- Comeback/walk-off rules check the final inning (and last 2 innings) of the game; a comeback is worth 20 once.
+- Not detectable from the API data and therefore not scored: diving plays, robbing a home run, and an outfielder backing up an errant throw to throw out a runner.
 
 ### Usages
 - Used `statsapi.last_game(teamID)` and `statsapi.get('game', {'gamePk': last_game_id})` to get the latest game of the team being analyzed.

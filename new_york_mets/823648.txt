@@ -1,0 +1,33 @@
+Game 823648 (2026-04-07): Mets vs D-backs  4-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Error (1): -1.0
+| Bo Bichette               | 3B       |      0.5 | Hits (1): +0.5
+| Jorge Polanco             | DH       |      1.0 | Hits (2): +1.0
+| Tyrone Taylor             | DH       |      1.0 | Runs (1): +1.0
+| Ronny Mauricio            | PH       |      1.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0
+| Luis Robert Jr.           | CF       |      3.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Brett Baty                | RF       |      2.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0
+| Mark Vientos              | 1B       |      0.0 | 
+| Jared Young               | 1B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | LF       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Francisco Alvarez         | C        |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0
+| Freddy Peralta            | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Luis García               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      0.0 | 
+| Devin Williams            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luke Weaver               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (5): +5.0
+  Unusual      Walk-Off Win (1): +5.0
+
+### Team Totals ###
+  Player points: 29.0
+  Team points:   10.0  (includes 0.0 carried over)
+  TOTAL:         39.0
+  Carry over into next game: 2.0

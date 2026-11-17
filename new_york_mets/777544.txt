@@ -1,0 +1,30 @@
+Game 777544 (2025-06-12): Mets vs Nationals  4-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| Jeff McNeil               | 2B       |     11.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Starling Marte            | DH       |      0.5 | Hits (1): +0.5
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | CF       |      3.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      2.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Kodai Senga               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 0 R): +5.0
+| José Castillo             | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Edwin Díaz                | P        |      2.0 | Save (1 H, 1 BB): +3.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Passed Ball (1): -1.0
+
+### Team Totals ###
+  Player points: 35.5
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         36.5
+  Carry over into next game: 0.0

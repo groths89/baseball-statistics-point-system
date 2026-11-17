@@ -1,0 +1,30 @@
+Game 777313 (2025-06-29): Mets @ Pirates  1-12 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Juan Soto                 | RF       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jeff McNeil               | RF       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | DH       |      1.0 | Long At-Bat (10+ Pitches) (10): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| Luis Torrens              | C        |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Ronny Mauricio            | 2B       |      1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Error (1): -1.0
+| Frankie Montas            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Richard Lovelady          | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Dedniel Núñez             | P        |      0.0 | 
+| Travis Jankowski          | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+
+### Team Totals ###
+  Player points: 13.5
+  Team points:   8.0  (includes 0.0 carried over)
+  TOTAL:         21.5
+  Carry over into next game: 0.0

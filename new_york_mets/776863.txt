@@ -1,0 +1,28 @@
+Game 776863 (2025-08-05): Mets vs Guardians  2-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Starling Marte            | DH       |      0.0 | 
+| Francisco Lindor          | SS       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Juan Soto                 | RF       |      3.0 | Walks (2): +2.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      3.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Mark Vientos              | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | Advances On Errant Throw (1): +1.0
+| Clay Holmes               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0
+| Gregory Soto              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tyler Rogers              | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Ryan Helsley              | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 20.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         19.0
+  Carry over into next game: 0.0

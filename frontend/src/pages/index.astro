@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { DEFAULT_TEAM_ID, fmtDate, fmtPts, getGames, getSeasons, getTeams, tone } from '../lib/api';
+
+export const prerender = false;
+
+const requested = Number(Astro.url.searchParams.get('team'));
+const teamId = Number.isInteger(requested) && requested > 0 ? requested : DEFAULT_TEAM_ID;
+
+const seasons = (await getSeasons()) ?? [];
+const requestedSeason = Number(Astro.url.searchParams.get('season'));
+const season = seasons.includes(requestedSeason) ? requestedSeason : seasons[0];
+
+const [games, teams] = await Promise.all([getGames(teamId, season), getTeams()]);
+---
+
+<Layout title="Games" season={season}>
+  <main class="page">
+    <div class="head">
+      <h1>Game Breakdown</h1>
+      <div class="teams">
+        {
+          seasons.map((s) => (
+            <a class:list={['btn', { active: s === season }]} href={`/?team=${teamId}&season=${s}`}>{s}</a>
+          ))
+        }
+        {
+          (teams ?? []).map((t) => (
+            <a class:list={['btn', { active: t.team_id === teamId }]} href={`/?team=${t.team_id}&season=${season}`}>{t.team_name}</a>
+          ))
+        }
+      </div>
+    </div>
+    <section class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="l">Date</th>
+              <th class="l">Matchup</th>
+              <th>Result</th>
+              <th>Score</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              (games ?? []).map((g) => (
+                <tr>
+                  <td class="l">{fmtDate(g.game_date)}</td>
+                  <td class="l">
+                    <a class="link" href={`/game/${g.team_id}/${g.game_id}`}>
+                      {g.home_away === 'away' ? `${g.team_abbr} @ ${g.opponent_abbr}` : `${g.opponent_abbr} @ ${g.team_abbr}`}
+                    </a>
+                  </td>
+                  <td><span class:list={['chip', g.won ? 'win' : 'loss']}>{g.won ? 'W' : 'L'}</span></td>
+                  <td>{g.runs_for}–{g.runs_against}</td>
+                  <td class={tone(g.total_points)}>{fmtPts(g.total_points)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      {(games ?? []).length === 0 && <p class="empty">No scored games yet. Run the scoring script, then reload.</p>}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .teams {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .link {
+    color: var(--link);
+    font-weight: 600;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  .empty {
+    padding: 1rem;
+    color: var(--muted);
+  }
+</style>

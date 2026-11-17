@@ -1,0 +1,31 @@
+Game 777904 (2025-05-16): Mets @ Yankees  2-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Error (1): -1.0
+| Juan Soto                 | RF       |      6.0 | Runs (1): +1.0 | Walks (3): +3.0 | Stolen Base (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      1.0 | Hits (2): +1.0
+| Starling Marte            | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      3.0 | Runs (1): +1.0 | Walks (2): +2.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Brett Baty                | PH       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | PH       |      1.0 | Walks (1): +1.0
+| Tylor Megill              | P        |      0.0 | Starter Under 4 IP (2.2 IP): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Max Kranick               | P        |      0.0 | 
+| José Buttó                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Dedniel Núñez             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (6): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   -3.0  (includes 0.0 carried over)
+  TOTAL:         13.5
+  Carry over into next game: 0.0

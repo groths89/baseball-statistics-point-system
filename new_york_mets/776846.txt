@@ -1,0 +1,28 @@
+Game 776846 (2025-08-06): Mets vs Guardians  1-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      4.0 | Walks (3): +3.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Mark Vientos              | DH       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Cedric Mullins            | CF       |      1.0 | Walks (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | 3B       |      0.0 | 
+| David Peterson            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Justin Hagenman           | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Deduction    No Runs For 6+ Innings (8): -1.0
+
+### Team Totals ###
+  Player points: 10.5
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         14.5
+  Carry over into next game: 0.0

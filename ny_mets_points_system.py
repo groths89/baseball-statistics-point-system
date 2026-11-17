@@ -1,155 +1,117 @@
-import statsapi
+"""
+Custom baseball point system for the New York Mets (or any team via --team).
+
+Examples:
+    python ny_mets_points_system.py                       # score the latest completed game
+    python ny_mets_points_system.py --game 776450         # score one game
+    python ny_mets_points_system.py --season 2025         # score every completed regular season game
+    python ny_mets_points_system.py --summary             # print stored season results
+"""
+import argparse
 import os
 import traceback
-import json
 
-from team_scoring import (
-    calculate_basic_team_points, 
-    calculate_team_totals, 
-    calculate_team_strikeout_for_pitchers_bonus,
-    calculate_bullpen_zero_runs_bonus
-)
-from data_utils import get_lineups_from_boxscore, get_starters_from_boxscore, initialize_player_points_map
-from player_scoring_rules import (
-    calculate_solo_homerun_points_for_player, 
-    calculate_total_hits_points_for_player, 
-    calculate_total_triples_points_for_player, 
-    calculate_total_runs_points_for_player, 
-    calculate_total_walks_points_for_player, 
-    calculate_starter_ip_points_for_player, 
-    calculate_starter_two_runs_or_less_points_for_player, 
-    calculate_starter_pitches_complete_game_points_for_player,
-    calculate_strikeouts_points_for_pitcher,
-    calculate_save_points_for_player,
-    track_earned_runs_for_player
-)
+import statsapi
 
+import storage
+from data_utils import fetch_game, fetch_play_context
+from game_scoring import TeamNotInGameError, score_game
+from report import build_report
 
-
-
-
-# Constants
 TEAM_ID = 121
-TEAM_LOCATION = None
-TEAM_NAME = None
-PROJECT_DIR = os.path.join(os.getcwd(), "new_york_mets")
-WIDTH_TEAM = 6
-WIDTH_PLAYER = 25
-WIDTH_POINTS = 15
-WIDTH_DETAILS = 50
-
-batting = []
-pitching = []
-
-if not os.path.exists(PROJECT_DIR):
-    os.mkdir(PROJECT_DIR)
-
-last_game_id = statsapi.last_game(TEAM_ID)
-game_boxscore_data = statsapi.boxscore_data(last_game_id)
-last_game = statsapi.get('game', {'gamePk': last_game_id})
-
-if game_boxscore_data['teamInfo']['home']['id'] == TEAM_ID:
-    TEAM_LOCATION = 'home'
-    TEAM_NAME = game_boxscore_data['teamInfo']['home']['teamName']
-elif game_boxscore_data['teamInfo']['away']['id'] == TEAM_ID:
-    TEAM_LOCATION = 'away'
-    TEAM_NAME = game_boxscore_data['teamInfo']['away']['teamName']
-else:
-    print(f"WARNING: Target Team ID {TEAM_ID} did not play in game {last_game_id}. Displaying all players.")
-    TARGET_TEAM_LOCATION = 'all'
-
-team_total_key = f"{TEAM_LOCATION.capitalize()} Total"
-
-try:
-    # 1. Data Fetching
-    starters = get_starters_from_boxscore(game_boxscore_data)
-    lineups = get_lineups_from_boxscore(last_game_id)
-    final_points_map = initialize_player_points_map(lineups)
-
-    # 2. Run all of the individual batting points
-    final_points_map = calculate_solo_homerun_points_for_player(lineups, final_points_map)
-    final_points_map = calculate_total_hits_points_for_player(lineups, final_points_map)
-    final_points_map = calculate_total_triples_points_for_player(lineups, final_points_map)
-    final_points_map = calculate_total_runs_points_for_player(lineups, final_points_map)
-    final_points_map = calculate_total_walks_points_for_player(lineups, final_points_map)
+PROJECT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'new_york_mets')
+DB_PATH = os.path.join(PROJECT_DIR, 'points.db')
+FINAL_STATES = ('Final', 'Game Over', 'Completed')
 
 
-    # 3. Run all of the individual pitching points
-    final_points_map = calculate_starter_ip_points_for_player(lineups, final_points_map, game_boxscore_data)
-    final_points_map = calculate_starter_two_runs_or_less_points_for_player(lineups, final_points_map, game_boxscore_data)
-    final_points_map = calculate_starter_pitches_complete_game_points_for_player(lineups, final_points_map, game_boxscore_data)
-    final_points_map = calculate_strikeouts_points_for_pitcher(lineups, final_points_map)
-    final_points_map = track_earned_runs_for_player(lineups, final_points_map)
-    final_points_map = calculate_save_points_for_player(final_points_map, game_boxscore_data)
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('--team', type=int, default=TEAM_ID, help='MLB team id (default: 121, New York Mets)')
+    parser.add_argument('--game', type=int, help='score a specific game id')
+    parser.add_argument('--season', type=int, help='score every completed regular season game of a season')
+    parser.add_argument('--start', help='start date YYYY-MM-DD (use with --end)')
+    parser.add_argument('--end', help='end date YYYY-MM-DD (use with --start)')
+    parser.add_argument('--summary', action='store_true', help='print the stored results and exit')
+    parser.add_argument('--no-save', action='store_true', help='do not write to the database')
+    parser.add_argument('--quiet', action='store_true', help='only print one line per game')
+    return parser.parse_args()
 
 
-    # 3. Calculating all of the team totals together
-    team_totals = calculate_team_totals(final_points_map, lineups)
-    team_totals = calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_totals, TEAM_LOCATION, team_total_key)
-    team_totals = calculate_bullpen_zero_runs_bonus(final_points_map, lineups, team_totals, starters, TEAM_LOCATION, team_total_key)
-
-    print(team_totals)
-
-    print(f"{TEAM_LOCATION.capitalize()} Team Totals: {team_totals[TEAM_LOCATION]}")
-
-    with open(os.path.join(PROJECT_DIR, str(last_game_id) + ".txt"), "w+", encoding="utf-8") as textfile:
-        line = f"The game is: {last_game_id}"
-        line += f"\nThe home team is: {game_boxscore_data['teamInfo']['home']['teamName']}"
-        line += f"\nThe away team is: {game_boxscore_data['teamInfo']['away']['teamName']}"
-        line = line + "\n" + "The lineup is: " + str(lineups) + "\n"
-        line += "\n\n### Individual Player Points (Applied Rules) ###" + "\n"
-        
-        separator = "-" * (WIDTH_TEAM + WIDTH_PLAYER + WIDTH_POINTS + WIDTH_DETAILS + 9)
-        header_row = (
-            "| "
-            f"{'Team':<{WIDTH_TEAM}} | "
-            f"{'Player'[:WIDTH_PLAYER]:<{WIDTH_PLAYER}} | "
-            f"{'Position':<{WIDTH_PLAYER}} | "
-            f"{'Total Points':>{WIDTH_POINTS}} | "
-            f"{'Details (HR, Runs, Hits)':<{WIDTH_DETAILS}}"
-        )
-        line += header_row + "\n"
-        line += separator + "\n"
-
-        teams_to_loop = ['away', 'home'] if TEAM_LOCATION == 'all' else [TEAM_LOCATION]
-    
-        for team in teams_to_loop:
-            for player in lineups.get(team, []):
-                mlb_id = player.get('mlb_id')
-                data = final_points_map.get(mlb_id, {'total_points': 0.0, 'breakdown': []})
-
-                detail_str = " | ".join([
-                    f"{item['rule_name']} ({item['value']}): {item['points']:.1f}pts" 
-                    for item in data['breakdown']
-                ])
-
-                line += f"| {team.upper():<{WIDTH_TEAM}} | {player['name'][:WIDTH_PLAYER]:<{WIDTH_PLAYER}} | {player['position'][:WIDTH_PLAYER]:<{WIDTH_PLAYER}}| {data['total_points']:>{WIDTH_POINTS}} | {detail_str:<{WIDTH_DETAILS}}" + "\n"
-                
-                line += separator + "\n"
-        line += "\n\n### Team Totals ###" + "\n"
-        line += "\n"
-        W_HT, W_HP = 30, 20
-        W_TT, W_TP = 15, 20
-        team_separator = "-" * (W_HT + W_HP + 9)
-
-        line += f"| {'Team'[:W_HT]:<{W_HT}} | {'Total Points':<{W_HP}} |" + "\n"
-        line += team_separator + "\n"
-        for team_location in teams_to_loop:
-            for team, total_points in team_totals.items():
-                print(f"Team: {team}, Total Points: {total_points}")
-                line += f"| {game_boxscore_data['teamInfo'][team_location]['teamName'][:W_TT]:<{W_TT}}{team.upper():<{W_TT}} | {total_points:>{W_TP}} |" + "\n"
-                line += team_separator + "\n"
-        line += "\n"
+def completed_game_ids(team_id, start, end):
+    games = statsapi.schedule(team=team_id, start_date=start, end_date=end)
+    final = [g for g in games if g['game_type'] == 'R' and g['status'].startswith(FINAL_STATES)]
+    final.sort(key=lambda g: (g['game_date'], g['game_datetime'], g['game_id']))
+    return [g['game_id'] for g in final]
 
 
-        line += "\n\n### RAW GAME DATA ###" + "\n"
-        line += "\nBOXSCORE DATA: " + str(statsapi.boxscore_data(last_game_id)) + "\n"
-        line += f"All Plays: {last_game['liveData']['plays']['allPlays']}" + "\n"
-        line += "\n"
+def pick_game_ids(args):
+    if args.game:
+        return [args.game]
+    if args.season:
+        return completed_game_ids(args.team, f'{args.season}-02-01', f'{args.season}-11-30')
+    if args.start and args.end:
+        return completed_game_ids(args.team, args.start, args.end)
+    return [statsapi.last_game(args.team)]
 
-        textfile.write(line)
-except Exception as e:
-    print(f"Error fetching data from {last_game_id}: {e}")
-    print("\n--- Full Traceback ---")
-    print(traceback.format_exc()) 
-    print("----------------------\n")
+
+def print_summary(conn, team_id):
+    rows = storage.get_season_summary(conn, team_id)
+    if not rows:
+        print('No stored games yet.')
+        return
+    print(f"{'Date':<11} {'Game':<8} {'Opponent':<22} {'W/L':<4} {'Score':<7} {'Points':>7}")
+    for date, game_id, opponent, won, runs_for, runs_against, total in rows:
+        print(f"{date:<11} {game_id:<8} {opponent[:22]:<22} {'W' if won else 'L':<4} "
+              f"{runs_for}-{runs_against:<5} {total:>7.1f}")
+    wins = sum(r[3] for r in rows)
+    average = sum(r[6] for r in rows) / len(rows)
+    print(f'\n{len(rows)} games, {wins}-{len(rows) - wins}, average points per game: {average:.1f}')
+
+
+def main():
+    args = parse_args()
+    os.makedirs(PROJECT_DIR, exist_ok=True)
+    conn = storage.connect(DB_PATH)
+
+    if args.summary:
+        print_summary(conn, args.team)
+        return
+
+    game_ids = pick_game_ids(args)
+    carry = None
+
+    for game_id in game_ids:
+        try:
+            boxscore, live_feed = fetch_game(game_id)
+            if carry is None:
+                game_date = live_feed['gameData']['datetime'].get('officialDate')
+                carry = storage.get_carry_in(conn, args.team, game_date, game_id)
+            result = score_game(game_id, args.team, carry_in=carry, boxscore=boxscore, live_feed=live_feed)
+        except TeamNotInGameError as e:
+            print(f'Skipping {game_id}: {e}')
+            continue
+        except Exception as e:
+            print(f'Error scoring game {game_id}: {e}')
+            print(traceback.format_exc())
+            continue
+
+        carry = result['carry_out']
+        report = build_report(result)
+        with open(os.path.join(PROJECT_DIR, f'{game_id}.txt'), 'w', encoding='utf-8') as f:
+            f.write(report)
+        if not args.no_save:
+            storage.save_game(conn, result)
+            try:
+                storage.save_play_context(conn, game_id, fetch_play_context(game_id))
+            except Exception as e:
+                print(f'Play context unavailable for {game_id}: {e}')
+
+        if args.quiet or len(game_ids) > 1:
+            print(f"{result['game_date']} {game_id} {result['opponent'][:20]:<20} "
+                  f"{'W' if result['won'] else 'L'} {result['total']:.1f} pts")
+        else:
+            print(report)
+
+
+if __name__ == '__main__':
+    main()

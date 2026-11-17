@@ -1,0 +1,31 @@
+Game 746634 (2024-05-22): Mets @ Guardians  3-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Hits (2): +1.0 | Long At-Bat (10+ Pitches) (11): +2.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| DJ Stewart                | RF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Starling Marte            | RF       |      0.0 | 
+| Mark Vientos              | 3B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Jeff McNeil               | 2B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Long At-Bat (10+ Pitches) (10): +1.0
+| Harrison Bader            | CF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0
+| Omar Narváez              | C        |      0.0 | 
+| Tyrone Taylor             | PH       |      0.0 | 
+| Jose Quintana             | P        |      0.0 | 
+| Reed Garrett              | P        |     -1.0 | Wild Pitch (1): -1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Josh Walker               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+
+### Team Totals ###
+  Player points: 19.0
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         21.0
+  Carry over into next game: 0.0

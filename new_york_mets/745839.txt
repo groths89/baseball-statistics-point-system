@@ -1,0 +1,29 @@
+Game 745839 (2024-04-13): Mets vs Royals  7-11 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | CF       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Starling Marte            | RF       |      4.5 | Hits (3): +1.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Francisco Lindor          | SS       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      9.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brett Baty                | 3B       |      1.0 | Runs (1): +1.0
+| DJ Stewart                | DH       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Tyrone Taylor             | DH       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Jeff McNeil               | LF       |      0.0 | 
+| Omar Narváez              | C        |      0.0 | 
+| Joey Wendle               | 2B       |      1.0 | Hits (2): +1.0
+| Sean Manaea               | P        |     -1.0 | Starter Under 4 IP (3.2 IP): -1.0
+| Cole Sulser               | P        |      0.0 | 
+| Jorge López               | P        |      0.0 | 
+| Jake Diekman              | P        |      0.0 | 
+| Tyler Jay                 | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 26.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         25.5
+  Carry over into next game: 0.0

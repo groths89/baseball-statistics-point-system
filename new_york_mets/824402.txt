@@ -1,0 +1,31 @@
+Game 824402 (2026-08-05): Mets @ Guardians  6-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | LF       |      0.5 | Hits (1): +0.5
+| Francisco Lindor          | SS       |     -3.0 | Runs (1): +1.0 | Struck Out 4+ Times (4): -4.0
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0
+| Carson Benge              | RF       |      7.5 | Hits (1): +0.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jared Young               | 1B       |      6.0 | Hits (2): +1.0 | Triples (1): +3.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | LF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Cristian Pache            | LF       |     -1.0 | Error (1): -1.0
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Jorge Polanco             | DH       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Marcus Semien             | 2B       |      1.0 | Walks (1): +1.0
+| Christian Scott           | P        |      0.0 | 
+| Jefry Yan                 | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Dedniel Núñez             | P        |     -2.0 | Blown Save (BS, 1): -2.0
+| Chayce McDermott          | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Daniel Duarte             | P        |      4.0 | Save (0 H, 1 BB): +3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (16): -7.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 25.0
+  Team points:   -8.0  (includes 0.0 carried over)
+  TOTAL:         17.0
+  Carry over into next game: 0.0

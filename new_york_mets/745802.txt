@@ -1,0 +1,33 @@
+Game 745802 (2024-06-30): Mets vs Astros  5-10 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |     11.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| J.D. Martinez             | DH       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (2): +2.0
+| DJ Stewart                | RF       |      1.0 | Outfield Assist (1): +1.0
+| Harrison Bader            | CF       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Mark Vientos              | 3B       |      6.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Ben Gamel                 | LF       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Luis Torrens              | C        |      4.0 | Runs (1): +1.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Luis Severino             | P        |      6.0 | Starter 7+ IP (7.0 IP): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adrian Houser             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Matt Festa                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 38.5
+  Team points:   10.0  (includes 0.0 carried over)
+  TOTAL:         48.5
+  Carry over into next game: 0.0

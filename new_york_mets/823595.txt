@@ -1,0 +1,30 @@
+Game 823595 (2026-07-30): Mets vs Marlins  4-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | LF       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Bo Bichette               | 3B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Carson Benge              | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Luis Robert Jr.           | CF       |      6.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | 1B       |      0.0 | 
+| Tyrone Taylor             | PH       |      0.0 | 
+| Jared Young               | 1B       |      0.0 | 
+| Marcus Semien             | 2B       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Jorge Polanco             | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      4.0 | Runs (1): +1.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Nolan McLean              | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (6.1 IP, 2 R): +5.0 | Pickoff (1): +1.0 | Error (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      0.0 | 
+| Devin Williams            | P        |      2.0 | Save (0 H, 1 BB): +3.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Deduction    Passed Ball (1): -1.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 30.0
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         36.0
+  Carry over into next game: 0.0

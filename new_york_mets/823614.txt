@@ -1,0 +1,32 @@
+Game 823614 (2026-06-23): Mets vs Cubs  6-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Bo Bichette               | SS       |     12.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Juan Soto                 | LF       |      0.0 | 
+| Mark Vientos              | 1B       |      3.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Jared Young               | LF       |      0.0 | 
+| Eric Wagaman              | LF       |     -1.0 | Error (1): -1.0
+| A.J. Ewing                | CF       |      1.0 | Walks (1): +1.0
+| Marcus Semien             | 2B       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Brett Baty                | 3B       |      4.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| MJ Melendez               | DH       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      8.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Kodai Senga               | P        |     -1.0 | Starter Under 4 IP (3.2 IP): -1.0
+| Cionel Pérez              | P        |      0.0 | 
+| Tobias Myers              | P        |     -1.0 | Pickoff (1): +1.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| A.J. Minter               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 36.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         36.0
+  Carry over into next game: 0.0

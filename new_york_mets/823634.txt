@@ -1,0 +1,30 @@
+Game 823634 (2026-04-30): Mets vs Nationals  4-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | 3B       |      5.0 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Juan Soto                 | DH       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| MJ Melendez               | LF       |     13.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | Advances Runner Into Scoring Position (1): +1.0
+| Austin Slater             | LF       |      0.0 | 
+| Mark Vientos              | 1B       |      1.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | RF       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.0 | 
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | RF       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | C        |      2.0 | Advances Runner Into Scoring Position (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Francisco Alvarez         | PH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Ronny Mauricio            | SS       |      0.0 | 
+| Freddy Peralta            | P        |      0.0 | Error (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      0.0 | 
+| Luke Weaver               | P        |      0.0 | 
+| Devin Williams            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 29.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         31.5
+  Carry over into next game: 0.0

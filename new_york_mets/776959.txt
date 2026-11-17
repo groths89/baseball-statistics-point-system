@@ -1,0 +1,30 @@
+Game 776959 (2025-07-28): Mets @ Padres  6-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Lindor          | SS       |      1.0 | Hits (2): +1.0
+| Juan Soto                 | RF       |      2.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jeff McNeil               | CF       |      6.0 | Runs (2): +2.0 | Walks (3): +3.0 | Stolen Base (1): +1.0
+| Mark Vientos              | DH       |     16.0 | Hits (2): +1.0 | Runs (1): +1.0 | Grand Slam (3 on): +4.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (4): +8.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | 2B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Francisco Alvarez         | C        |      2.0 | Walks (2): +2.0
+| Ronny Mauricio            | 3B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Frankie Montas            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |     -1.0 | Wild Pitch (1): -1.0
+| Rico Garcia               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryne Stanek               | P        |      0.0 | 
+| Gregory Soto              | P        |     -1.0 | Error (1): -1.0
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (15): -6.0
+
+### Team Totals ###
+  Player points: 33.0
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         31.0
+  Carry over into next game: 0.0

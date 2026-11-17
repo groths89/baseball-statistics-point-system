@@ -1,0 +1,26 @@
+Game 745220 (2024-08-09): Mets @ Mariners  0-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Jesse Winker              | RF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| J.D. Martinez             | DH       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Jeff McNeil               | 2B       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Jose Quintana             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adam Ottavino             | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Alex Young                | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 9.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         8.5
+  Carry over into next game: 0.0

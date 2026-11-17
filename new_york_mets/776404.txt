@@ -1,0 +1,26 @@
+Game 776404 (2025-09-09): Mets @ Phillies  3-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Starling Marte            | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | 2B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Jose Siri                 | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Sean Manaea               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Justin Hagenman           | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (14): -5.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 18.0
+  Team points:   -6.0  (includes 0.0 carried over)
+  TOTAL:         12.0
+  Carry over into next game: 0.0

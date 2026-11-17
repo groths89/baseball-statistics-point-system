@@ -1,0 +1,31 @@
+Game 824042 (2026-05-02): Mets @ Angels  3-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | SS       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Juan Soto                 | DH       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Marcus Semien             | 2B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Andy Ibáñez               | LF       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Carson Benge              | RF       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Austin Slater             | RF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Outfield Assist (1): +1.0
+| MJ Melendez               | LF       |      0.0 | 
+| Ronny Mauricio            | SS       |      0.5 | Hits (1): +0.5
+| Brett Baty                | 3B       |      0.0 | 
+| Nolan McLean              | P        |     -1.0 | Wild Pitch (1): -1.0
+| Tobias Myers              | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Craig Kimbrel             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Austin Warren             | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+
+### Team Totals ###
+  Player points: 17.5
+  Team points:   -3.0  (includes 0.0 carried over)
+  TOTAL:         14.5
+  Carry over into next game: 0.0

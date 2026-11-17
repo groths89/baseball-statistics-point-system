@@ -1,0 +1,33 @@
+Game 746067 (2024-05-18): Mets @ Marlins  9-10 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Runs (1): +1.0 | Long At-Bat (10+ Pitches) (11): +2.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      1.0 | Hits (2): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | Runs (3): +3.0
+| Edwin Díaz                | P        |      0.0 | 
+| Jake Diekman              | P        |      0.0 | 
+| DJ Stewart                | PH       |      0.0 | 
+| Jorge López               | P        |      0.0 | 
+| J.D. Martinez             | DH       |      2.0 | Hits (2): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Tyrone Taylor             | LF       |      1.0 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Starling Marte            | RF       |      2.5 | Hits (3): +1.5 | Runs (1): +1.0
+| Harrison Bader            | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Jeff McNeil               | 2B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Tomás Nido                | C        |      1.0 | Hits (2): +1.0
+| Luis Severino             | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Adam Ottavino             | P        |      0.0 | 
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 25.5
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         31.5
+  Carry over into next game: 0.0

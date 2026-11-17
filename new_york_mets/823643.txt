@@ -1,0 +1,29 @@
+Game 823643 (2026-04-10): Mets vs Athletics  0-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0
+| Bo Bichette               | DH       |      0.5 | Hits (1): +0.5
+| Jared Young               | 1B       |      0.5 | Hits (1): +0.5
+| Luis Robert Jr.           | CF       |      0.5 | Hits (1): +0.5
+| Brett Baty                | RF       |      0.0 | 
+| Marcus Semien             | 2B       |      0.0 | 
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Carson Benge              | LF       |     -0.5 | Hits (1): +0.5 | Error (1): -1.0
+| Clay Holmes               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 1 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tobias Myers              | P        |      0.0 | 
+| Richard Lovelady          | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 10.0
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         12.0
+  Carry over into next game: 0.0

@@ -1,0 +1,32 @@
+Game 823603 (2026-07-11): Mets vs Red Sox  0-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | 2B       |      0.0 | 
+| Juan Soto                 | LF       |      1.0 | Walks (1): +1.0
+| Francisco Lindor          | SS       |      1.0 | Walks (1): +1.0
+| Carson Benge              | RF       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Jorge Polanco             | DH       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Eric Wagaman              | 1B       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      3.0 | Hits (2): +1.0 | Walks (1): +1.0 | Advances On Passed Ball (1): +1.0
+| Brett Baty                | 3B       |      1.0 | Walks (1): +1.0
+| Zack Short                | 2B       |      0.0 | 
+| Bo Bichette               | PH       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Freddy Peralta            | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| A.J. Minter               | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Brooks Raley              | P        |      0.0 | 
+| Tobias Myers              | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 18.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         18.5
+  Carry over into next game: 0.0

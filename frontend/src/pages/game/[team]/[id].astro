@@ -1,0 +1,53 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import GameStrip from '../../../components/GameStrip.astro';
+import ScoreSummary from '../../../components/ScoreSummary.astro';
+import CategoryLedger from '../../../components/CategoryLedger.astro';
+import BattersTable from '../../../components/BattersTable.astro';
+import PitchersTable from '../../../components/PitchersTable.astro';
+import PlayLog from '../../../components/PlayLog.astro';
+import GameMedia from '../../../components/GameMedia.astro';
+import { getBreakdown, getGameMedia } from '../../../lib/api';
+
+export const prerender = false;
+
+const teamId = Number(Astro.params.team);
+const gameId = Number(Astro.params.id);
+
+const data = Number.isInteger(teamId) && Number.isInteger(gameId) ? await getBreakdown(gameId, teamId) : null;
+
+if (!data) {
+  return new Response(null, { status: 404, statusText: 'Game not found' });
+}
+
+const media = (await getGameMedia(gameId, teamId)) ?? [];
+const teamName = data.game.team.name;
+---
+
+<Layout title={`${data.game.team.abbr} vs ${data.game.opponent.abbr} · ${data.game.game_date}`} season={data.game.game_date?.slice(0, 4)}>
+  <GameStrip slot="subnav" data={data} />
+  <main class="page">
+    <ScoreSummary data={data} />
+    <CategoryLedger categories={data.categories} points={data.points} />
+    <div class="split">
+      <BattersTable teamName={teamName} summary={data.batter_summary} batters={data.batters} />
+      <PitchersTable teamName={teamName} summary={data.pitcher_summary} pitchers={data.pitchers} />
+    </div>
+    <GameMedia items={media} />
+    <PlayLog plays={data.play_log} total={data.points.total} />
+  </main>
+</Layout>
+
+<style>
+  .split {
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+  }
+  @media (min-width: 1024px) {
+    .split {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+  }
+</style>

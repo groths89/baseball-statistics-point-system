@@ -1,0 +1,27 @@
+Game 776645 (2025-08-22): Mets @ Braves  12-7 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      7.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0 | Stolen Base (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Juan Soto                 | RF       |     10.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (2): +2.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Starling Marte            | DH       |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Sac Fly Scores Run (1): +2.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Brett Baty                | 2B       |      6.0 | Hits (4): +2.0 | Runs (3): +3.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | LF       |      5.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Cedric Mullins            | CF       |     11.5 | Hits (3): +1.5 | Triples (1): +3.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Hayden Senger             | C        |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Nolan McLean              | P        |     10.0 | Starter 2 Runs or Less (min 5 IP) (7.0 IP, 2 R): +5.0 | Starter 7+ IP (7.0 IP): +5.0
+| Reed Garrett              | P        |      0.0 | 
+| Ryan Helsley              | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 67.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         69.5
+  Carry over into next game: 0.0

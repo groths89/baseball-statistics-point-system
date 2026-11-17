@@ -1,0 +1,34 @@
+Game 823623 (2026-05-29): Mets vs Marlins  9-7 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      1.0 | Walks (1): +1.0
+| Bo Bichette               | SS       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0
+| Vidal Bruján              | PR       |      1.0 | Runs (1): +1.0
+| Juan Soto                 | LF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Jared Young               | DH       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Eric Wagaman              | PH       |      0.0 | 
+| MJ Melendez               | DH       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Sac Fly Scores Run (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| A.J. Ewing                | CF       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 1B       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brett Baty                | 3B       |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Marcus Semien             | 2B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Luis Torrens              | C        |      1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Freddy Peralta            | P        |      0.0 | 
+| A.J. Minter               | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Tobias Myers              | P        |     -2.0 | Blown Save (BS, 2): -2.0
+| Luke Weaver               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Austin Warren             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Unusual      Walk-Off Win (1): +5.0
+
+### Team Totals ###
+  Player points: 36.0
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         43.0
+  Carry over into next game: 2.0

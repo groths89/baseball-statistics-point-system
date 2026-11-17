@@ -1,0 +1,26 @@
+Game 823646 (2026-04-08): Mets vs D-backs  2-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Bo Bichette               | 3B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Jorge Polanco             | DH       |      0.0 | 
+| Luis Robert Jr.           | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brett Baty                | RF       |      1.0 | Hits (2): +1.0
+| Mark Vientos              | 1B       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | LF       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| David Peterson            | P        |      0.0 | 
+| Sean Manaea               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 9.5
+  Team points:   4.0  (includes 2.0 carried over)
+  TOTAL:         13.5
+  Carry over into next game: 0.0

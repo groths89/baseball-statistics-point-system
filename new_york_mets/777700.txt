@@ -1,0 +1,28 @@
+Game 777700 (2025-05-31): Mets vs Rockies  8-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |     10.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Juan Soto                 | RF       |      7.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Brett Baty                | 3B       |      5.5 | Hits (1): +0.5 | Triples (1): +3.0 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jared Young               | DH       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | CF       |      5.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Stolen Base (1): +1.0
+| Jeff McNeil               | LF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Stolen Base (1): +1.0
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Kodai Senga               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.1 IP, 2 R): +5.0
+| José Buttó                | P        |      0.0 | 
+| Chris Devenski            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 46.5
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         53.5
+  Carry over into next game: 0.0

@@ -1,0 +1,34 @@
+Game 745379 (2024-08-22): Mets @ Padres  8-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0
+| Mark Vientos              | 3B       |      2.0 | Hits (2): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      6.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jesse Winker              | DH       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Advances On Passed Ball (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jose Iglesias             | 3B       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Advances On Passed Ball (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Francisco Alvarez         | C        |     -4.0 | Struck Out 4+ Times (4): -4.0
+| Jeff McNeil               | 2B       |      5.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Tyrone Taylor             | RF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Luis Severino             | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Danny Young               | P        |      0.0 | 
+| Reed Garrett              | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Phil Maton                | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 36.5
+  Team points:   0.0  (includes 2.0 carried over)
+  TOTAL:         36.5
+  Carry over into next game: 0.0

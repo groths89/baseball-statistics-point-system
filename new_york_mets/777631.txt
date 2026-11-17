@@ -1,0 +1,29 @@
+Game 777631 (2025-06-05): Mets @ Dodgers  5-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0
+| Starling Marte            | DH       |      6.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Juan Soto                 | RF       |      2.0 | Walks (2): +2.0
+| Pete Alonso               | 1B       |      8.5 | Hits (3): +1.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Brett Baty                | 3B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0 | Error (1): -1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jared Young               | PR       |      0.0 | 
+| Luisangel Acuña           | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| David Peterson            | P        |      6.0 | Starter 7+ IP (7.0 IP): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |     -2.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| Brandon Waddell           | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 34.5
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         40.5
+  Carry over into next game: 0.0

@@ -1,0 +1,30 @@
+Game 745795 (2024-07-28): Mets vs Braves  2-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Stolen Base (1): +1.0
+| Jesse Winker              | LF       |      0.0 | 
+| Jose Iglesias             | SS       |      0.0 | 
+| Brandon Nimmo             | DH       |      5.0 | Runs (1): +1.0 | Walks (1): +1.0 | Long At-Bat (10+ Pitches) (10): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      9.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | 2B       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Tyrone Taylor             | CF       |      3.0 | Hits (2): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Ben Gamel                 | RF       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| David Peterson            | P        |     -2.0 | Wild Pitch (1): -1.0 | Wild Pitch (1): -1.0
+| Alex Young                | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Jake Diekman              | P        |      0.0 | 
+| Adam Ottavino             | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 18.5
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         16.5
+  Carry over into next game: 0.0

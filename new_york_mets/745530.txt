@@ -1,0 +1,31 @@
+Game 745530 (2024-09-15): Mets @ Phillies  1-2 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | SS       |      0.0 | 
+| Mark Vientos              | 3B       |     -4.0 | Struck Out 4+ Times (4): -4.0
+| Pete Alonso               | 1B       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Jose Iglesias             | 2B       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | C        |      1.0 | Walks (1): +1.0
+| Jesse Winker              | PH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Tyrone Taylor             | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Harrison Bader            | CF       |      1.5 | Hits (1): +0.5 | Stolen Base (1): +1.0
+| David Peterson            | P        |     11.0 | Starter 2 Runs or Less (min 5 IP) (7.2 IP, 1 R): +5.0 | Starter 7+ IP (7.2 IP): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Phil Maton                | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 17.5
+  Team points:   -3.0  (includes 0.0 carried over)
+  TOTAL:         14.5
+  Carry over into next game: 0.0

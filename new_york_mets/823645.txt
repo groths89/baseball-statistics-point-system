@@ -1,0 +1,29 @@
+Game 823645 (2026-04-09): Mets vs D-backs  1-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Bo Bichette               | 3B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Luis Robert Jr.           | CF       |      7.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 1B       |      0.0 | 
+| Marcus Semien             | 2B       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | DH       |      0.0 | 
+| Brett Baty                | RF       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Tyrone Taylor             | LF       |      0.5 | Hits (1): +0.5
+| Jared Young               | LF       |      0.0 | 
+| Nolan McLean              | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (6.1 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luke Weaver               | P        |     -2.0 | Blown Save (BS, 1): -2.0
+| Luis García               | P        |      0.0 | 
+| Richard Lovelady          | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (8): -1.0
+
+### Team Totals ###
+  Player points: 19.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         20.0
+  Carry over into next game: 0.0

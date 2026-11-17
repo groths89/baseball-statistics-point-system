@@ -1,0 +1,31 @@
+Game 745716 (2024-07-24): Mets @ Yankees  12-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      8.5 | Hits (3): +1.5 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      1.0 | Walks (1): +1.0
+| Ben Gamel                 | LF       |      1.0 | Runs (1): +1.0
+| J.D. Martinez             | DH       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 3B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Sac Fly Scores Run (1): +2.0
+| Jeff McNeil               | RF       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Advances On Errant Throw (1): +1.0
+| Jose Iglesias             | 2B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |     11.5 | Hits (3): +1.5 | Runs (3): +3.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Sean Manaea               | P        |      0.0 | Error (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adam Ottavino             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Danny Young               | P        |      0.0 | Error (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Alex Young                | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Adrian Houser             | P        |      0.0 | 
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 46.0
+  Team points:   3.0  (includes 0.0 carried over)
+  TOTAL:         49.0
+  Carry over into next game: 0.0

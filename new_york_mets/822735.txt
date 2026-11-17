@@ -1,0 +1,29 @@
+Game 822735 (2026-05-20): Mets @ Nationals  4-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Outfield Assist (1): +1.0
+| Bo Bichette               | SS       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Juan Soto                 | LF       |     14.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Mark Vientos              | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| MJ Melendez               | DH       |      0.0 | 
+| Nick Morabito             | PH       |      0.0 | 
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Tyrone Taylor             | PH       |      0.0 | 
+| Marcus Semien             | 2B       |      0.0 | 
+| A.J. Ewing                | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Hayden Senger             | C        |     -1.0 | Error (1): -1.0
+| Luis Torrens              | C        |      0.0 | 
+| Zac Thornton              | P        |      0.0 | 
+| Austin Warren             | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Craig Kimbrel             | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 24.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         24.5
+  Carry over into next game: 0.0

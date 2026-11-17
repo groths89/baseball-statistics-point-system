@@ -1,0 +1,30 @@
+Game 777831 (2025-05-21): Mets @ Red Sox  5-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0 | Stolen Base (1): +1.0
+| Starling Marte            | LF       |      2.0 | Walks (1): +1.0 | Long At-Bat (10+ Pitches) (10): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Juan Soto                 | RF       |      4.0 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0
+| Mark Vientos              | DH       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Luis Torrens              | C        |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Luisangel Acuña           | 2B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Brett Baty                | 3B       |      7.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Stolen Base (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Tylor Megill              | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Edwin Díaz                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Pitching     Team Pitchers 16+ Strikeouts (16): +1.0
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 27.0
+  Team points:   8.0  (includes 0.0 carried over)
+  TOTAL:         35.0
+  Carry over into next game: 0.0

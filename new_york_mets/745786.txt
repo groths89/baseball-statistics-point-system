@@ -1,0 +1,32 @@
+Game 745786 (2024-08-18): Mets vs Marlins  2-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Starling Marte            | RF       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      0.0 | 
+| Jesse Winker              | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Jose Iglesias             | 2B       |      4.0 | Hits (2): +1.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | RF       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | C        |      0.0 | 
+| Jeff McNeil               | LF       |      0.0 | 
+| Paul Blackburn            | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Pickoff (1): +1.0 | Pickoff (1): +1.0
+| Huascar Brazobán          | P        |     -3.0 | Blown Save (BS, 5): -2.0 | Wild Pitch (1): -1.0
+| Reed Garrett              | P        |      1.0 | Pickoff (1): +1.0
+| Phil Maton                | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+
+### Team Totals ###
+  Player points: 21.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         20.5
+  Carry over into next game: 0.0

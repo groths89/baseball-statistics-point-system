@@ -1,0 +1,28 @@
+Game 823638 (2026-04-24): Mets vs Rockies  3-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Juan Soto                 | DH       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Tommy Pham                | PR       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Brett Baty                | RF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Mark Vientos              | 1B       |      1.0 | Hits (2): +1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| MJ Melendez               | PH       |      0.0 | 
+| Ronny Mauricio            | SS       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Freddy Peralta            | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 2 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Sean Manaea               | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         16.5
+  Carry over into next game: 0.0

@@ -1,0 +1,28 @@
+Game 745528 (2024-09-14): Mets @ Phillies  4-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Jose Iglesias             | 2B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brandon Nimmo             | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| J.D. Martinez             | DH       |      1.0 | Walks (1): +1.0
+| Starling Marte            | RF       |      6.0 | Hits (2): +1.0 | Triples (1): +3.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Jesse Winker              | LF       |      0.0 | 
+| Luisangel Acuña           | SS       |      1.0 | Hits (2): +1.0
+| Luis Severino             | P        |      0.0 | 
+| Danny Young               | P        |      0.0 | 
+| Reed Garrett              | P        |     -2.0 | Blown Save (BS, 5): -2.0
+| Ryne Stanek               | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 18.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         17.0
+  Carry over into next game: 0.0

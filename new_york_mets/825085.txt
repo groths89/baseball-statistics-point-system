@@ -1,0 +1,29 @@
+Game 825085 (2026-05-10): Mets @ D-backs  1-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Juan Soto                 | DH       |      1.0 | Walks (1): +1.0
+| Bo Bichette               | SS       |      1.0 | Walks (1): +1.0
+| Austin Slater             | LF       |      0.0 | 
+| Mark Vientos              | 1B       |      0.5 | Hits (1): +0.5
+| Marcus Semien             | 2B       |      1.0 | Walks (1): +1.0
+| Andy Ibáñez               | 3B       |     -2.0 | Error (1): -1.0 | Error (1): -1.0
+| Brett Baty                | PH       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| MJ Melendez               | PH       |      0.0 | 
+| Carson Benge              | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Luis Torrens              | C        |      1.0 | Hits (2): +1.0
+| Huascar Brazobán          | P        |      0.0 | Starter Under 4 IP (1.0 IP): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tobias Myers              | P        |      0.0 | 
+| David Peterson            | P        |      0.0 | Error (1): -1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Sean Manaea               | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 5.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         5.0
+  Carry over into next game: 0.0

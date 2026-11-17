@@ -1,0 +1,35 @@
+Game 823651 (2026-03-28): Mets vs Pirates  4-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | LF       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Bo Bichette               | 3B       |      0.5 | Hits (1): +0.5 | Runs (1): +1.0 | Error (1): -1.0
+| Jorge Polanco             | 1B       |      4.0 | Runs (1): +1.0 | Walks (3): +3.0
+| Luis Robert Jr.           | CF       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Advances Runner Into Scoring Position (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | DH       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Marcus Semien             | 2B       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Carson Benge              | RF       |      0.0 | 
+| Mark Vientos              | PH       |      0.5 | Hits (1): +0.5
+| Jared Young               | RF       |      0.0 | 
+| Francisco Alvarez         | C        |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | PR       |      0.0 | 
+| Luis Torrens              | C        |      0.5 | Hits (1): +0.5
+| David Peterson            | P        |      9.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 0 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luke Weaver               | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Devin Williams            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luis García               | P        |      0.0 | 
+| Richard Lovelady          | P        |      0.0 | 
+
+### Team Events ###
+  Unusual      Walk-Off Win (1): +5.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 31.0
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         35.0
+  Carry over into next game: 2.0

@@ -1,0 +1,29 @@
+Game 777257 (2025-07-03): Mets vs Brewers  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Starling Marte            | DH       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Juan Soto                 | RF       |      3.0 | Hits (2): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | C        |      1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Brett Baty                | 2B       |     -1.0 | Error (1): -1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| David Peterson            | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.2 IP, 2 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Ryne Stanek               | P        |      0.0 | 
+| Edwin Díaz                | P        |      3.0 | Save (1 H, 0 BB): +3.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 23.0
+  Team points:   11.0  (includes 0.0 carried over)
+  TOTAL:         34.0
+  Carry over into next game: 0.0

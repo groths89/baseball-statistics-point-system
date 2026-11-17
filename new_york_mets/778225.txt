@@ -1,0 +1,28 @@
+Game 778225 (2025-04-21): Mets vs Phillies  5-4 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |     15.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Juan Soto                 | RF       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Jesse Winker              | DH       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Starling Marte            | DH       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Luisangel Acuña           | 2B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brett Baty                | 3B       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Tylor Megill              | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 0 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Max Kranick               | P        |      0.0 | 
+| Edwin Díaz                | P        |      3.0 | Save (1 H, 0 BB): +3.0
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 34.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         34.0
+  Carry over into next game: 0.0

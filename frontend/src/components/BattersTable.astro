@@ -1,0 +1,159 @@
+---
+import { fmtPts, gradeClass, tone, type Breakdown } from '../lib/api';
+
+interface Props {
+  teamName: string;
+  summary: string;
+  batters: Breakdown['batters'];
+}
+
+const { teamName, summary, batters } = Astro.props;
+const cell = (n: number) => (n === 0 ? '0.0' : fmtPts(n));
+---
+
+<section class="panel">
+  <div class="head">
+    <div class="title">
+      <h2>{teamName} Batters Point Leaders</h2>
+      <span class="sum">{summary}</span>
+    </div>
+    <span class="meta">Ranked by net points</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="l">Player</th>
+          <th class="c">Pos</th>
+          <th>PA</th>
+          <th>Basic</th>
+          <th>Situational</th>
+          <th>Ded.</th>
+          <th class="net-h">Net Pts</th>
+          <th class="c">Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          batters.map((b, i) => (
+            <tr>
+              <td class="l">
+                <div class="player">
+                  <span class="rank">{i + 1}</span>
+                  <span>{b.name}</span>
+                </div>
+              </td>
+              <td class="c dim">{b.position}</td>
+              <td class="dim">{b.pa}</td>
+              <td class="basic">{cell(b.basic)}</td>
+              <td class:list={['sit', b.has_miracle ? 'miracle' : tone(b.situational)]}>{cell(b.situational)}</td>
+              <td class={b.deductions < 0 ? 'neg' : 'zero'}>{cell(b.deductions)}</td>
+              <td class="net">{fmtPts(b.net)}</td>
+              <td class="c">
+                <span class={`grade ${gradeClass(b.grade)}`} title={`${b.grade}th percentile of batter games`}>{b.grade}</span>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  h2 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .sum,
+  .meta,
+  td,
+  th {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  .sum {
+    font-size: 11px;
+    background: var(--surface-2);
+    color: var(--muted);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .meta {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .rank {
+    width: 12px;
+    color: var(--muted);
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+  }
+  .c {
+    text-align: center;
+  }
+  .dim {
+    color: var(--muted);
+  }
+  .basic {
+    color: var(--muted);
+  }
+  .sit {
+    font-weight: 600;
+  }
+  .miracle {
+    color: var(--c-miracles);
+  }
+  .sit.pos,
+  .net-pos {
+    color: var(--pos);
+  }
+  .sit.neg,
+  .neg {
+    color: var(--neg);
+  }
+  .zero {
+    color: var(--muted);
+    opacity: 0.7;
+  }
+  .net {
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .net-h {
+    color: var(--text);
+  }
+</style>

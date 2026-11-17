@@ -1,0 +1,31 @@
+Game 746733 (2024-04-05): Mets @ Reds  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0 | Advances On Errant Throw (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | 3B       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Starling Marte            | RF       |      0.0 | 
+| Tyrone Taylor             | LF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Jeff McNeil               | 2B       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Harrison Bader            | CF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| DJ Stewart                | DH       |      2.0 | Walks (2): +2.0
+| Zack Short                | DH       |      0.0 | 
+| Jose Quintana             | P        |      8.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 1 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Drew Smith                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      0.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Edwin Díaz                | P        |      1.0 | Save (0 H, 1 BB): +3.0 | Error (1): -1.0 | Wild Pitch (1): -1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 29.0
+  Team points:   -1.0  (includes 2.0 carried over)
+  TOTAL:         28.0
+  Carry over into next game: 0.0

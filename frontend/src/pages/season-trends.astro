@@ -1,0 +1,749 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  DEFAULT_TEAM_ID,
+  fmtDate,
+  fmtPts,
+  getSeasonTrends,
+  getBuzzPins,
+  getMoments,
+  getSeasons,
+  getTeams,
+  tone,
+} from '../lib/api';
+
+export const prerender = false;
+
+const seasons = (await getSeasons()) ?? [];
+const requestedSeason = Number(Astro.url.searchParams.get('season'));
+const defaultSeason = seasons[0];
+const season = seasons.includes(requestedSeason) ? requestedSeason : defaultSeason;
+const teams = (await getTeams(season)) ?? [];
+const requestedTeam = Number(Astro.url.searchParams.get('team'));
+const teamId = teams.some((team) => team.team_id === requestedTeam)
+  ? requestedTeam
+  : teams.some((team) => team.team_id === DEFAULT_TEAM_ID)
+    ? DEFAULT_TEAM_ID
+    : teams[0]?.team_id;
+const requestedSplit = Astro.url.searchParams.get('split');
+const split = ['all', 'high-leverage', 'carry-only', 'home-only'].includes(requestedSplit ?? '')
+  ? requestedSplit!
+  : 'all';
+const horizon = Astro.url.searchParams.get('horizon') ?? 'full';
+const seasonData = teamId ? await getSeasonTrends(teamId, season, split) : null;
+const allGames = seasonData?.games ?? [];
+const games = horizon === 'last30'
+  ? allGames.slice(-30)
+  : horizon === 'post-all-star'
+    ? allGames.filter((game) => (game.game_date ?? '') >= `${season}-07-15`)
+    : allGames;
+const team = teams.find((item) => item.team_id === teamId);
+const teamRank = teams.findIndex((item) => item.team_id === teamId) + 1;
+const wins = games.filter((game) => game.won).length;
+const losses = games.length - wins;
+const totalPoints = games.reduce((sum, game) => sum + game.total_points, 0);
+const averagePoints = games.length ? totalPoints / games.length : 0;
+const homeGames = allGames.filter((game) => game.home_away === 'home');
+const awayGames = allGames.filter((game) => game.home_away === 'away');
+const average = (rows: typeof allGames) =>
+  rows.length ? rows.reduce((sum, game) => sum + game.total_points, 0) / rows.length : 0;
+const homeDelta = average(homeGames) - average(awayGames);
+const carryRows = seasonData?.carry_ledger ?? [];
+const completedCarryRows = carryRows.filter((row) => row.next_game);
+const carryWins = completedCarryRows.filter((row) => row.next_game?.won).length;
+const carryLosses = completedCarryRows.length - carryWins;
+const carryConversion = completedCarryRows.length ? (carryWins / completedCarryRows.length) * 100 : 0;
+const months = seasonData?.months ?? [];
+const monthTotal = months.reduce(
+  (total, month) => ({
+    games: total.games + month.games,
+    wins: total.wins + month.wins,
+    base: total.base + month.base_points,
+    situational: total.situational + month.situational_points,
+    miracle: total.miracle + month.miracle_carry_points,
+    penalty: total.penalty + month.penalty_points,
+    points: total.points + month.total_points,
+  }),
+  { games: 0, wins: 0, base: 0, situational: 0, miracle: 0, penalty: 0, points: 0 },
+);
+const cumulative: number[] = [];
+let running = 0;
+for (const game of games) {
+  running += game.total_points;
+  cumulative.push(running);
+}
+const rolling = games.map((_, index) => {
+  const window = games.slice(Math.max(0, index - 9), index + 1);
+  return window.reduce((sum, game) => sum + game.total_points, 0) / window.length;
+});
+const scaleMax = Math.max(1, ...cumulative);
+const chartX = (index: number) => 42 + (games.length > 1 ? (index / (games.length - 1)) * 898 : 0);
+const chartY = (value: number) => 224 - (value / scaleMax) * 196;
+const line = (values: number[]) => values.map((value, index) => `${chartX(index)},${chartY(value)}`).join(' ');
+const cumulativeLine = line(cumulative);
+const rollingScale = games.length && Math.max(...rolling) > 0 ? cumulative.at(-1)! / Math.max(...rolling) : 1;
+const rollingLine = line(rolling.map((value) => value * rollingScale));
+const areaPoints = games.length
+  ? `${chartX(0)},224 ${cumulativeLine} ${chartX(games.length - 1)},224`
+  : '';
+const peakIndex = rolling.length ? rolling.indexOf(Math.max(...rolling)) : -1;
+const slumpIndex = rolling.length ? rolling.indexOf(Math.min(...rolling)) : -1;
+const allMoments = teamId ? ((await getMoments(teamId, season)) ?? []) : [];
+const pins = allMoments
+  .map((moment) => ({ moment, index: games.findIndex((game) => (game.game_date ?? '') >= moment.moment_date) }))
+  .filter((pin) => pin.index >= 0 && games.length > 0 && (games[0].game_date ?? '') <= pin.moment.moment_date)
+  .map((pin) => ({ ...pin, game: games[pin.index] }));
+const buzzPins = teamId ? ((await getBuzzPins(teamId, season, 8)) ?? []) : [];
+const buzzMarks = buzzPins
+  .map((pin) => ({ pin, index: games.findIndex((game) => game.game_id === pin.game_id) }))
+  .filter((mark) => mark.index >= 0)
+  .map((mark) => ({ ...mark, game: games[mark.index] }));
+const bestGame = games.length ? games.reduce((best, game) => game.total_points > best.total_points ? game : best) : null;
+const rankingText = teamRank > 0 ? `${teamRank}${teamRank === 1 ? 'st' : teamRank === 2 ? 'nd' : teamRank === 3 ? 'rd' : 'th'} of ${teams.length} tracked teams` : 'Not ranked';
+const displayHorizon = horizon === 'last30' ? 'Last 30G' : horizon === 'post-all-star' ? 'Post-All-Star' : `Full ${games.length}G`;
+const carryRowsInView = horizon === 'full'
+  ? carryRows
+  : carryRows.filter((row) => games.some((game) => game.game_id === row.game_id));
+const highLeverage = split === 'high-leverage';
+---
+
+<Layout title="Season Trends" season={season}>
+  <main class="trend-page">
+    <section class="context-bar">
+      <div class="context-inner">
+        <div class="context-copy">
+          <div class="context-icon" aria-hidden="true"><span class="material-symbols-outlined">timeline</span></div>
+          <div>
+            <div class="status-line">
+              <span class="model-tag">Statcast Macro Model</span>
+              <span class="calibrated"><i></i> {games.length ? `${games.length}G Scored` : 'Awaiting scored games'}</span>
+            </div>
+            <h1>{season ?? 'Season'} Regular Season · {games.length}-Game Trajectory &amp; Momentum Audit</h1>
+          </div>
+        </div>
+        <form class="controls" method="get" id="trendFilters">
+          <label class="select-control season-select">
+            <span>Season:</span>
+            <select name="season" id="seasonSelector" aria-label="Select season">
+              {seasons.map((item) => <option value={item} selected={item === season}>{item} Regular Season</option>)}
+            </select>
+          </label>
+          <label class="select-control">
+            <span>Team:</span>
+            <select name="team" id="teamSelector" aria-label={`Select team from ${teams.length} tracked teams`} title="Choose from teams with scored games in this season">
+              {teams.map((item) => (
+                <option value={item.team_id} selected={item.team_id === teamId}>
+                  {item.team_name} · {item.wins}-{item.games - item.wins} · {item.games} games
+                </option>
+              ))}
+            </select>
+          </label>
+          <label class="select-control">
+            <span>Metric Split:</span>
+            <select name="split" id="splitSelector">
+              <option value="all" selected={split === 'all'}>All DiamondPoints (Aggregate)</option>
+              <option value="high-leverage" selected={split === 'high-leverage'}>High-Leverage Situations (LI &gt; 1.8)</option>
+              <option value="carry-only" selected={split === 'carry-only'}>Rule V Carry-Over Sequels Only</option>
+              <option value="home-only" selected={split === 'home-only'}>Home Games (Citi Field)</option>
+            </select>
+          </label>
+          <input type="hidden" name="horizon" value={horizon} />
+          <div class="horizon-control" aria-label="Time horizon">
+            <a class:list={['horizon-button', { active: horizon === 'full' }]} href={`?team=${teamId}&season=${season}&split=${split}&horizon=full`}>Full {allGames.length}G</a>
+            <a class:list={['horizon-button', { active: horizon === 'last30' }]} href={`?team=${teamId}&season=${season}&split=${split}&horizon=last30`}>Last 30G</a>
+            <a class:list={['horizon-button', { active: horizon === 'post-all-star' }]} href={`?team=${teamId}&season=${season}&split=${split}&horizon=post-all-star`}>Post-All-Star</a>
+          </div>
+          <button class="export-button" id="exportCsv" type="button">
+            <span class="material-symbols-outlined">file_download</span> Export CSV
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="dashboard">
+      {games.length ? (
+        <>
+          <section class="overview-grid">
+            <article class="metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label-row">
+                    <span class="small-label">Cumulative Output</span>
+                    <span class="badge green">#{teamRank} Tracked</span>
+                  </div>
+                  <p class="metric-value">{fmtPts(totalPoints)} <small>PTS</small></p>
+                </div>
+                <span class="metric-icon red"><span class="material-symbols-outlined">workspace_premium</span></span>
+              </div>
+              <div class="metric-detail">
+                <div><span>Per Game Metric Rate:</span><b>{fmtPts(averagePoints)} PPG</b></div>
+                <div><span>Team Rank:</span><b class="green-text">{rankingText}</b></div>
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label-row">
+                    <span class="small-label">Rule V Carry-Over Conversion</span>
+                    <span class="badge blue">From Scored Games</span>
+                  </div>
+                  <p class="metric-value green-text">{carryConversion.toFixed(1)}% <small>RATE</small></p>
+                </div>
+                <span class="metric-icon green-icon"><span class="material-symbols-outlined">bolt</span></span>
+              </div>
+              <div class="metric-detail">
+                <div><span>Sequel Record:</span><b>{carryWins} W - {carryLosses} L</b></div>
+                <div><span>Net Carry-Over Yield:</span><b class="green-text">{fmtPts(carryRows.reduce((sum, row) => sum + row.carry_points, 0))} DiamondPts</b></div>
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label-row">
+                    <span class="small-label">Home Venue Delta</span>
+                    <span class="badge neutral">{homeGames.length} Home Games</span>
+                  </div>
+                  <p class="metric-value">{fmtPts(homeDelta)} <small>PPG at Home</small></p>
+                </div>
+                <span class="metric-icon blue-icon"><span class="material-symbols-outlined">stadium</span></span>
+              </div>
+              <div class="metric-detail">
+                <div><span>Home Splits:</span><b>{fmtPts(average(homeGames))} PPG ({homeGames.filter((game) => game.won).length}-{homeGames.filter((game) => !game.won).length})</b></div>
+                <div><span>Road Splits:</span><b>{fmtPts(average(awayGames))} PPG ({awayGames.filter((game) => game.won).length}-{awayGames.filter((game) => !game.won).length})</b></div>
+              </div>
+            </article>
+          </section>
+
+          <section class="trajectory-card">
+            <div class="trajectory-head">
+              <div>
+                <div class="section-title"><i class="red-dot"></i><h2>{games.length}-Game Cumulative Trajectory &amp; 10-Game Rolling Efficiency</h2></div>
+                <p>Tracking daily cumulative surplus, momentum inflection thresholds, and Rule V carry amplification zones.</p>
+              </div>
+              <div class="legend">
+                <span><i class="legend-line red-line"></i>Cumulative DiamondPoints</span>
+                <span><i class="legend-line blue-line"></i>10-Game Rolling Moving Avg (x10)</span>
+                <span><i class="legend-box green-box"></i>Carry Momentum Surge</span>
+                <span><i class="legend-box slump-box"></i>Slump Correction Zone</span>
+                <span><i class="legend-line blue-line"></i>Gold pin: moment · Blue pin: most covered game</span>
+              </div>
+            </div>
+            <div class="chart-scroll">
+              <svg class="trajectory-chart" viewBox="0 0 960 260" role="img" aria-label="Cumulative DiamondPoints and rolling ten-game efficiency">
+                <defs>
+                  <linearGradient id="pointsFill" x1="0%" x2="0%" y1="0%" y2="100%">
+                    <stop class="chart-gradient-stop" offset="0%" stop-opacity=".18" />
+                    <stop class="chart-gradient-stop" offset="100%" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                {Array.from({ length: 5 }, (_, index) => {
+                  const value = scaleMax * (1 - index / 4);
+                  const y = 20 + index * 49;
+                  return (
+                    <g>
+                      <line class="grid-line" x1="40" x2="940" y1={y} y2={y} />
+                      <text class="axis-label" text-anchor="end" x="32" y={y + 4}>{Math.round(value)}</text>
+                    </g>
+                  );
+                })}
+                {peakIndex >= 0 && <rect class="surge-zone" x={chartX(Math.max(0, peakIndex - 8))} y="20" width={Math.max(40, chartX(Math.min(games.length - 1, peakIndex + 8)) - chartX(Math.max(0, peakIndex - 8)))} height="196" rx="4" />}
+                {peakIndex >= 0 && <text class="zone-label green-zone-label" x={chartX(peakIndex)} y="36" text-anchor="middle">ROLLING SURGE ({fmtPts(rolling[peakIndex])} PPG)</text>}
+                {slumpIndex >= 0 && slumpIndex !== peakIndex && <rect class="slump-zone" x={chartX(Math.max(0, slumpIndex - 5))} y="20" width={Math.max(32, chartX(Math.min(games.length - 1, slumpIndex + 5)) - chartX(Math.max(0, slumpIndex - 5)))} height="196" rx="4" />}
+                {slumpIndex >= 0 && slumpIndex !== peakIndex && <text class="zone-label red-zone-label" x={chartX(slumpIndex)} y="51" text-anchor="middle">CORRECTION ZONE</text>}
+                {games.length > 1 && <polygon class="chart-fill" points={areaPoints} />}
+                {games.length > 0 && <polyline class="cumulative-line" points={cumulativeLine} />}
+                {games.length > 0 && <polyline class="rolling-line" points={rollingLine} />}
+                {pins.map(({ moment, index, game }) => (
+                  <g class="moment-pin">
+                    <line x1={chartX(index)} x2={chartX(index)} y1="58" y2="224" />
+                    <a href={moment.source_url ?? `/game/${game.team_id}/${game.game_id}`}>
+                      <path d={`M${chartX(index)} 52 l6 6 l-6 6 l-6 -6 z`} />
+                      <title>{`${fmtDate(moment.moment_date)} · ${moment.headline} (${game.opponent ?? 'game'}: ${fmtPts(game.total_points)} pts, ${game.won ? 'W' : 'L'} ${game.runs_for}-${game.runs_against})`}</title>
+                    </a>
+                  </g>
+                ))}
+                {buzzMarks.map(({ pin, index, game }) => (
+                  <g class="buzz-pin">
+                    <line x1={chartX(index)} x2={chartX(index)} y1="58" y2="224" />
+                    <a href={`/game/${game.team_id}/${game.game_id}`}>
+                      <circle cx={chartX(index)} cy="58" r="5" />
+                      <title>{`${fmtDate(pin.game_date)} · ${pin.news_count} stories from ${pin.outlets} outlets${pin.headline ? ` · ${pin.headline}` : ''} (${game.opponent ?? 'game'}: ${fmtPts(game.total_points)} pts, ${game.won ? 'W' : 'L'} ${game.runs_for}-${game.runs_against})`}</title>
+                    </a>
+                  </g>
+                ))}
+                {bestGame && <g class="chart-marker">
+                  <circle cx={chartX(games.findIndex((game) => game.game_id === bestGame.game_id))} cy={chartY(cumulative[games.findIndex((game) => game.game_id === bestGame.game_id)])} r="5" />
+                  <title>{`Game ${games.findIndex((game) => game.game_id === bestGame.game_id) + 1}: ${fmtPts(bestGame.total_points)} DiamondPoints vs ${bestGame.opponent ?? 'opponent'}`}</title>
+                </g>}
+                {games.length > 0 && [0, Math.floor((games.length - 1) / 4), Math.floor((games.length - 1) / 2), Math.floor(((games.length - 1) * 3) / 4), games.length - 1]
+                  .filter((value, index, items) => items.indexOf(value) === index)
+                  .map((index) => (
+                    <text class="axis-label" text-anchor={index === 0 ? 'start' : index === games.length - 1 ? 'end' : 'middle'} x={chartX(index)} y="242">
+                      GM {index + 1}{games[index]?.game_date ? ` (${new Date(`${games[index].game_date}T12:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })})` : ''}
+                    </text>
+                  ))}
+              </svg>
+            </div>
+            {pins.length > 0 && (
+              <ul class="moment-list">
+                {pins.map(({ moment, game }) => (
+                  <li>
+                    <span class="moment-type">{moment.type}</span>
+                    <b>{fmtDate(moment.moment_date)}</b>
+                    <a href={moment.source_url ?? `/game/${game.team_id}/${game.game_id}`}>{moment.headline}</a>
+                    <small>{game.won ? 'W' : 'L'} {game.runs_for}-{game.runs_against} vs {game.opponent} · {fmtPts(game.total_points)} pts</small>
+                    {moment.note && <em>{moment.note}</em>}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {buzzMarks.length > 0 && (
+              <ul class="moment-list buzz-list">
+                {buzzMarks.map(({ pin, game }) => (
+                  <li>
+                    <span class="moment-type buzz-type">{pin.news_count} stories</span>
+                    <b>{fmtDate(pin.game_date)}</b>
+                    <a href={`/game/${game.team_id}/${game.game_id}`}>{game.home_away === 'away' ? '@' : 'vs'} {game.opponent}</a>
+                    <small>{game.won ? 'W' : 'L'} {game.runs_for}-{game.runs_against} · {fmtPts(game.total_points)} pts · {pin.outlets} outlets</small>
+                    {pin.headline && <em>{pin.headline}</em>}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div class="chart-callouts">
+              <div><span>Season Peak Velocity:</span><b>{fmtPts(Math.max(0, ...rolling))} PPG (10-game rolling)</b></div>
+              <div><span>Longest Carry Sequel:</span><b>{carryRows.length} audited triggers</b></div>
+              <div><span>Max Single Game:</span><b>{bestGame ? `${fmtPts(bestGame.total_points)} PTS vs ${bestGame.opponent ?? 'opponent'}` : '—'}</b></div>
+              <div><span>Model Coverage:</span><b>{games.length} scored games</b></div>
+            </div>
+            <table id="seasonGamesCsv">
+              <thead>
+                <tr><th>Date</th><th>Matchup</th><th>Result</th><th>Runs For</th><th>Runs Against</th><th>DiamondPoints</th><th>Player Points</th><th>Team Points</th><th>Carry In</th><th>Carry Out</th></tr>
+              </thead>
+              <tbody>
+                {games.map((game) => (
+                  <tr>
+                    <td>{game.game_date ?? ''}</td>
+                    <td>{game.home_away === 'away' ? `${game.team_abbr} @ ${game.opponent_abbr}` : `${game.opponent_abbr} @ ${game.team_abbr}`}</td>
+                    <td>{game.won ? 'W' : 'L'}</td>
+                    <td>{game.runs_for}</td><td>{game.runs_against}</td><td>{game.total_points.toFixed(1)}</td>
+                    <td>{game.player_points.toFixed(1)}</td><td>{game.team_points.toFixed(1)}</td>
+                    <td>{game.carry_in.toFixed(1)}</td><td>{game.carry_out.toFixed(1)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+
+          <section class="analysis-grid">
+            <div class="ledger-card">
+              <div class="ledger-heading">
+                <div>
+                  <div class="section-title"><span class="material-symbols-outlined title-icon red-text">receipt_long</span><h2>Carry-Over Ledger &amp; Next Game Impact</h2></div>
+                  <p>High-leverage emotional and comeback triggers qualifying under Rule V DiamondMetrics carry-over scoring.</p>
+                </div>
+                <span class="count-badge">{carryRowsInView.length} Audited Triggers</span>
+              </div>
+              <div class="table-scroll">
+                <table class="carry-table">
+                  <thead><tr><th>Date</th><th>Event Trigger</th><th>Matchup</th><th>Carry Pts</th><th>Next Gm Pts</th><th>Next Result</th></tr></thead>
+                  <tbody>
+                    {carryRowsInView.slice(0, 8).map((row) => (
+                      <tr>
+                        <td>{row.game_date ? fmtDate(row.game_date).toUpperCase().replace(/,\s+\d{4}/, '') : '—'}</td>
+                        <td><span class="trigger-tag">{row.trigger}</span></td>
+                        <td>{row.home_away === 'away' ? '@' : 'vs'} {row.opponent ?? 'Opponent'} ({row.runs_for}-{row.runs_against})</td>
+                        <td class="positive-cell">{fmtPts(row.carry_points)}</td>
+                        <td>{row.next_game ? `${fmtPts(row.next_game.total_points)} PTS` : '—'}</td>
+                        <td>{row.next_game ? <span class:list={['result-pill', row.next_game.won ? 'won' : 'lost']}>{row.next_game.won ? 'W' : 'L'} {row.next_game.runs_for}-{row.next_game.runs_against}</span> : '—'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {!carryRowsInView.length && <p class="empty">No carry-over triggers are available for this selection.</p>}
+              </div>
+              <div class="ledger-footnote">
+                <span>* Carry-over sequels are linked to the next scored game in the selected season.</span>
+                <b>Conversion Win% = {carryConversion.toFixed(1)}%</b>
+              </div>
+            </div>
+
+            <aside class="right-column">
+              <section class="venue-card">
+                <div class="venue-banner">
+                  <div><span>Venue Calibration</span><h3>{team?.team_name === 'Mets' ? 'Citi Field (Queens, NY)' : `${team?.team_name ?? 'Selected Club'} Home Park`}</h3></div>
+                </div>
+                <div class="venue-details">
+                  <div><span>Home Games (Scored):</span><b>{homeGames.length}</b></div>
+                  <div><span>Home Average:</span><b>{fmtPts(average(homeGames))} DiamondPts / game</b></div>
+                  <div><span>Home Advantage Delta:</span><b class="green-text">{fmtPts(homeDelta)} PPG</b></div>
+                  <div><span>Road Average:</span><b>{fmtPts(average(awayGames))} DiamondPts / game</b></div>
+                </div>
+              </section>
+              <section class="calibration-card">
+                <div class="calibration-heading"><h3>Dynamic Recalibration</h3><span class="material-symbols-outlined">tune</span></div>
+                <label class="slider-block">
+                  <span class="slider-label"><span>Carry Bonus Cap:</span><b id="bonusDisplay">+2.0 PTS</b></span>
+                  <input id="bonusSlider" max="5" min="0.5" step="0.5" type="range" value="2" />
+                  <span class="slider-ends"><span>+0.5</span><span>Default (+2.0)</span><span>+5.0</span></span>
+                </label>
+                <label class="slider-block penalty-slider">
+                  <span class="slider-label"><span>Blown Lead Penalty Floor:</span><b id="penaltyDisplay">-6.0 PTS</b></span>
+                  <input id="penaltySlider" max="-2" min="-12" step="1" type="range" value="-6" />
+                  <span class="slider-ends"><span>-12.0</span><span>Default (-6.0)</span><span>-2.0</span></span>
+                </label>
+                <button
+                  class="simulation-button"
+                  id="simButton"
+                  type="button"
+                  data-carry-count={carryRows.length}
+                  data-penalty-count={Math.max(0, Math.round(Math.abs(monthTotal.penalty) / 6))}
+                >
+                  <span class="material-symbols-outlined">autorenew</span> Run Trajectory Simulation
+                </button>
+                <div class="simulation-feedback" id="simFeedback" hidden></div>
+              </section>
+            </aside>
+          </section>
+
+          <section class="cadence-card">
+            <div class="cadence-heading">
+              <div>
+                <div class="section-title"><span class="material-symbols-outlined title-icon blue-text">calendar_view_month</span><h2>Monthly &amp; Series Cadence Splits</h2></div>
+                <p>Partitioning base performance runs against high-stakes situational modifiers across the {season} campaign.</p>
+              </div>
+              <span class="cadence-status">Full {monthTotal.games}-Game Breakdown · Scored Data</span>
+            </div>
+            <div class="table-scroll">
+              <table class="cadence-table" id="cadenceTable">
+                <thead>
+                  <tr><th>Month / Split</th><th>Games</th><th>W-L Record</th><th>Base Runs Pts</th><th>Situational Pts</th><th>Miracle Carry</th><th>Penalty Deduct</th><th>Total Net Pts</th><th>Net PPG</th><th>Trendline</th></tr>
+                </thead>
+                <tbody>
+                  {months.map((month, index) => {
+                    const date = new Date(`${month.month}-15T12:00:00`);
+                    const label = date.toLocaleDateString('en-US', { month: 'long' }) + (months.length > 1 ? ` ${date.getFullYear()}` : '');
+                    const ppg = month.games ? month.total_points / month.games : 0;
+                    const previous = months[index - 1];
+                    const previousRate = previous?.games ? previous.total_points / previous.games : 0;
+                    const status = !previous ? 'FLAT' : ppg > previousRate * 1.05 ? 'SURGE ▲' : ppg < previousRate * 0.95 ? 'SLUMP' : 'FLAT';
+                    return (
+                      <tr class:list={[{ highlight: status === 'SURGE ▲' }]}>
+                        <td>{label}</td>
+                        <td>{month.games}</td>
+                        <td>{month.wins}-{month.games - month.wins}</td>
+                        <td>{fmtPts(month.base_points)}</td>
+                        <td>{fmtPts(month.situational_points)}</td>
+                        <td class="green-text">{fmtPts(month.miracle_carry_points)}</td>
+                        <td class="error-text">{fmtPts(month.penalty_points)}</td>
+                        <td class="total-cell">{fmtPts(month.total_points)}</td>
+                        <td>{fmtPts(ppg)}</td>
+                        <td><span class:list={['trend-badge', status === 'SURGE ▲' ? 'surge' : status === 'SLUMP' ? 'slump' : 'flat']}>{status}</span></td>
+                      </tr>
+                    );
+                  })}
+                  <tr class="total-row">
+                    <td>Total Regular Season</td><td>{monthTotal.games}</td><td>{monthTotal.wins}-{monthTotal.games - monthTotal.wins}</td>
+                    <td>{fmtPts(monthTotal.base)}</td><td>{fmtPts(monthTotal.situational)}</td><td class="green-text">{fmtPts(monthTotal.miracle)}</td>
+                    <td class="error-text">{fmtPts(monthTotal.penalty)}</td><td>{fmtPts(monthTotal.points)}</td>
+                    <td>{fmtPts(monthTotal.games ? monthTotal.points / monthTotal.games : 0)}</td><td>{teamRank ? `RANK ${teamRank}` : '—'}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </>
+      ) : (
+        <section class="empty-panel"><h2>No scored games found</h2><p>Choose another club, season, or metric split.</p></section>
+      )}
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const filters = document.getElementById('trendFilters') as HTMLFormElement | null;
+  filters?.querySelectorAll('select').forEach((select) =>
+    select.addEventListener('change', () => filters.requestSubmit()),
+  );
+
+  const exportButton = document.getElementById('exportCsv');
+  exportButton?.addEventListener('click', () => {
+    const table = document.getElementById('seasonGamesCsv');
+    if (!table) return;
+    const csv = Array.from(table.querySelectorAll('tr'))
+      .map((row) => Array.from(row.querySelectorAll('th,td'))
+        .map((cell) => `"${(cell.textContent ?? '').trim().replaceAll('"', '""')}"`)
+        .join(','))
+      .join('\r\n');
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const season = document.querySelector('.context-copy h1')?.textContent?.match(/\d{4}/)?.[0] ?? 'season';
+    const team = document.getElementById('teamSelector') as HTMLSelectElement | null;
+    const club = team?.selectedOptions[0]?.textContent?.split(' (')[0]?.replaceAll(' ', '_') ?? 'team';
+    link.download = `${season}_${club}_DiamondPoints_Audit.csv`;
+    link.click();
+    URL.revokeObjectURL(link.href);
+  });
+
+  const bonusSlider = document.getElementById('bonusSlider') as HTMLInputElement | null;
+  const penaltySlider = document.getElementById('penaltySlider') as HTMLInputElement | null;
+  const bonusDisplay = document.getElementById('bonusDisplay');
+  const penaltyDisplay = document.getElementById('penaltyDisplay');
+  const feedback = document.getElementById('simFeedback');
+
+  const updateCalibration = () => {
+    if (bonusSlider && bonusDisplay) bonusDisplay.textContent = `+${Number(bonusSlider.value).toFixed(1)} PTS`;
+    if (penaltySlider && penaltyDisplay) penaltyDisplay.textContent = `${Number(penaltySlider.value).toFixed(1)} PTS`;
+    if (feedback) feedback.hidden = true;
+  };
+  bonusSlider?.addEventListener('input', updateCalibration);
+  penaltySlider?.addEventListener('input', updateCalibration);
+
+  document.getElementById('simButton')?.addEventListener('click', (event) => {
+    if (!bonusSlider || !penaltySlider || !feedback) return;
+    const button = event.currentTarget as HTMLButtonElement;
+    const carryCount = Number(button.dataset.carryCount ?? 0);
+    const penaltyCount = Number(button.dataset.penaltyCount ?? 0);
+    const adjusted =
+      (Number(bonusSlider.value) - 2) * carryCount +
+      (Number(penaltySlider.value) + 6) * penaltyCount;
+    feedback.textContent = `Projected Shift: ${adjusted >= 0 ? '+' : ''}${adjusted.toFixed(1)} Net Adjusted PTS`;
+    feedback.hidden = false;
+  });
+</script>
+
+<style>
+  .trend-page {
+    --canvas: #f7f9ff;
+    --surface: #fff;
+    --surface-low: #edf4ff;
+    --surface-mid: #e3effe;
+    --surface-high: #dee9f8;
+    --surface-highest: #d8e4f3;
+    --ink: #111d27;
+    --muted-ink: #5b403d;
+    --border: #e4beba;
+    --red: #d22d2d;
+    --green: #006444;
+    --green-bright: #007f58;
+    --blue: #005faf;
+    --error: #ba1a1a;
+    --chart-grid: #dee9f8;
+  }
+  :global(html[data-theme='dark']) .trend-page {
+    --canvas: #0d1b2a;
+    --surface: #132238;
+    --surface-low: #1b263b;
+    --surface-mid: #1b263b;
+    --surface-high: #27384f;
+    --surface-highest: #324a68;
+    --ink: #f8f9fa;
+    --muted-ink: #a8b3c2;
+    --border: #415a77;
+    --red: #e63946;
+    --green: #2ec4b6;
+    --green-bright: #2ec4b6;
+    --blue: #98cdf2;
+    --error: #ff5a6a;
+    --chart-grid: #415a77;
+    min-height: calc(100vh - 48px);
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: Inter, sans-serif;
+  }
+  .trend-page * { box-sizing: border-box; }
+  .context-bar { background: color-mix(in srgb,var(--surface) 96%,transparent); box-shadow: 0 1px 5px rgba(17,29,39,.08); }
+  .context-inner {
+    width: min(100% - 3rem, 1400px);
+    min-height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .7rem 0;
+  }
+  .context-copy { min-width: 0; display: flex; align-items: center; gap: .75rem; }
+  .context-icon { width: 40px; height: 40px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 4px; background: rgba(210,45,45,.1); color: var(--red); }
+  .context-icon .material-symbols-outlined { font-size: 24px; }
+  .status-line, .metric-label-row, .section-title, .legend, .controls, .horizon-control { display: flex; align-items: center; }
+  .status-line { gap: .5rem; flex-wrap: wrap; }
+  .model-tag, .calibrated, .small-label, .badge, .select-control > span, .horizon-control, .export-button, .count-badge, .cadence-status {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  .model-tag { padding: 2px 5px; border-radius: 3px; background: var(--surface-high); color: var(--muted-ink); }
+  .calibrated { display: inline-flex; align-items: center; gap: .3rem; color: var(--green); }
+  .calibrated i { width: 6px; height: 6px; border-radius: 50%; background: var(--green-bright); }
+  .context-copy h1 { margin: .2rem 0 0; font: 600 16px/1.35 'Space Grotesk', sans-serif; letter-spacing: -.02em; }
+  .controls { justify-content: flex-end; flex-wrap: wrap; gap: .5rem; }
+  .select-control { display: flex; align-items: center; gap: .35rem; min-height: 30px; padding: .2rem .5rem; border-radius: 3px; background: var(--surface-low); }
+  .select-control > span { color: var(--muted-ink); white-space: nowrap; }
+  .select-control select { max-width: 290px; min-width: 120px; border: 0; outline: 0; background: transparent; color: var(--ink); font: 600 11px Inter, sans-serif; }
+  .season-select select { min-width: 150px; }
+  .horizon-control { gap: 2px; padding: 2px; border-radius: 3px; background: var(--surface-high); white-space: nowrap; }
+  .horizon-button { padding: 5px 8px; color: var(--muted-ink); border-radius: 3px; }
+  .horizon-button.active { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px #111d2712; }
+  .export-button { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; padding: .35rem .55rem; border: 0; border-radius: 3px; background: var(--surface-mid); color: var(--ink); cursor: pointer; }
+  .export-button:hover { background: var(--surface-high); }
+  .export-button .material-symbols-outlined { font-size: 16px; }
+  .dashboard { width: min(100% - 3rem, 1400px); margin: 0 auto; padding: 1.5rem 0 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .overview-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+  .metric-card, .trajectory-card, .ledger-card, .venue-card, .calibration-card, .cadence-card {
+    min-width: 0; border-radius: 4px; background: var(--surface); box-shadow: 0 1px 5px rgba(17,29,39,.07);
+  }
+  .metric-card { min-height: 166px; padding: 1rem; display: flex; flex-direction: column; justify-content: space-between; gap: .85rem; }
+  .metric-top { display: flex; align-items: flex-start; justify-content: space-between; gap: .5rem; }
+  .metric-label-row { gap: .45rem; flex-wrap: wrap; }
+  .small-label { color: var(--muted-ink); }
+  .badge { padding: 2px 5px; border-radius: 3px; font-size: 9px; }
+  .badge.green { background: color-mix(in srgb,var(--green-bright) 12%,var(--surface)); color: var(--green); }
+  .badge.blue { background: var(--surface-highest); color: var(--blue); }
+  .badge.neutral { background: var(--surface-highest); color: var(--ink); }
+  .metric-value { margin: .35rem 0 0; font: 700 29px/1.15 'Space Grotesk', sans-serif; letter-spacing: -.04em; }
+  .metric-value small { color: var(--muted-ink); font-size: 13px; font-weight: 600; letter-spacing: 0; }
+  .metric-icon { width: 36px; height: 36px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 4px; background: var(--surface-mid); color: var(--red); }
+  .metric-icon .material-symbols-outlined { font-size: 20px; }
+  .metric-icon.green-icon { color: var(--green); }
+  .metric-icon.blue-icon { color: var(--blue); }
+  .metric-detail { display: grid; gap: .3rem; padding: .45rem .5rem; border-radius: 3px; background: color-mix(in srgb,var(--surface-low) 72%,transparent); }
+  .metric-detail div { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; font-size: 11px; }
+  .metric-detail span { color: var(--muted-ink); }
+  .metric-detail b { text-align: right; font-weight: 600; }
+  .green-text { color: var(--green); }
+  .red-text { color: var(--red); }
+  .blue-text { color: var(--blue); }
+  .trajectory-card { padding: 1rem; display: flex; flex-direction: column; gap: .8rem; }
+  .trajectory-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+  .section-title { gap: .45rem; }
+  .section-title h2, .ledger-heading h2, .cadence-heading h2 { margin: 0; font: 600 16px/1.35 'Space Grotesk', sans-serif; letter-spacing: -.02em; }
+  .trajectory-head p, .ledger-heading p, .cadence-heading p { margin: .15rem 0 0; color: var(--muted-ink); font-size: 11px; line-height: 1.5; }
+  .red-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--red); }
+  .legend { justify-content: flex-end; flex-wrap: wrap; gap: .75rem; color: var(--ink); font-size: 9px; }
+  .legend span { display: inline-flex; align-items: center; gap: .3rem; white-space: nowrap; }
+  .legend-line { width: 15px; height: 3px; border-radius: 3px; }
+  .red-line { background: var(--red); }
+  .blue-line { background: var(--blue); }
+  .legend-box { width: 10px; height: 10px; border-radius: 2px; }
+  .green-box { background: color-mix(in srgb,var(--green-bright) 25%,transparent); }
+  .slump-box { background: color-mix(in srgb,var(--error) 15%,transparent); }
+  .chart-scroll { overflow-x: auto; border-radius: 4px; background: color-mix(in srgb,var(--surface-low) 55%,transparent); }
+  .trajectory-chart { display: block; width: 100%; min-width: 820px; height: 255px; }
+  .grid-line { stroke: var(--chart-grid); stroke-dasharray: 2 2; stroke-width: 1; }
+  .axis-label { fill: var(--muted-ink); font: 10px 'Space Grotesk', sans-serif; }
+  .zone-label { font: 700 9px 'Space Grotesk',sans-serif; }
+  .green-zone-label { fill: var(--green); }
+  .red-zone-label { fill: var(--error); }
+  .surge-zone { fill: var(--green-bright); fill-opacity: .08; }
+  .slump-zone { fill: var(--error); fill-opacity: .06; }
+  .chart-fill { fill: url(#pointsFill); }
+  .chart-gradient-stop { stop-color: var(--red); }
+  .cumulative-line { fill: none; stroke: var(--red); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  .rolling-line { fill: none; stroke: var(--blue); stroke-width: 1.8; stroke-dasharray: 4 4; }
+  .moment-pin line { stroke: #f5b942; stroke-dasharray: 3 3; opacity: .7; }
+  .moment-pin path { fill: #f5b942; stroke: #fff; stroke-width: 1; cursor: pointer; }
+  .moment-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; font-size: 0.85rem; }
+  .moment-list li { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+  .buzz-pin line { stroke: var(--blue); stroke-dasharray: 2 4; opacity: .6; }
+  .buzz-pin circle { fill: var(--blue); stroke: #fff; stroke-width: 1; cursor: pointer; }
+  .buzz-type { background: color-mix(in srgb, var(--blue) 16%, transparent); color: var(--blue); }
+  .moment-list a { color: var(--link); }
+  .moment-list small, .moment-list em { color: var(--muted); }
+  .moment-type { background: rgba(245, 185, 66, .18); color: #f5b942; padding: 1px 6px; border-radius: 4px; font-size: 0.7rem; text-transform: uppercase; }
+  .chart-marker circle { fill: var(--red); stroke: #fff; stroke-width: 2; }
+  .chart-callouts { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: .5rem; }
+  .chart-callouts div { display: grid; gap: 2px; padding: .45rem .5rem; border-radius: 3px; background: var(--surface-low); }
+  .chart-callouts span { color: var(--muted-ink); font: 700 9px 'Space Grotesk',sans-serif; text-transform: uppercase; }
+  .chart-callouts b { font-size: 11px; }
+  #seasonGamesCsv { display: none; }
+  .analysis-grid { display: grid; grid-template-columns: minmax(0,2fr) minmax(280px,1fr); gap: 1rem; align-items: start; }
+  .ledger-card { padding: 1rem; display: flex; flex-direction: column; gap: .75rem; }
+  .ledger-heading, .cadence-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: .75rem; }
+  .title-icon { font-size: 20px; }
+  .count-badge, .cadence-status { flex: 0 0 auto; padding: 4px 7px; border-radius: 3px; background: var(--surface-mid); color: var(--muted-ink); font-size: 9px; }
+  .table-scroll { overflow-x: auto; }
+  .trend-page table { width: 100%; border-collapse: collapse; font-size: 10px; text-align: left; }
+  .trend-page th { height: 32px; padding: 0 7px; background: var(--surface-mid); color: var(--ink); border-bottom: 1px solid var(--surface-high); font: 700 9px 'Space Grotesk',sans-serif; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; text-align: inherit; }
+  .trend-page td { height: 36px; padding: 5px 7px; border-bottom: 1px solid color-mix(in srgb,var(--surface-high) 85%,transparent); color: var(--muted-ink); font-size: 10px; white-space: nowrap; text-align: inherit; }
+  .trend-page tbody tr:hover { background: var(--surface-low); }
+  .carry-table { min-width: 660px; }
+  .carry-table td:nth-child(4), .carry-table td:nth-child(5) { text-align: right; font-variant-numeric: tabular-nums; }
+  .positive-cell { color: var(--green)!important; font-weight: 700; }
+  .trigger-tag { display: inline-block; max-width: 190px; overflow: hidden; text-overflow: ellipsis; vertical-align: middle; padding: 3px 6px; border-radius: 3px; background: rgba(210,45,45,.1); color: var(--red); font-weight: 600; }
+  .result-pill { display: inline-block; padding: 3px 6px; border-radius: 3px; font: 700 9px 'Space Grotesk',sans-serif; }
+  .result-pill.won { background: color-mix(in srgb,var(--green-bright) 12%,var(--surface)); color: var(--green); }
+  .result-pill.lost { background: color-mix(in srgb,var(--error) 16%,var(--surface)); color: var(--error); }
+  .ledger-footnote { display: flex; justify-content: space-between; gap: .75rem; color: var(--muted-ink); font-size: 9px; }
+  .ledger-footnote b { color: var(--green); white-space: nowrap; }
+  .right-column { display: flex; flex-direction: column; gap: 1rem; }
+  .venue-card { overflow: hidden; }
+  .venue-banner { position: relative; min-height: 110px; display: flex; align-items: flex-end; padding: .8rem; color: #fff; background: linear-gradient(180deg,rgba(17,29,39,.06),rgba(17,29,39,.83)), repeating-linear-gradient(165deg,#78966c 0 12px,#83a276 12px 24px,#667f61 24px 26px); }
+  .venue-banner::before { content: ''; position: absolute; inset: 0 0 40% 0; opacity: .45; background: repeating-linear-gradient(90deg,transparent 0 24px,#e5e9e8 25px 27px), linear-gradient(180deg,#a8bfd1,#e6edf2); clip-path: polygon(0 0,100% 0,100% 80%,0 90%); }
+  .venue-banner div { position: relative; }
+  .venue-banner span { color: #d4e3ff; font: 700 9px 'Space Grotesk',sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+  .venue-banner h3, .calibration-heading h3 { margin: .2rem 0 0; font: 600 15px 'Space Grotesk',sans-serif; }
+  .venue-details { padding: .7rem .8rem; display: grid; gap: .5rem; }
+  .venue-details div { display: flex; justify-content: space-between; gap: .5rem; font-size: 10px; }
+  .venue-details span { color: var(--muted-ink); }
+  .venue-details b { text-align: right; }
+  .calibration-card { padding: .9rem; display: flex; flex-direction: column; gap: .85rem; }
+  .calibration-heading { display: flex; justify-content: space-between; align-items: center; }
+  .calibration-heading h3 { margin: 0; }
+  .calibration-heading .material-symbols-outlined { color: var(--muted-ink); font-size: 18px; }
+  .slider-block { display: grid; gap: .35rem; }
+  .slider-label, .slider-ends { display: flex; justify-content: space-between; gap: .4rem; font: 700 9px 'Space Grotesk',sans-serif; }
+  .slider-label { color: var(--muted-ink); text-transform: uppercase; }
+  .slider-label b { color: var(--green); }
+  .penalty-slider .slider-label b { color: var(--error); }
+  .slider-block input { width: 100%; height: 5px; margin: 4px 0; accent-color: var(--red); cursor: pointer; }
+  .penalty-slider input { accent-color: var(--error); }
+  .slider-ends { color: var(--muted-ink); font-size: 8px; font-weight: 500; text-transform: none; }
+  .simulation-button { min-height: 34px; display: flex; align-items: center; justify-content: center; gap: .4rem; border: 0; border-radius: 3px; background: var(--red); color: #fff; font: 700 9px 'Space Grotesk',sans-serif; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; }
+  .simulation-button:hover { background: #ae0c18; }
+  .simulation-button .material-symbols-outlined { font-size: 15px; }
+  .simulation-feedback { padding: .4rem; border-radius: 3px; background: #007f5815; color: var(--green); text-align: center; font: 700 10px 'Space Grotesk',sans-serif; }
+  .cadence-card { padding: 1rem; display: flex; flex-direction: column; gap: .75rem; }
+  .cadence-table { min-width: 950px; }
+  .cadence-table th:not(:first-child), .cadence-table td:not(:first-child) { text-align: right; }
+  .cadence-table th:last-child, .cadence-table td:last-child { text-align: center; }
+  .cadence-table td:first-child { color: var(--ink); font-weight: 600; }
+  .cadence-table td:nth-child(4), .cadence-table td:nth-child(5), .cadence-table td:nth-child(6), .cadence-table td:nth-child(7), .cadence-table td:nth-child(8), .cadence-table td:nth-child(9) { font-variant-numeric: tabular-nums; }
+  .error-text { color: var(--error)!important; }
+  .total-cell { color: var(--ink)!important; font-weight: 700; }
+  .cadence-table tr.highlight { background: color-mix(in srgb,var(--green-bright) 5%,var(--surface)); }
+  .trend-badge { display: inline-block; padding: 3px 6px; border-radius: 3px; background: var(--surface-mid); color: var(--muted-ink); font: 700 8px 'Space Grotesk',sans-serif; }
+  .trend-badge.surge { background: color-mix(in srgb,var(--green-bright) 14%,var(--surface)); color: var(--green); }
+  .trend-badge.slump { background: color-mix(in srgb,var(--error) 16%,var(--surface)); color: var(--error); }
+  .trend-page .total-row { background: var(--surface-mid); font-weight: 700; }
+  .total-row td { height: 40px; border-top: 2px solid rgba(228,190,186,.5); color: var(--ink); font-weight: 700; }
+  .empty, .empty-panel { padding: 1rem; color: var(--muted-ink); }
+  .empty-panel { background: var(--surface); border-radius: 4px; text-align: center; }
+  .empty-panel p { color: var(--muted-ink); font-size: 12px; }
+  @media (max-width: 1180px) {
+    .context-inner { width: min(100% - 2rem,1400px); align-items: flex-start; flex-direction: column; }
+    .controls { justify-content: flex-start; width: 100%; }
+  }
+  @media (max-width: 900px) {
+    .dashboard { width: min(100% - 2rem,1400px); }
+    .overview-grid { grid-template-columns: 1fr 1fr; }
+    .analysis-grid { grid-template-columns: 1fr; }
+    .right-column { display: grid; grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .context-inner, .dashboard { width: calc(100% - 1rem); }
+    .context-copy h1 { font-size: 14px; }
+    .controls { align-items: stretch; }
+    .select-control { box-sizing: border-box; flex: 1 1 100%; min-width: 0; max-width: 100%; }
+    .select-control select { box-sizing: border-box; width: 0; min-width: 0; max-width: 100%; flex: 1; }
+    .season-select select { min-width: 0; }
+    .horizon-control { flex: 1; justify-content: space-around; }
+    .overview-grid, .right-column { grid-template-columns: 1fr; }
+    .chart-callouts { grid-template-columns: 1fr 1fr; }
+    .trajectory-card, .ledger-card, .cadence-card { padding: .75rem; }
+    .ledger-footnote { flex-direction: column; }
+    .cadence-heading { flex-direction: column; }
+  }
+</style>

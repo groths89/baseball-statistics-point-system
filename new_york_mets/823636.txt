@@ -1,0 +1,28 @@
+Game 823636 (2026-04-28): Mets vs Nationals  8-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | 3B       |      7.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Juan Soto                 | DH       |      8.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Francisco Alvarez         | C        |      0.0 | 
+| MJ Melendez               | LF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Mark Vientos              | 1B       |      3.0 | Runs (1): +1.0 | Walks (2): +2.0
+| Brett Baty                | RF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Marcus Semien             | 2B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Carson Benge              | LF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Ronny Mauricio            | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Clay Holmes               | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 0 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tobias Myers              | P        |      0.0 | 
+| Craig Kimbrel             | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+
+### Team Totals ###
+  Player points: 34.0
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         41.0
+  Carry over into next game: 0.0

@@ -1,0 +1,31 @@
+Game 745823 (2024-05-25): Mets vs Giants  2-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Pete Alonso               | 1B       |     -1.0 | Error (1): -1.0
+| Brandon Nimmo             | LF       |     -2.5 | Hits (1): +0.5 | Stolen Base (1): +1.0 | Struck Out 4+ Times (4): -4.0
+| J.D. Martinez             | DH       |      1.0 | Walks (1): +1.0
+| DJ Stewart                | LF       |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| Starling Marte            | RF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Outfield Assist (1): +1.0
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Brett Baty                | 3B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Omar Narváez              | C        |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | PR       |      1.0 | Stolen Base (1): +1.0
+| Tomás Nido                | C        |      0.0 | 
+| Luis Severino             | P        |     10.0 | Starter 2 Runs or Less (min 5 IP) (7.0 IP, 1 R): +5.0 | Starter 7+ IP (7.0 IP): +5.0
+| Adam Ottavino             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Edwin Díaz                | P        |     -2.0 | Blown Save (BS, 4): -2.0
+| Sean Reid-Foley           | P        |      0.0 | 
+| Josh Walker               | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (14): -5.0
+
+### Team Totals ###
+  Player points: 20.0
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         15.0
+  Carry over into next game: 0.0

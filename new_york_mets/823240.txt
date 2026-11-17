@@ -1,0 +1,32 @@
+Game 823240 (2026-04-03): Mets @ Giants  10-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Juan Soto                 | LF       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | LF       |      0.0 | 
+| Bo Bichette               | 3B       |      4.5 | Hits (3): +1.5 | Runs (2): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Luis Robert Jr.           | CF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (2): +2.0
+| Brett Baty                | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Mark Vientos              | DH       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Marcus Semien             | 2B       |      7.5 | Hits (3): +1.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Carson Benge              | RF       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Francisco Alvarez         | C        |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0
+| Nolan McLean              | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 2 R): +5.0
+| Brooks Raley              | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Richard Lovelady          | P        |      0.0 | 
+| Luis García               | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (6): +2.0
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Passed Ball (1): -1.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+
+### Team Totals ###
+  Player points: 41.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         40.5
+  Carry over into next game: 0.0

@@ -1,0 +1,619 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+export const prerender = false;
+const apiBase = (import.meta.env.PUBLIC_API_URL ?? 'http://localhost:8000').replace(/\/$/, '');
+
+const pillars = [
+  {
+    numeral: 'I',
+    title: 'Basic Production',
+    icon: 'sports_baseball',
+    tone: 'base',
+    description: 'The linear weights baseline reflecting pure offensive and pitching outputs decoupled from context.',
+    metrics: [
+      ['HR / Single', '+4.0 / +1.0'],
+      ['Double / Triple', '+2.0 / +3.0'],
+      ['BB / Run / RBI', '+1.0 each'],
+      ['Batter Strikeout', '-0.5'],
+      ['Pitcher IP / K / ER', '+1.0 / +1.0 / -1.0'],
+    ],
+    footer: 'Weight: 1.00x Base',
+    frequency: '95.2% freq',
+  },
+  {
+    numeral: 'II',
+    title: 'Situational & Leverage',
+    icon: 'speed',
+    tone: 'base',
+    description: 'Direct mathematical amplification scaling with context Leverage Index (LI ≥ 1.5).',
+    metrics: [
+      ['2-Out RISP Hit', '+2.0 to +4.0'],
+      ['Bases-Loaded K (P)', '+3.0 bonus'],
+      ['GIDP Jam Escape', '+3.0 bonus'],
+      ['Late-Inning Tie-Break', '+3.5 bonus'],
+      ['High-LI Hold (7th+)', '+2.5 bonus'],
+    ],
+    footer: 'Dynamic: [1.2x - 2.5x]',
+    frequency: '18.4% freq',
+  },
+  {
+    numeral: 'III',
+    title: 'Miracles & Outliers',
+    icon: 'auto_awesome',
+    tone: 'exceptional',
+    description: 'Sub-5% optical probability events captured via Hawk-Eye track coordinates.',
+    metrics: [
+      ['5-Star Catch (≤25%)', '+3.0'],
+      ['100+ mph OF Throw', '+2.0'],
+      ['Immaculate Inning', '+5.0'],
+      ['Walk-Off Home Run', '+5.0'],
+      ['Unassisted Triple Play', '+8.0'],
+    ],
+    footer: 'Threshold: ≤ 0.05 p',
+    frequency: '1.2% freq',
+  },
+  {
+    numeral: 'IV',
+    title: 'Deductions & Blunders',
+    icon: 'warning',
+    tone: 'deduction',
+    description: 'Severe penalty subtractions for unforced fielding miscues and bullpen collapses.',
+    metrics: [
+      ['Blown Save (BS)', '-4.0'],
+      ['Defensive Throwing Err', '-2.0'],
+      ['Leadoff Relief Walk', '-1.0'],
+      ['Bases-Loaded WP/BK', '-3.0'],
+      ['Pickoff Caught Napping', '-1.5'],
+    ],
+    footer: 'Negative Scalar: 1.0x',
+    frequency: '3.8% freq',
+  },
+  {
+    numeral: 'V',
+    title: 'Momentum Carry-Over',
+    icon: 'trending_up',
+    tone: 'base',
+    description: 'Rule V provisions that bank credit into the athlete’s subsequent game ledger.',
+    metrics: [
+      ['Walk-Off Win Bonus', '+2.0 next gm'],
+      ['Complete Game Shutout', '+3.0 next start'],
+      ['Multi-HR Game Surge', '+1.5 next gm'],
+      ['9th Inning Rally Spark', '+1.0 next gm'],
+      ['Golden Sombrero Drag', '-1.0 next gm'],
+    ],
+    footer: 'Retention Window: 1 Game',
+    frequency: 'Dynamic ledger',
+  },
+];
+
+const rules = [
+  { code: 'M-01', category: 'miracle', tier: 'III. Miracles', title: 'Walk-Off Home Run', telemetry: 'B9+ | Win Prob Shift > +0.40 | EV ≥ 95.0 mph', points: '+5.0', precedent: 'F. Freeman (2024 WS Gm 1 Grand Slam)' },
+  { code: 'M-04', category: 'miracle', tier: 'III. Miracles', title: 'Five-Star Outfield Catch', telemetry: 'Catch Prob ≤ 20% | Distance Cover ≥ 85 ft', points: '+3.0', precedent: 'K. Kiermaier (98.4 ft sprint, dive in R-Center)' },
+  { code: 'M-08', category: 'miracle', tier: 'III. Miracles', title: '100+ MPH Laser OF Assist', telemetry: 'Throw Velo ≥ 100.0 mph | Tagout at Home/3rd', points: '+2.0', precedent: 'R. Acuña Jr. (101.5 mph strike from right field)' },
+  { code: 'M-12', category: 'miracle', tier: 'III. Miracles', title: 'Immaculate Inning Complete', telemetry: '3 Strikeouts | Exactly 9 Pitches (0 Balls)', points: '+5.0', precedent: 'C. Sale (9 pitches, 9 swinging strikes)' },
+  { code: 'L-02', category: 'leverage', tier: 'II. Leverage', title: '2-Out RISP Run Production', telemetry: '2 Outs | Runner on 2B or 3B | LI ≥ 1.50', points: '+2.0 to +4.0', precedent: 'Y. Alvarez (2-out 2-run double off Chapman)' },
+  { code: 'L-05', category: 'leverage', tier: 'II. Leverage', title: 'Inning-Ending Bases Loaded Jam Escape', telemetry: 'Bases Full | 3 Outs secured without ER | LI ≥ 2.2', points: '+3.0', precedent: 'E. Diaz (Back-to-back Ks with sacks full, 8th)' },
+  { code: 'L-09', category: 'leverage', tier: 'II. Leverage', title: 'Late-Inning Tie-Breaking Hit', telemetry: 'Inning ≥ 8 | Score Differential == 0 | RBI > 0', points: '+3.5', precedent: 'B. Witt Jr. (8th inn tie-breaking RBI triple)' },
+  { code: 'B-01', category: 'basic', tier: 'I. Basic', title: 'Home Run (Standard)', telemetry: 'Over fence or inside-the-park fair ball outcome', points: '+4.0', precedent: 'A. Judge (442-ft shot, 113.8 mph EV)' },
+  { code: 'B-02', category: 'basic', tier: 'I. Basic', title: 'Triple (3B)', telemetry: 'Advance to 3B cleanly on batted ball', points: '+3.0', precedent: 'C. Carroll (Tripled down right field corner)' },
+  { code: 'B-03', category: 'basic', tier: 'I. Basic', title: 'Double (2B)', telemetry: 'Advance to 2B cleanly on batted ball', points: '+2.0', precedent: 'M. Betts (Gap line drive double into LF)' },
+  { code: 'B-07', category: 'basic', tier: 'I. Basic', title: 'Pitcher Strikeout Recorded', telemetry: 'Looking or swinging strike three', points: '+1.0', precedent: 'P. Skenes (101 mph fastball whiff)' },
+  { code: 'B-10', category: 'basic', tier: 'I. Basic', title: 'Batter Strikeout Incurred', telemetry: 'Third strike recorded against batter', points: '-0.5', precedent: 'Standard batter punchout deduction' },
+  { code: 'D-01', category: 'blunder', tier: 'IV. Deductions', title: 'Blown Save (BS)', telemetry: 'Relief appearance with save lead surrendered', points: '-4.0', precedent: 'Surrendered lead with ≤3 outs to victory' },
+  { code: 'D-03', category: 'blunder', tier: 'IV. Deductions', title: 'Fielding / Throwing Error', telemetry: 'Official Scorer ‘E’ | Sub-0.05 play execution', points: '-2.0', precedent: 'Throw sails into dugout allowing runner advance' },
+  { code: 'D-06', category: 'blunder', tier: 'IV. Deductions', title: 'Leadoff Relief Walk', telemetry: 'First batter faced by RP issued free pass (BB)', points: '-1.0', precedent: 'Bullpen arm enters and issues 4-pitch walk' },
+  { code: 'D-08', category: 'blunder', tier: 'IV. Deductions', title: 'Bases Loaded Wild Pitch / Balk', telemetry: 'Run scores without contact on pitcher error', points: '-3.0', precedent: '55-ft spike skipping past catcher for free run' },
+  { code: 'V-01', category: 'momentum', tier: 'V. Carry-Over', title: 'Dramatic Walk-Off Residual Bank', telemetry: 'Walk-off scorer/hitter banks +2.0 to Game T+1', points: '+2.0 (Next Gm)', precedent: 'Applied automatically at 1st pitch of next fixture' },
+  { code: 'V-02', category: 'momentum', tier: 'V. Carry-Over', title: 'Complete Game Shutout (CGSO) Bank', telemetry: '9.0 IP | 0 ER | Applied to next scheduled start', points: '+3.0 (Next Start)', precedent: 'C. Ragans CGSO carrying surplus into road start' },
+  { code: 'V-05', category: 'momentum', tier: 'V. Carry-Over', title: 'Golden Sombrero Psychological Drag', telemetry: '4+ Strikeouts in single contest | Carry negative', points: '-1.0 (Next Gm)', precedent: "Penalty debit applied to batter's next game slate" },
+];
+
+const presets = [
+  ['walkoff', 'Preset: Walk-Off HR'],
+  ['basesloaded_k', 'Preset: High-Leverage Strikeout'],
+  ['blunder', 'Preset: Blown Save Collapse'],
+];
+---
+
+<Layout title="Points Rubric">
+  <main class="rubric-page">
+    <section class="command-banner">
+      <div class="command-inner">
+        <div class="banner-copy">
+          <div class="banner-meta">
+            <span class="official-tag">Official Formulation</span>
+            <span class="revision-tag">Rulebook v2.1 • Revision Build 2025.04</span>
+            <span class="verified-tag"><span class="material-symbols-outlined">verified</span>Validated with Hawk-Eye Optical Telemetry</span>
+          </div>
+          <h1>Statcast Point Formulation Rubric</h1>
+          <p>The 5-tier DiamondMetrics protocol reconciles legacy baseball counting metrics with high-frequency optical tracking. By weighting outcome values against real-time <b>Leverage Index (LI)</b>, probability thresholds (<b>Catch Prob &lt; 25%</b>), sub-second execution speed, and game-to-game psychological drag, the rubric quantifies sheer competitive impact in a unified valuation ledger.</p>
+        </div>
+        <div class="finder">
+          <label class="search-box">
+            <span class="material-symbols-outlined">filter_list</span>
+            <input id="ruleSearchInput" type="search" placeholder="Search triggers (e.g., 'Immaculate', 'Exit Velo', 'LI >= 2.0')..." />
+          </label>
+          <button class="reset-button" id="resetRubric" type="button"><span class="material-symbols-outlined">restart_alt</span>Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars-section">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><span class="eyebrow">Architecture Tiers</span><h2>The Five Core Valuation Pillars</h2></div>
+          <div class="legend">
+            <span><i class="legend-dot deduction"></i>Negative Deduction</span>
+            <span><i class="legend-dot base"></i>Base / Situational</span>
+            <span><i class="legend-dot exceptional"></i>Exceptional</span>
+          </div>
+        </div>
+        <div class="pillar-grid">
+          {pillars.map((pillar) => (
+            <article class:list={['pillar-card', pillar.tone]}>
+              <div class="pillar-main">
+                <div class="pillar-overline">
+                  <span>Pillar {pillar.numeral}</span>
+                  <span class="material-symbols-outlined">{pillar.icon}</span>
+                </div>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.description}</p>
+                <div class="pillar-metrics">
+                  {pillar.metrics.map(([label, value]) => <div><span>{label}</span><b>{value}</b></div>)}
+                </div>
+              </div>
+              <div class="pillar-footer"><span>{pillar.footer}</span><b>{pillar.frequency}</b></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="sandbox-section" id="sandbox">
+      <div class="section-wrap sandbox-wrap">
+        <div class="sandbox-heading">
+          <div><span class="eyebrow red-eyebrow">Live Telemetry Compiler</span><h2>Point Calculation Sandbox / Tester</h2></div>
+          <div class="presets">
+            {presets.map(([value, label]) => <button type="button" data-preset={value}>{label}</button>)}
+          </div>
+        </div>
+
+        <div class="sandbox-grid">
+          <section class="sandbox-controls">
+            <div class="controls-heading">
+              <span><span class="material-symbols-outlined">tune</span>Select Context Variables</span>
+              <small>Real-Time WPA &amp; LI Linkage</small>
+            </div>
+            <div class="variable-grid">
+              <label>Inning
+                <select id="sbInning">
+                  <option value="1">1st Inning</option><option value="3">3rd Inning</option><option value="6">6th Inning</option>
+                  <option value="7">7th Inning</option><option value="8">8th Inning</option><option value="9" selected>9th Inning (High Stakes)</option><option value="10">Extra Innings (10th+)</option>
+                </select>
+              </label>
+              <label>Outs
+                <select id="sbOuts"><option value="0">0 Outs</option><option value="1">1 Out</option><option value="2" selected>2 Outs (Max Pressure)</option></select>
+              </label>
+              <label>Runners On
+                <select id="sbRunners"><option value="empty">Bases Empty</option><option value="1st">Runner on 1st</option><option value="risp" selected>Scoring Pos (2nd / 3rd)</option><option value="loaded">Bases Loaded</option></select>
+              </label>
+              <label>Score Differential
+                <select id="sbDiff">
+                  <option value="up3">Leading by 3+</option><option value="up1">Leading by 1 (Save Situation)</option><option value="tie">Tied Game</option>
+                  <option value="down1" selected>Trailing by 1</option><option value="down3">Trailing by 3</option><option value="down5">Trailing by 5+ (Garbage Time)</option>
+                </select>
+              </label>
+              <label class="play-select">Event / Play Trigger
+                <select id="sbPlay">
+                  <option value="walkoff_hr" selected>Walk-Off 2-Run Home Run</option><option value="solo_hr">Solo Home Run (Regulation)</option>
+                  <option value="double_risp">2-RBI Double (Go-Ahead)</option><option value="single">Clean Single</option><option value="walk">Base on Balls (BB)</option>
+                  <option value="strikeout_batter">Swinging Strikeout (Batter)</option><option value="strikeout_pitcher">Inning-Ending Strikeout (Pitcher)</option>
+                  <option value="immaculate">Immaculate Inning Complete (9 pitches)</option><option value="fivestar_catch">5-Star Diving Catch (&lt;20% Prob)</option>
+                  <option value="blown_save">Blown Save (BS)</option><option value="defensive_error">Costly Throwing Error</option>
+                </select>
+              </label>
+            </div>
+            <div class="telemetry-strip">
+              <div class="telemetry-values">
+                <div><span>Estimated Leverage (LI)</span><b id="sbBadgeLI">3.84 (EXTREME)</b></div>
+                <div><span>Win Prob Delta (ΔWP)</span><b id="sbBadgeWPA">+64.2%</b></div>
+              </div>
+              <div class="telemetry-tags"><span>Optical Tracking Verified</span><span>Rule V Active</span></div>
+            </div>
+          </section>
+
+          <section class="derivation">
+            <div>
+              <div class="derivation-heading"><span>Compiled Derivation</span><small>Formula Expansion</small></div>
+              <div class="total-value">
+                <div><span>Total Value Assigned</span><b id="sbTotalPoints">+15.0</b></div>
+                <div class="percentile"><b id="sbPercentile">99th Percentile</b><span>DiamondPoints (DP)</span></div>
+              </div>
+              <div class="breakdown">
+                <div><span><i class="dot base"></i>I. Base Weight (Event Matrix)</span><b id="sbBaseVal">+4.0 PTS</b></div>
+                <div><span><i class="dot base"></i>II. Situational Leverage Multiplier</span><b id="sbSitVal">+4.0 PTS</b></div>
+                <div><span><i class="dot exceptional"></i>III. Miracle / Outlier Premium</span><b id="sbMiracleVal">+5.0 PTS</b></div>
+                <div><span><i class="dot deduction"></i>IV. Deductions / Penalty Charge</span><b class="negative" id="sbDeductVal">0.0 PTS</b></div>
+                <div><span><i class="dot base"></i>V. Rule V Momentum Carry-Over</span><b class="positive" id="sbCarryVal">+2.0 PTS</b></div>
+              </div>
+            </div>
+            <div class="formula"><span>Mathematical Representation:</span><b id="sbFormulaString">DP = (HR: 4.0) + (LI_3.84: +4.0) + (WalkOff_Miracle: +5.0) - (0.0) + (NextGame_Bank: +2.0) = +15.0</b></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="matrix-section">
+      <div class="section-wrap matrix-wrap">
+        <div class="matrix-heading">
+          <div><span class="eyebrow">Full Ledger Specification</span><h2>Complete Algorithmic Rulebook Matrix</h2><p>Filter every discrete trigger condition, optical parameter requirement, and historical precedent.</p></div>
+          <div class="filter-pills" id="filterPillGroup">
+            <button class="active" data-category="all" type="button">All Tiers (24)</button>
+            <button data-category="basic" type="button">I. Production</button>
+            <button data-category="leverage" type="button">II. Leverage</button>
+            <button data-category="miracle" type="button">III. Miracles</button>
+            <button data-category="blunder" type="button">IV. Deductions</button>
+            <button data-category="momentum" type="button">V. Carry-Over</button>
+          </div>
+        </div>
+        <div class="matrix-scroll">
+          <table class="rubric-table" id="rubricTable">
+            <thead><tr><th>Code</th><th>Tier Category</th><th>Trigger / Event Designation</th><th>Statcast Telemetry Requirements</th><th>Points (DP)</th><th>Historical Play Precedent</th></tr></thead>
+            <tbody id="tableBody">
+              {rules.map((rule) => (
+                <tr data-cat={rule.category}>
+                  <td class="code">{rule.code}</td>
+                  <td><span class:list={['tier-tag', rule.category]}>{rule.tier}</span></td>
+                  <td class="trigger">{rule.title}</td><td class="telemetry">{rule.telemetry}</td>
+                  <td class:list={['points', rule.category, { negative: rule.points.startsWith('-') }]}>{rule.points}</td><td>{rule.precedent}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="matrix-footer">
+          <span>Displaying 19 indexed triggers across MLB Statcast Tracking API Feed (Production + Calibration)</span>
+          <span><span class="material-symbols-outlined">history</span>Last Synchronized: 2025-04-18 19:42:01 UTC</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer slot="footer" class="rubric-footer">
+    <div class="footer-inner">
+      <div class="footer-meta">
+        <span class="standard"><i></i>Statcast / Baseball Savant Analytical Standard</span>
+        <span class="footer-separator">|</span><span>Engine v4.8.2-r1</span>
+        <span class="footer-separator">|</span><span>Telemetry Sync Latency: <b>14ms</b></span>
+      </div>
+      <nav aria-label="Rubric resources">
+        <a href={`${apiBase}/docs`}>API Spec</a>
+        <a href="#rubricTable">Metric Dictionary</a>
+        <a href="#sandbox">Optic Calibrations</a>
+        <a href={`${apiBase}/health`}>System Status</a>
+      </nav>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  const searchInput = document.getElementById('ruleSearchInput') as HTMLInputElement | null;
+  const filterButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('#filterPillGroup button'));
+  let activeCategory = 'all';
+
+  function applyFilters() {
+    const query = searchInput?.value.trim().toLocaleLowerCase() ?? '';
+    document.querySelectorAll<HTMLTableRowElement>('#tableBody tr').forEach((row) => {
+      const categoryMatches = activeCategory === 'all' || row.dataset.cat === activeCategory;
+      const textMatches = !query || row.textContent?.toLocaleLowerCase().includes(query);
+      row.hidden = !(categoryMatches && textMatches);
+    });
+  }
+
+  filterButtons.forEach((button) => button.addEventListener('click', () => {
+    activeCategory = button.dataset.category ?? 'all';
+    filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+    applyFilters();
+  }));
+  searchInput?.addEventListener('input', applyFilters);
+
+  const controls = {
+    inning: document.getElementById('sbInning') as HTMLSelectElement,
+    outs: document.getElementById('sbOuts') as HTMLSelectElement,
+    runners: document.getElementById('sbRunners') as HTMLSelectElement,
+    diff: document.getElementById('sbDiff') as HTMLSelectElement,
+    play: document.getElementById('sbPlay') as HTMLSelectElement,
+  };
+
+  function recalculateSandbox() {
+    const { inning, outs, runners, diff, play } = controls;
+    let base = 0;
+    let situational = 0;
+    let miracle = 0;
+    let deduction = 0;
+    let carry = 0;
+    let wpa = '+4.2%';
+
+    switch (play.value) {
+      case 'walkoff_hr': base = 4; miracle = 5; carry = 2; wpa = '+64.8%'; break;
+      case 'solo_hr': base = 4; break;
+      case 'double_risp': base = 2; wpa = '+28.1%'; break;
+      case 'single': base = 1; break;
+      case 'walk': base = 1; break;
+      case 'strikeout_batter': deduction = -0.5; break;
+      case 'strikeout_pitcher': base = 1; wpa = '+18.4%'; break;
+      case 'immaculate': base = 3; miracle = 5; break;
+      case 'fivestar_catch': miracle = 3; break;
+      case 'blown_save': deduction = -4; wpa = '-48.2%'; break;
+      case 'defensive_error': deduction = -2; break;
+    }
+
+    let leverage = 1;
+    if (Number(inning.value) >= 7) leverage += 0.8;
+    if (runners.value === 'risp') leverage += 1.1;
+    else if (runners.value === 'loaded') leverage += 1.8;
+    if (['down1', 'tie', 'up1'].includes(diff.value)) leverage += 1.2;
+    else if (diff.value === 'down5') leverage = 0.25;
+
+    if (leverage >= 1.5 && ['walkoff_hr', 'double_risp', 'strikeout_pitcher'].includes(play.value)) {
+      situational = Number(Math.min(leverage, 4).toFixed(1));
+    }
+    if (play.value === 'walkoff_hr') wpa = '+64.2%';
+    const total = base + situational + miracle + deduction + carry;
+    const signed = (value: number) => `${value > 0 ? '+' : ''}${value.toFixed(1)}`;
+    document.getElementById('sbBaseVal')!.textContent = `${signed(base)} PTS`;
+    document.getElementById('sbSitVal')!.textContent = `${signed(situational)} PTS`;
+    document.getElementById('sbMiracleVal')!.textContent = `${signed(miracle)} PTS`;
+    document.getElementById('sbDeductVal')!.textContent = `${deduction.toFixed(1)} PTS`;
+    document.getElementById('sbCarryVal')!.textContent = `${signed(carry)} PTS`;
+    document.getElementById('sbTotalPoints')!.textContent = signed(total);
+    document.getElementById('sbBadgeLI')!.textContent = `${leverage.toFixed(2)} (${leverage >= 2.5 ? 'EXTREME' : leverage >= 1.5 ? 'HIGH' : 'NORMAL'})`;
+    document.getElementById('sbBadgeWPA')!.textContent = wpa;
+    document.getElementById('sbFormulaString')!.textContent =
+      `DP = Base(${base.toFixed(1)}) + SitLI(${situational.toFixed(1)}) + Miracle(${miracle.toFixed(1)}) + Deduct(${deduction.toFixed(1)}) + RuleV(${carry.toFixed(1)}) = ${signed(total)} PTS`;
+    document.getElementById('sbPercentile')!.textContent = `${Math.min(99, Math.max(1, Math.round(total * 6 + 50)))}th Percentile`;
+  }
+
+  Object.values(controls).forEach((control) => control.addEventListener('change', recalculateSandbox));
+  document.querySelectorAll<HTMLButtonElement>('[data-preset]').forEach((button) => button.addEventListener('click', () => {
+    const preset = button.dataset.preset;
+    if (preset === 'walkoff') {
+      controls.inning.value = '9'; controls.outs.value = '2'; controls.runners.value = 'risp'; controls.diff.value = 'down1'; controls.play.value = 'walkoff_hr';
+    } else if (preset === 'basesloaded_k') {
+      controls.inning.value = '8'; controls.outs.value = '2'; controls.runners.value = 'loaded'; controls.diff.value = 'up1'; controls.play.value = 'strikeout_pitcher';
+    } else {
+      controls.inning.value = '9'; controls.outs.value = '1'; controls.runners.value = 'loaded'; controls.diff.value = 'up1'; controls.play.value = 'blown_save';
+    }
+    recalculateSandbox();
+  }));
+
+  document.getElementById('resetRubric')?.addEventListener('click', () => {
+    if (searchInput) searchInput.value = '';
+    activeCategory = 'all';
+    filterButtons.forEach((button) => button.classList.toggle('active', button.dataset.category === 'all'));
+    controls.inning.value = '9'; controls.outs.value = '2'; controls.runners.value = 'risp'; controls.diff.value = 'down1'; controls.play.value = 'walkoff_hr';
+    applyFilters();
+    recalculateSandbox();
+  });
+
+  recalculateSandbox();
+</script>
+
+<style>
+  .rubric-page {
+    --page-bg: #071327;
+    --card-bg: #142034;
+    --low-bg: #101b30;
+    --mid-bg: #1f2a3f;
+    --high-bg: #2a354b;
+    --text-main: #d7e2ff;
+    --text-muted: #c4c6cc;
+    --text-outline: #8e9196;
+    --border-color: #44474c;
+    --primary-text: #bac8dc;
+    --negative: #ffb3b1;
+    --teal: #98cdf2;
+    --exceptional: #d6e4f9;
+    --positive-container: #ad0224;
+    --positive-on-container: #ffb8b5;
+    min-height: calc(100vh - 48px);
+    background: var(--page-bg);
+    color: var(--text-main);
+    font-family: Geist, Inter, sans-serif;
+    font-size: 14px;
+  }
+  :global(html[data-theme='light']) .rubric-page {
+    --page-bg: #f4f6f9;
+    --card-bg: #fff;
+    --low-bg: #f8fafc;
+    --mid-bg: #eef2f7;
+    --high-bg: #e2e8f0;
+    --text-main: #1a2530;
+    --text-muted: #475569;
+    --text-outline: #64748b;
+    --border-color: #cbd5e1;
+    --primary-text: #334155;
+    --negative: #d22d2d;
+    --teal: #1976d2;
+    --exceptional: #7c3aed;
+    --positive-container: #d22d2d;
+    --positive-on-container: #fff;
+  }
+  .rubric-page * { box-sizing: border-box; }
+  .command-banner { padding: 1.5rem 2rem; background: var(--low-bg); }
+  .command-inner, .section-wrap { width: min(100%, 1720px); margin: 0 auto; }
+  .command-inner { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; }
+  .banner-copy { max-width: 920px; }
+  .banner-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem; margin-bottom: .65rem; color: var(--text-outline); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+  .official-tag { padding: 3px 6px; border-radius: 3px; background: var(--positive-container); color: var(--positive-on-container); font-weight: 700; }
+  .revision-tag { color: var(--text-muted); font-weight: 600; }
+  .verified-tag { display: inline-flex; align-items: center; gap: 4px; color: var(--text-muted); text-transform: none; letter-spacing: 0; }
+  .verified-tag .material-symbols-outlined { color: var(--teal); font-size: 14px; }
+  .banner-copy h1, .section-heading h2, .sandbox-heading h2, .matrix-heading h2 { margin: 0; font-family: 'Space Grotesk',sans-serif; font-weight: 600; letter-spacing: -.025em; }
+  .banner-copy h1 { font-size: clamp(28px,3.4vw,42px); line-height: 1.15; text-transform: uppercase; }
+  .banner-copy p { max-width: 920px; margin: .65rem 0 0; color: var(--text-muted); font-size: 13px; line-height: 1.65; }
+  .banner-copy p b { color: var(--text-main); }
+  .finder { display: flex; align-items: center; gap: .5rem; flex: 0 0 auto; }
+  .search-box { min-width: 300px; height: 40px; position: relative; display: flex; align-items: center; }
+  .search-box .material-symbols-outlined { position: absolute; left: 10px; color: var(--text-outline); font-size: 18px; pointer-events: none; }
+  .search-box input { width: 100%; height: 100%; padding: 0 12px 0 36px; border: 0; border-radius: 4px; outline: 0; background: var(--card-bg); color: var(--text-main); font: 12px Geist, sans-serif; }
+  .search-box input::placeholder { color: var(--text-outline); }
+  .search-box input:focus { box-shadow: 0 0 0 1px var(--teal); }
+  .reset-button, .presets button {
+    height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    border: 0; border-radius: 4px; padding: 0 .9rem; background: var(--high-bg); color: var(--text-main);
+    font: 500 12px Geist,sans-serif; white-space: nowrap; cursor: pointer;
+  }
+  .reset-button:hover, .presets button:hover { filter: brightness(1.12); }
+  .reset-button .material-symbols-outlined { font-size: 16px; }
+  .pillars-section, .matrix-section { padding: 2.25rem 2rem; }
+  .section-heading, .matrix-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; margin-bottom: 1rem; }
+  .eyebrow { display: block; margin-bottom: 3px; color: var(--teal); font: 600 10px 'Space Grotesk',sans-serif; letter-spacing: .09em; text-transform: uppercase; }
+  .section-heading h2, .sandbox-heading h2, .matrix-heading h2 { font-size: 22px; line-height: 1.3; }
+  .legend { display: flex; flex-wrap: wrap; gap: .85rem; color: var(--text-muted); font-size: 11px; }
+  .legend span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .legend-dot.deduction, .dot.deduction { background: var(--negative); }
+  .legend-dot.base, .dot.base { background: var(--teal); }
+  .legend-dot.exceptional, .dot.exceptional { background: var(--exceptional); }
+  .pillar-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 1rem; }
+  .pillar-card { min-width: 0; padding: 1rem; display: flex; flex-direction: column; justify-content: space-between; border-radius: 4px; background: var(--card-bg); transition: background .15s ease; }
+  .pillar-card:hover { background: var(--high-bg); }
+  .pillar-main { display: flex; flex-direction: column; gap: .4rem; }
+  .pillar-overline { display: flex; justify-content: space-between; align-items: center; padding-bottom: .2rem; color: var(--teal); font: 600 10px 'Space Grotesk',sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+  .pillar-overline .material-symbols-outlined { color: var(--text-outline); font-size: 20px; }
+  .pillar-card:hover .pillar-overline .material-symbols-outlined { color: var(--teal); }
+  .pillar-card.exceptional .pillar-overline { color: var(--exceptional); }
+  .pillar-card.exceptional:hover .pillar-overline .material-symbols-outlined { color: var(--exceptional); }
+  .pillar-card.deduction .pillar-overline { color: var(--negative); }
+  .pillar-card.deduction:hover .pillar-overline .material-symbols-outlined { color: var(--negative); }
+  .pillar-card h3 { margin: 0; font: 500 17px/1.3 'Space Grotesk',sans-serif; }
+  .pillar-card p { min-height: 62px; margin: 0; color: var(--text-muted); font-size: 11px; line-height: 1.5; }
+  .pillar-metrics { display: flex; flex-direction: column; gap: 5px; margin-top: .45rem; }
+  .pillar-metrics div { min-height: 28px; padding: 5px 7px; border-radius: 3px; background: var(--low-bg); display: flex; justify-content: space-between; align-items: center; gap: .25rem; font-size: 10px; }
+  .pillar-metrics span { color: var(--text-muted); }
+  .pillar-metrics b { color: var(--text-main); white-space: nowrap; }
+  .pillar-card.exceptional .pillar-metrics b { color: var(--exceptional); }
+  .pillar-card.deduction .pillar-metrics b { color: var(--negative); }
+  .pillar-card:nth-child(2) .pillar-metrics b, .pillar-card:nth-child(5) .pillar-metrics b { color: var(--teal); }
+  .pillar-card:nth-child(5) .pillar-metrics div:last-child b { color: var(--negative); }
+  .pillar-footer { display: flex; justify-content: space-between; gap: .35rem; margin-top: 1rem; padding-top: .4rem; color: var(--text-outline); font-size: 10px; }
+  .pillar-footer b { color: var(--teal); font-weight: 500; white-space: nowrap; }
+  .pillar-card.exceptional .pillar-footer b { color: var(--exceptional); }
+  .pillar-card.deduction .pillar-footer b { color: var(--negative); }
+  .sandbox-section { padding: 2.5rem 2rem; background: var(--card-bg); }
+  .sandbox-wrap { display: flex; flex-direction: column; gap: 1.25rem; }
+  .sandbox-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .red-eyebrow { color: var(--negative); }
+  .presets { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .presets button { height: 32px; padding: 0 .65rem; background: var(--low-bg); font-size: 10px; }
+  .sandbox-grid { display: grid; grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: 1.25rem; }
+  .sandbox-controls, .derivation { min-width: 0; padding: 1.25rem; border-radius: 4px; background: var(--card-bg); }
+  .controls-heading { display: flex; justify-content: space-between; align-items: center; gap: .5rem; margin-bottom: .8rem; }
+  .controls-heading > span { display: inline-flex; align-items: center; gap: .5rem; font: 500 12px 'Space Grotesk',sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+  .controls-heading .material-symbols-outlined { color: var(--teal); font-size: 18px; }
+  .controls-heading small { color: var(--text-muted); font-size: 10px; }
+  .variable-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .8rem; }
+  .variable-grid label { display: flex; flex-direction: column; gap: 5px; color: var(--text-muted); font: 600 10px 'Space Grotesk',sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+  .variable-grid select { min-width: 0; width: 100%; height: 36px; padding: 0 8px; border: 0; border-radius: 3px; background: var(--low-bg); color: var(--text-main); font: 11px Geist, sans-serif; letter-spacing: 0; text-transform: none; }
+  .play-select { grid-column: span 2; }
+  .telemetry-strip { display: flex; justify-content: space-between; align-items: center; gap: .75rem; flex-wrap: wrap; margin-top: .9rem; padding: .8rem; border-radius: 4px; background: var(--low-bg); }
+  .telemetry-values, .telemetry-tags { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .telemetry-values div { display: grid; gap: 3px; }
+  .telemetry-values span { color: var(--text-outline); font: 600 9px 'Space Grotesk',sans-serif; }
+  .telemetry-values b { color: var(--teal); font: 600 17px 'Geist',sans-serif; }
+  .telemetry-values div:last-child b { color: var(--text-main); }
+  .telemetry-tags span { padding: 4px 6px; border-radius: 3px; background: var(--high-bg); color: var(--text-main); font: 600 9px 'Space Grotesk',sans-serif; }
+  .telemetry-tags span:last-child { background: var(--positive-container); color: var(--positive-on-container); }
+  .derivation { display: flex; flex-direction: column; justify-content: space-between; }
+  .derivation-heading { display: flex; justify-content: space-between; align-items: center; padding-bottom: .6rem; }
+  .derivation-heading > span { color: var(--teal); font: 600 11px 'Space Grotesk',sans-serif; letter-spacing: .07em; text-transform: uppercase; }
+  .derivation-heading small { color: var(--text-outline); font: 600 9px 'Space Grotesk',sans-serif; text-transform: uppercase; }
+  .total-value { display: flex; justify-content: space-between; align-items: center; gap: .8rem; padding: .85rem; border-radius: 4px; background: var(--low-bg); }
+  .total-value > div:first-child { display: grid; gap: 4px; }
+  .total-value > div:first-child span, .percentile span { color: var(--text-outline); font: 600 9px 'Space Grotesk',sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+  .total-value > div:first-child b { color: var(--primary-text); font: 700 40px/1 'Space Grotesk',sans-serif; letter-spacing: -.04em; }
+  .percentile { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
+  .percentile b { padding: 4px 8px; border-radius: 99px; background: var(--positive-container); color: var(--positive-on-container); font: 700 10px 'Space Grotesk',sans-serif; }
+  .percentile span { letter-spacing: 0; text-transform: none; }
+  .breakdown { display: flex; flex-direction: column; gap: 6px; margin-top: .8rem; }
+  .breakdown > div { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding: 8px; border-radius: 3px; background: var(--high-bg); font-size: 11px; }
+  .breakdown > div > span { display: inline-flex; align-items: center; gap: 7px; }
+  .breakdown > div > b { font-family: monospace; white-space: nowrap; }
+  .dot { width: 8px; height: 8px; display: inline-block; flex: 0 0 auto; border-radius: 50%; }
+  .breakdown .negative { color: var(--negative); }
+  .breakdown .positive { color: var(--teal); }
+  .formula { margin-top: .85rem; padding: .7rem; border-radius: 3px; background: var(--low-bg); font: 11px/1.5 monospace; overflow-wrap: anywhere; }
+  .formula span { display: block; margin-bottom: 4px; color: var(--text-outline); font: 600 9px 'Space Grotesk',sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+  .formula b { color: var(--teal); font-weight: 500; }
+  .matrix-heading { align-items: flex-end; }
+  .matrix-heading p { margin: .25rem 0 0; color: var(--text-muted); font-size: 11px; }
+  .filter-pills { max-width: 760px; display: flex; gap: 5px; overflow-x: auto; padding-bottom: 3px; }
+  .filter-pills button { flex: 0 0 auto; min-height: 28px; padding: 0 .65rem; border: 0; border-radius: 3px; background: var(--high-bg); color: var(--text-muted); font: 600 10px 'Space Grotesk',sans-serif; cursor: pointer; }
+  .filter-pills button:hover { color: var(--text-main); }
+  .filter-pills button.active { background: var(--positive-container); color: var(--positive-on-container); }
+  .matrix-scroll { width: 100%; overflow-x: auto; border-radius: 4px; background: var(--card-bg); }
+  .rubric-table { width: 100%; min-width: 1100px; border-collapse: collapse; text-align: left; }
+  .rubric-table th { padding: 11px 12px; background: var(--high-bg); color: var(--text-muted); font: 600 10px Geist,sans-serif; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+  .rubric-table td { padding: 10px 12px; border-bottom: 1px solid var(--border-color); color: var(--text-muted); font-size: 11px; line-height: 1.45; }
+  .rubric-table tr:hover td { background: var(--high-bg); }
+  .rubric-table tr[hidden] { display: none; }
+  .rubric-table .code, .rubric-table .telemetry, .rubric-table .points { font-family: monospace; }
+  .rubric-table .code { color: var(--teal); }
+  .rubric-table .trigger { color: var(--text-main); font-weight: 500; }
+  .rubric-table .points { text-align: right; font-weight: 700; white-space: nowrap; }
+  .tier-tag { display: inline-block; padding: 2px 6px; border-radius: 3px; background: var(--low-bg); font-size: 10px; font-weight: 600; white-space: nowrap; }
+  .tier-tag.basic { color: var(--text-muted); }
+  .tier-tag.leverage, .tier-tag.momentum, .points.leverage, .points.momentum { color: var(--teal); }
+  .tier-tag.miracle, .points.miracle { color: var(--exceptional); }
+  .tier-tag.blunder, .points.blunder { color: var(--negative); }
+  .points.basic { color: var(--text-main); }
+  .points.negative { color: var(--negative); }
+  .matrix-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-top: .3rem; color: var(--text-outline); font-size: 10px; }
+  .matrix-footer > span:last-child { display: inline-flex; align-items: center; gap: 4px; font: 10px monospace; white-space: nowrap; }
+  .matrix-footer .material-symbols-outlined { font-size: 14px; }
+  .rubric-footer { padding: 1rem 2rem; background: var(--card-bg); box-shadow: 0 -1px 8px rgba(0,0,0,.25); }
+  .footer-inner { width: min(100%,1720px); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .footer-meta, .rubric-footer nav { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem; color: var(--text-muted); font-size: 10px; }
+  .footer-meta .standard { display: inline-flex; align-items: center; gap: 6px; font: 600 9px 'Space Grotesk',sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+  .footer-meta i { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); }
+  .footer-separator { color: var(--text-outline); }
+  .footer-meta b { color: var(--teal); font-weight: 600; }
+  .rubric-footer nav { gap: 1rem; font-size: 11px; }
+  .rubric-footer nav a:hover { color: var(--text-main); }
+  @media (min-width: 1720px) { .command-inner, .section-wrap { width: min(100%,1720px); } }
+  @media (max-width: 1350px) {
+    .command-inner { align-items: flex-start; flex-direction: column; }
+    .finder { width: 100%; }
+    .search-box { flex: 1; }
+    .pillar-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+    .matrix-heading { align-items: flex-start; flex-direction: column; }
+    .filter-pills { max-width: 100%; }
+  }
+  @media (max-width: 900px) {
+    .command-banner, .pillars-section, .matrix-section, .sandbox-section { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .pillar-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .sandbox-grid { grid-template-columns: 1fr; }
+    .section-heading { align-items: flex-start; flex-direction: column; }
+  }
+  @media (max-width: 600px) {
+    .command-banner, .pillars-section, .matrix-section, .sandbox-section { padding: 1rem .75rem; }
+    .banner-copy h1 { font-size: 27px; }
+    .banner-meta { gap: .35rem; }
+    .finder { align-items: stretch; flex-direction: column; }
+    .search-box { min-width: 0; flex: none; width: 100%; }
+    .reset-button { width: 100%; }
+    .pillar-grid { grid-template-columns: 1fr; }
+    .pillar-card p { min-height: auto; }
+    .sandbox-heading { align-items: flex-start; flex-direction: column; }
+    .presets { width: 100%; }
+    .presets button { white-space: normal; }
+    .variable-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .play-select { grid-column: span 2; }
+    .controls-heading { align-items: flex-start; flex-direction: column; }
+    .telemetry-strip, .matrix-footer { align-items: flex-start; flex-direction: column; }
+    .matrix-footer > span:last-child { white-space: normal; }
+    .rubric-footer { padding: 1rem .75rem; }
+    .footer-inner { align-items: flex-start; flex-direction: column; }
+  }
+</style>

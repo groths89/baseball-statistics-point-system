@@ -1,0 +1,28 @@
+Game 823620 (2026-06-09): Mets vs Cardinals  0-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Bo Bichette               | SS       |      0.0 | 
+| Juan Soto                 | LF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jared Young               | 1B       |      0.0 | 
+| A.J. Ewing                | CF       |      3.0 | Hits (2): +1.0 | Advances On Passed Ball (1): +1.0 | 2 Out Hit (1): +1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Brett Baty                | 3B       |      0.0 | 
+| MJ Melendez               | DH       |      0.0 | 
+| Mark Vientos              | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Freddy Peralta            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Joey Gerber               | P        |      0.0 | 
+| Cionel Pérez              | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 8.5
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         9.5
+  Carry over into next game: 0.0

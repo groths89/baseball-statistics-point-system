@@ -1,0 +1,33 @@
+Game 777502 (2025-06-15): Mets vs Rays  0-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | DH       |      1.0 | Walks (1): +1.0
+| Luis Torrens              | PH       |      0.0 | 
+| Brandon Nimmo             | LF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Juan Soto                 | RF       |      4.0 | Walks (3): +3.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Brett Baty                | 3B       |      0.0 | 
+| Ronny Mauricio            | 3B       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | SS       |      2.0 | Hits (2): +1.0 | Walks (1): +1.0
+| Griffin Canning           | P        |     -1.0 | Wild Pitch (1): -1.0
+| Max Kranick               | P        |      1.0 | Pickoff (1): +1.0
+| Ty Adcock                 | P        |      0.0 | 
+| Ryne Stanek               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Jared Young               | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (9): -5.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 10.5
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         8.5
+  Carry over into next game: 0.0

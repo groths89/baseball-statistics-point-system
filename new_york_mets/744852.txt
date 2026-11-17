@@ -1,0 +1,29 @@
+Game 744852 (2024-06-05): Mets @ Nationals  9-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0
+| Pete Alonso               | 1B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (2): +2.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| J.D. Martinez             | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Tyrone Taylor             | RF       |      4.5 | Hits (1): +0.5 | Triples (1): +3.0 | Runs (1): +1.0
+| Harrison Bader            | CF       |      8.5 | Hits (1): +0.5 | Runs (1): +1.0 | Sac Fly Scores Run (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Jose Iglesias             | 2B       |      5.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Luis Torrens              | C        |     10.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Luis Severino             | P        |     10.0 | Starter 2 Runs or Less (min 5 IP) (8.0 IP, 1 R): +5.0 | Starter 7+ IP (8.0 IP): +5.0
+| Danny Young               | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (1): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+
+### Team Totals ###
+  Player points: 49.5
+  Team points:   14.0  (includes 0.0 carried over)
+  TOTAL:         63.5
+  Carry over into next game: 0.0

@@ -1,0 +1,28 @@
+Game 823575 (2026-09-14): Mets vs Orioles  1-2 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Walks (1): +1.0
+| Juan Soto                 | LF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Bo Bichette               | 3B       |      0.0 | 
+| Carson Benge              | RF       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Jared Young               | DH       |      1.0 | Walks (1): +1.0
+| Mark Vientos              | DH       |      0.0 | 
+| Marcus Semien             | 2B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| A.J. Ewing                | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Error (1): -1.0
+| Brett Baty                | 1B       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jonah Tong                | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jonathan Pintaro          | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Dedniel Núñez             | P        |      0.0 | 
+| Kodai Senga               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Deduction    Passed Ball (1): -1.0
+
+### Team Totals ###
+  Player points: 22.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         21.0
+  Carry over into next game: 0.0

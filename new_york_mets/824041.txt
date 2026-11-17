@@ -1,0 +1,29 @@
+Game 824041 (2026-05-01): Mets @ Angels  4-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | 3B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Juan Soto                 | LF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| MJ Melendez               | DH       |      0.0 | 
+| Austin Slater             | DH       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5 | Runs (1): +1.0 | Error (1): -1.0
+| Brett Baty                | 1B       |      4.0 | Walks (2): +2.0 | Advances Runner Into Scoring Position (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Marcus Semien             | 2B       |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Carson Benge              | RF       |      0.0 | 
+| Tyrone Taylor             | CF       |      1.0 | Walks (1): +1.0
+| Ronny Mauricio            | SS       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Christian Scott           | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Luke Weaver               | P        |      0.0 | 
+| Devin Williams            | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+
+### Team Totals ###
+  Player points: 24.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         29.5
+  Carry over into next game: 0.0

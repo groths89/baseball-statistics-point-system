@@ -1,0 +1,28 @@
+Game 778032 (2025-05-06): Mets @ D-backs  1-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Walks (1): +1.0
+| Juan Soto                 | RF       |      2.0 | Walks (2): +2.0
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| Starling Marte            | DH       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      0.0 | 
+| Mark Vientos              | 3B       |     -0.5 | Hits (1): +0.5 | Error (1): -1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Francisco Alvarez         | C        |      1.0 | Hits (2): +1.0
+| Tyrone Taylor             | CF       |      0.0 | Runs (1): +1.0 | Error (1): -1.0
+| David Peterson            | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| José Buttó                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Deduction    Passed Ball (1): -1.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 6.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         5.0
+  Carry over into next game: 0.0

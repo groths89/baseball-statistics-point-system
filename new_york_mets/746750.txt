@@ -1,0 +1,33 @@
+Game 746750 (2024-09-01): Mets @ White Sox  2-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jose Iglesias             | 2B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 3B       |      1.0 | Hits (2): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Tyrone Taylor             | LF       |      0.0 | 
+| Jesse Winker              | LF       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.0 | 
+| J.D. Martinez             | DH       |      3.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pablo Reyes               | DH       |      1.0 | Runs (1): +1.0
+| Starling Marte            | RF       |      4.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Luis Torrens              | C        |      1.5 | Hits (1): +0.5 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jeff McNeil               | RF       |      1.0 | Walks (1): +1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Sean Manaea               | P        |     12.0 | Starter 2 Runs or Less (min 5 IP) (7.0 IP, 0 R): +5.0 | Starter 7+ IP (7.0 IP): +5.0 | Pickoff (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (16): -7.0
+
+### Team Totals ###
+  Player points: 32.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         32.5
+  Carry over into next game: 0.0

@@ -1,0 +1,30 @@
+Game 777405 (2025-06-22): Mets @ Phillies  1-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Starling Marte            | DH       |      0.0 | 
+| Juan Soto                 | RF       |      1.0 | Walks (1): +1.0
+| Hayden Senger             | PH       |      0.0 | 
+| Pete Alonso               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Jared Young               | PH       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Tyrone Taylor             | CF       |      0.0 | 
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Luisangel Acuña           | 2B       |      0.0 | 
+| David Peterson            | P        |      3.0 | Pickoff (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Chris Devenski            | P        |      0.0 | 
+| Dedniel Núñez             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tyler Zuber               | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 13.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         14.0
+  Carry over into next game: 0.0

@@ -1,0 +1,32 @@
+Game 778173 (2025-04-26): Mets @ Nationals  2-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0
+| Juan Soto                 | RF       |      0.0 | 
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Jesse Winker              | DH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      9.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jeff McNeil               | CF       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | CF       |      0.0 | 
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Clay Holmes               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 0 R): +5.0
+| Danny Young               | P        |      0.0 | 
+| Reed Garrett              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| A.J. Minter               | P        |      0.0 | 
+| Max Kranick               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |      3.0 | Save (0 H, 1 BB): +3.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (5): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 26.0
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         32.0
+  Carry over into next game: 0.0

@@ -1,0 +1,28 @@
+Game 745800 (2024-07-12): Mets vs Rockies  7-6 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.5 | Hits (1): +0.5 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Jose Iglesias             | 3B       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0
+| Jeff McNeil               | 2B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Harrison Bader            | CF       |     10.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Sean Manaea               | P        |      5.0 | Starter 7+ IP (7.0 IP): +5.0
+| Jake Diekman              | P        |      0.0 | 
+| Phil Maton                | P        |      0.0 | 
+| Edwin Díaz                | P        |      4.0 | Save (0 H, 2 BB): +3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 43.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         43.0
+  Carry over into next game: 0.0

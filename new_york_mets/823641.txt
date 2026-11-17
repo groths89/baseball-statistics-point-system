@@ -1,0 +1,28 @@
+Game 823641 (2026-04-22): Mets vs Twins  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Juan Soto                 | DH       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Francisco Lindor          | SS       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | 3B       |      3.0 | Runs (1): +1.0 | Walks (2): +2.0
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 1B       |      6.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Marcus Semien             | 2B       |      2.5 | Hits (1): +0.5 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Tommy Pham                | LF       |      0.0 | 
+| Carson Benge              | LF       |      0.0 | 
+| Tyrone Taylor             | RF       |      0.5 | Hits (1): +0.5
+| Clay Holmes               | P        |     11.0 | Starter 2 Runs or Less (min 5 IP) (7.0 IP, 2 R): +5.0 | Starter 7+ IP (7.0 IP): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      0.0 | 
+| Luke Weaver               | P        |      0.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+
+### Team Totals ###
+  Player points: 36.0
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         41.0
+  Carry over into next game: 0.0

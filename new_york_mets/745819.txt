@@ -1,0 +1,32 @@
+Game 745819 (2024-05-30): Mets vs D-backs  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      7.0 | Hits (4): +2.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Error (1): -1.0
+| DJ Stewart                | LF       |      1.0 | Walks (1): +1.0
+| Tomás Nido                | C        |      0.0 | 
+| Brandon Nimmo             | LF       |      0.0 | 
+| J.D. Martinez             | DH       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Starling Marte            | RF       |      3.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Brett Baty                | 3B       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Omar Narváez              | C        |      1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Christian Scott           | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Adrian Houser             | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Danny Young               | P        |      0.0 | 
+| Reed Garrett              | P        |      2.0 | Save (0 H, 1 BB): +3.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 30.5
+  Team points:   9.0  (includes 0.0 carried over)
+  TOTAL:         39.5
+  Carry over into next game: 0.0

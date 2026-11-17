@@ -1,0 +1,30 @@
+Game 823607 (2026-07-07): Mets vs Royals  12-16 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | CF       |     16.0 | Hits (4): +2.0 | Runs (4): +4.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Stolen Base (1): +1.0
+| Juan Soto                 | LF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0
+| Bo Bichette               | 3B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Francisco Lindor          | SS       |      1.0 | Walks (1): +1.0
+| Carson Benge              | RF       |     18.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | Hit Scores Run To Take The Lead (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jorge Polanco             | DH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Jared Young               | 1B       |      1.0 | Hits (2): +1.0
+| Brett Baty                | 2B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Luis Torrens              | C        |      4.5 | Hits (1): +0.5 | Runs (2): +2.0 | Advances Runner Into Scoring Position (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Cionel Pérez              | P        |      0.0 | Starter Under 4 IP (1.0 IP): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Kodai Senga               | P        |      0.0 | 
+| Austin Warren             | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | Blown Save (BS, 3): -2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Matt Seelinger            | P        |      0.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| A.J. Minter               | P        |      0.0 | 
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Pitchers Walk 5+ Batters (11): -7.0
+
+### Team Totals ###
+  Player points: 52.5
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         47.5
+  Carry over into next game: 0.0

@@ -1,0 +1,29 @@
+Game 776947 (2025-07-29): Mets @ Padres  1-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      1.0 | Walks (1): +1.0
+| Francisco Lindor          | SS       |      3.0 | Long At-Bat (10+ Pitches) (12): +3.0
+| Juan Soto                 | RF       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.0 | 
+| Starling Marte            | RF       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Luisangel Acuña           | CF       |      0.0 | 
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| Jeff McNeil               | RF       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | DH       |      1.0 | Hits (2): +1.0
+| Ronny Mauricio            | 3B       |      2.0 | Advances Runner Into Scoring Position (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brett Baty                | 2B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Luis Torrens              | C        |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Sean Manaea               | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| José Buttó                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Chris Devenski            | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 21.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         21.0
+  Carry over into next game: 0.0

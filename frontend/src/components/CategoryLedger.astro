@@ -1,0 +1,193 @@
+---
+import { fmtPts, tone, type Breakdown } from '../lib/api';
+
+interface Props {
+  categories: Breakdown['categories'];
+  points: Breakdown['points'];
+}
+
+const { categories, points } = Astro.props;
+const scored = categories.filter((c) => c.key !== 'carry_over');
+const max = Math.max(1, ...scored.map((c) => Math.abs(c.points)));
+const carryTotal = categories.find((c) => c.key === 'carry_over');
+const base = points.total - points.carry_in;
+---
+
+<section class="ledger">
+  <div class="head">
+    <div class="title">
+      <span class="dot"></span>
+      <h2>Five-Category Situational Ledger</h2>
+    </div>
+    <span class="meta">Rules per README · {scored.reduce((n, c) => n + c.events, 0)} scored events</span>
+  </div>
+  <div class="grid">
+    {
+      scored.map((c) => (
+        <div class="cell" style={`--cat: var(--c-${c.key})`}>
+          <div class="row">
+            <span class="name">{c.label}</span>
+            <span class="tag">{c.stat}</span>
+          </div>
+          <div class="val">
+            <span class={c.key === 'deductions' || c.points === 0 ? tone(c.points) : 'cat'}>{fmtPts(c.points)}</span> <small>PTS</small>
+          </div>
+          <div class="rail"><span style={`width:${(Math.abs(c.points) / max) * 100}%`}></span></div>
+          <div class="row foot">
+            <span>{c.top_rule ? `Top: ${c.top_rule}` : 'No events'}</span>
+            {c.top_rule_points !== null && <span class="cat">{fmtPts(c.top_rule_points)}</span>}
+          </div>
+        </div>
+      ))
+    }
+    <div class="cell wide" style="--cat: var(--c-carry_over)">
+      <div class="row">
+        <span class="name">V. Carry-Over Net</span>
+        <span class="tag">{carryTotal?.events ? `${carryTotal.events} earned` : 'Final'}</span>
+      </div>
+      <div class="val">
+        <span class={tone(points.total)}>{fmtPts(points.total)}</span> <small>NET</small>
+      </div>
+      <div class="rail"><span style="width:100%"></span></div>
+      <div class="row foot">
+        <span>Base {fmtPts(base)}</span>
+        <span class={tone(points.carry_in)}>{fmtPts(points.carry_in)} Carry</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ledger {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--link);
+  }
+  h2 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .meta,
+  .row,
+  .val small {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  .meta {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  .cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px;
+  }
+  .wide {
+    grid-column: span 2;
+  }
+  @media (min-width: 768px) {
+    .wide {
+      grid-column: span 1;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .tag {
+    color: var(--cat);
+  }
+  .val {
+    margin-top: 8px;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .val small {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .rail {
+    margin-top: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--pill-bg);
+    overflow: hidden;
+  }
+  .rail span {
+    display: block;
+    height: 100%;
+    background: var(--cat);
+  }
+  .foot {
+    margin-top: 8px;
+    text-transform: none;
+  }
+  .foot span:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .cat {
+    color: var(--cat);
+    font-weight: 500;
+  }
+  .pos {
+    color: var(--pos);
+  }
+  .neg {
+    color: var(--neg);
+  }
+  .zero {
+    color: var(--muted);
+  }
+</style>

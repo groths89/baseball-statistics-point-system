@@ -1,0 +1,29 @@
+Game 777638 (2025-06-04): Mets @ Dodgers  6-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Stolen Base (1): +1.0
+| Juan Soto                 | RF       |      6.0 | Runs (1): +1.0 | Walks (3): +3.0 | Advances Runner Into Scoring Position (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0 | Homerun With Runners On (2 on): +2.0
+| Brett Baty                | 3B       |      0.0 | 
+| Jared Young               | DH       |      1.0 | Walks (1): +1.0
+| Starling Marte            | DH       |      0.0 | 
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Jeff McNeil               | CF       |      1.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Griffin Canning           | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 0 R): +5.0
+| José Castillo             | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryne Stanek               | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 27.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         26.0
+  Carry over into next game: 0.0

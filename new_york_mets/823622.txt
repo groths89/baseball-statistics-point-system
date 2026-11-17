@@ -1,0 +1,29 @@
+Game 823622 (2026-05-30): Mets vs Marlins  6-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      2.5 | Hits (3): +1.5 | Runs (1): +1.0
+| Bo Bichette               | 3B       |      1.0 | Walks (1): +1.0
+| Juan Soto                 | LF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Jared Young               | DH       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0
+| Mark Vientos              | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| A.J. Ewing                | CF       |      0.0 | 
+| Marcus Semien             | 2B       |      4.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Vidal Bruján              | SS       |      0.0 | 
+| Hayden Senger             | C        |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Christian Scott           | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Cionel Pérez              | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Austin Warren             | P        |      1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Reliever Walks First Batter (1): -1.0
+| Devin Williams            | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 28.0
+  Team points:   7.0  (includes 2.0 carried over)
+  TOTAL:         35.0
+  Carry over into next game: 0.0

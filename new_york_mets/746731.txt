@@ -1,0 +1,27 @@
+Game 746731 (2024-04-06): Mets @ Reds  6-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | DH       |      8.0 | Hits (2): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Francisco Lindor          | SS       |      0.0 | 
+| Pete Alonso               | 1B       |      1.0 | Runs (1): +1.0
+| Brett Baty                | 3B       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Starling Marte            | RF       |      9.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Tyrone Taylor             | LF       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jeff McNeil               | 2B       |      0.0 | Runs (1): +1.0 | Error (1): -1.0
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Omar Narváez              | C        |      7.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Luis Severino             | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jake Diekman              | P        |      0.0 | 
+| Yohan Ramírez             | P        |     -1.0 | Wild Pitch (1): -1.0
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 39.5
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         40.5
+  Carry over into next game: 0.0

@@ -1,0 +1,167 @@
+---
+import { fmtPts, gradeClass, tone, type Breakdown } from '../lib/api';
+
+interface Props {
+  teamName: string;
+  summary: string;
+  pitchers: Breakdown['pitchers'];
+}
+
+const { teamName, summary, pitchers } = Astro.props;
+const decisionTone = (d: string) => (d === 'W' || d === 'S' ? 'pos' : d === 'L' || d === 'BS' ? 'neg' : 'dim');
+const decisionLabel = (d: string) => (d === 'S' ? 'SV' : d);
+const sub = (p: Breakdown['pitchers'][number]) =>
+  [p.pitches ? `${p.pitches} Pitches` : null, p.bb ? `${p.bb} BB` : null].filter(Boolean).join(' • ');
+---
+
+<section class="panel">
+  <div class="head">
+    <div class="title">
+      <h2>Pitching Custom Ledger</h2>
+      <span class="sum">{summary}</span>
+    </div>
+    <span class="meta">Situational = non-box-score points</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="l">Pitcher</th>
+          <th class="c">Dec</th>
+          <th>IP</th>
+          <th>ER</th>
+          <th>SO</th>
+          <th>Situational</th>
+          <th class="net-h">Net Pts</th>
+          <th class="c">Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          pitchers.map((p) => (
+            <tr>
+              <td class="l who">
+                <div class="name">{p.name}</div>
+                <div class="subline">{sub(p)}</div>
+              </td>
+              <td class={`c dec ${decisionTone(p.decision)}`}>{decisionLabel(p.decision)}</td>
+              <td>{p.ip}</td>
+              <td class={p.er > 0 ? 'neg' : 'pos'}>{p.er}</td>
+              <td class="so">{p.so}</td>
+              <td class={`sit ${tone(p.situational)}`}>
+                {p.situational === 0 ? '0.0' : fmtPts(p.situational)}
+                {p.highlight && <span class="hl" title={p.highlight}>({p.highlight})</span>}
+              </td>
+              <td class={`net ${tone(p.net)}`}>{fmtPts(p.net)}</td>
+              <td class="c">
+                <span class={`grade ${gradeClass(p.grade)}`} title={`${p.grade}th percentile of pitcher games`}>{p.grade}</span>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  h2 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .sum,
+  .meta,
+  td,
+  th {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  .sum {
+    font-size: 11px;
+    background: var(--surface-2);
+    color: var(--muted);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .meta {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .who .name {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .subline {
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .c {
+    text-align: center;
+  }
+  .dec {
+    font-weight: 700;
+  }
+  .dim {
+    color: var(--muted);
+  }
+  .so {
+    font-weight: 700;
+  }
+  .sit {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .hl {
+    display: inline-block;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.85;
+  }
+  .net {
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .net-h {
+    color: var(--text);
+  }
+  .pos {
+    color: var(--pos);
+  }
+  .neg {
+    color: var(--neg);
+  }
+  .zero {
+    color: var(--muted);
+  }
+</style>

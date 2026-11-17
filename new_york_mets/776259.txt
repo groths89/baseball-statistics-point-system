@@ -1,0 +1,35 @@
+Game 776259 (2025-09-19): Mets vs Nationals  12-6 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      9.5 | Hits (3): +1.5 | Runs (4): +4.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0
+| Juan Soto                 | RF       |     10.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (2): +2.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Jeff McNeil               | PH       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | 2B       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      8.0 | Hits (2): +1.0 | Runs (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Starling Marte            | DH       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brett Baty                | 3B       |      1.0 | Runs (1): +1.0
+| Jose Siri                 | CF       |      0.0 | 
+| Cedric Mullins            | CF       |      0.0 | 
+| Brandon Sproat            | P        |     -1.0 | Error (1): -1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Ryan Helsley              | P        |      0.0 | 
+| Tyler Rogers              | P        |      0.0 | 
+| Chris Devenski            | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 42.5
+  Team points:   6.0  (includes 0.0 carried over)
+  TOTAL:         48.5
+  Carry over into next game: 0.0

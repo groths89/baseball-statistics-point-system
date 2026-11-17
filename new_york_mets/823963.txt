@@ -1,0 +1,27 @@
+Game 823963 (2026-04-15): Mets @ Dodgers  2-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Long At-Bat (10+ Pitches) (11): +2.0
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Brett Baty                | 1B       |      0.0 | 
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Alvarez         | C        |      1.0 | Walks (1): +1.0
+| Carson Benge              | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Marcus Semien             | 2B       |      4.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| MJ Melendez               | DH       |      1.0 | Hits (2): +1.0
+| Tommy Pham                | LF       |      0.0 | 
+| Clay Holmes               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Tobias Myers              | P        |      0.0 | 
+| Devin Williams            | P        |      0.0 | 
+| Austin Warren             | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (14): -5.0
+
+### Team Totals ###
+  Player points: 16.5
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         11.5
+  Carry over into next game: 0.0

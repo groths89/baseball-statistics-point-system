@@ -1,0 +1,33 @@
+Game 778481 (2025-04-02): Mets @ Marlins  6-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (3): +3.0
+| Pete Alonso               | 1B       |     14.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Jesse Winker              | DH       |      2.0 | Walks (2): +2.0
+| Mark Vientos              | 3B       |     -1.0 | Error (1): -1.0
+| Brett Baty                | 2B       |      0.0 | 
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Hayden Senger             | C        |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      1.5 | Hits (1): +0.5 | Catcher Throws Out Runner Stealing (1): +1.0
+| Clay Holmes               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| A.J. Minter               | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| José Buttó                | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Danny Young               | P        |      0.0 | 
+| Huascar Brazobán          | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 34.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         33.5
+  Carry over into next game: 0.0

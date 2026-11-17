@@ -1,0 +1,31 @@
+Game 745817 (2024-05-29): Mets vs Dodgers  3-10 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Brett Baty                | 3B       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| J.D. Martinez             | DH       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 1B       |      0.0 | 
+| Starling Marte            | RF       |      3.0 | Hits (2): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | LF       |      1.0 | Outfield Assist (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Tomás Nido                | C        |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| David Peterson            | P        |     -1.0 | Error (1): -1.0
+| Sean Reid-Foley           | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jake Diekman              | P        |      0.0 | 
+| Adam Ottavino             | P        |      0.0 | 
+| Jorge López               | P        |     -1.0 | Error (1): -1.0
+| Josh Walker               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 17.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         17.5
+  Carry over into next game: 0.0

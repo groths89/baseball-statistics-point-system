@@ -1,0 +1,30 @@
+Game 823348 (2026-08-08): Mets @ Pirates  0-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | LF       |      1.0 | Walks (1): +1.0
+| Francisco Lindor          | SS       |      0.5 | Hits (1): +0.5
+| Gabriel Arias             | SS       |     -1.0 | Error (1): -1.0
+| Bo Bichette               | 3B       |      0.0 | 
+| Cristian Pache            | RF       |      0.0 | 
+| Jared Young               | 1B       |      0.0 | 
+| Luis Robert Jr.           | CF       |      0.5 | Hits (1): +0.5
+| Brett Baty                | 3B       |      0.0 | 
+| Marcus Semien             | 2B       |      0.0 | 
+| Jorge Polanco             | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Robert Stock              | P        |     -1.0 | Starter Under 4 IP (3.0 IP): -1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Xzavion Curry             | P        |      1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luis Torrens              | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (9): -5.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 3.5
+  Team points:   -4.0  (includes 0.0 carried over)
+  TOTAL:         -0.5
+  Carry over into next game: 0.0

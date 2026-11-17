@@ -1,0 +1,31 @@
+Game 778256 (2025-04-19): Mets vs Cardinals  3-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Brett Baty                | 3B       |      1.0 | Walks (1): +1.0
+| Starling Marte            | DH       |      2.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Luisangel Acuña           | 2B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| José Azócar               | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Kodai Senga               | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 0 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Reed Garrett              | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| A.J. Minter               | P        |      0.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 35.0
+  Team points:   8.0  (includes 2.0 carried over)
+  TOTAL:         43.0
+  Carry over into next game: 0.0

@@ -1,0 +1,31 @@
+Game 745816 (2024-05-28): Mets vs Dodgers  0-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| DJ Stewart                | DH       |      0.0 | 
+| Starling Marte            | RF       |      0.0 | 
+| Mark Vientos              | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Harrison Bader            | CF       |      1.0 | Walks (1): +1.0
+| Omar Narváez              | C        |      0.0 | 
+| Tyrone Taylor             | PH       |      0.0 | 
+| Tomás Nido                | C        |      0.0 | 
+| Jose Quintana             | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Dedniel Núñez             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Josh Walker               | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 7.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         12.5
+  Carry over into next game: 0.0

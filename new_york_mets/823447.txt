@@ -1,0 +1,29 @@
+Game 823447 (2026-06-20): Mets @ Phillies  3-15 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      8.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | SS       |      0.0 | 
+| Juan Soto                 | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| MJ Melendez               | LF       |      0.0 | 
+| Marcus Semien             | 2B       |     -1.0 | Error (1): -1.0
+| Eric Wagaman              | 3B       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | DH       |      0.5 | Hits (1): +0.5
+| A.J. Ewing                | CF       |      0.0 | 
+| Mark Vientos              | 1B       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Luis Torrens              | C        |      2.5 | Hits (1): +0.5 | Advances Runner Into Scoring Position (1): +1.0 | 2 Out Hit (1): +1.0
+| Zack Short                | P        |      0.5 | Hits (1): +0.5
+| Freddy Peralta            | P        |     -1.0 | Starter Under 4 IP (2.2 IP): -1.0
+| Cionel Pérez              | P        |      0.0 | 
+| Tobias Myers              | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 21.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         21.0
+  Carry over into next game: 0.0

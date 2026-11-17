@@ -1,0 +1,26 @@
+Game 822679 (2026-09-27): Mets @ Nationals  4-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      8.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Juan Soto                 | LF       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Carson Benge              | RF       |      5.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Marcus Semien             | 2B       |      0.5 | Hits (1): +0.5
+| Brett Baty                | 1B       |      0.0 | 
+| Luis Torrens              | C        |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| A.J. Ewing                | CF       |      1.0 | Walks (1): +1.0
+| Ronny Mauricio            | DH       |     14.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0 | 2 Out Hit (1): +1.0
+| Sean Manaea               | P        |      0.0 | 
+| Austin Warren             | P        |      0.0 | 
+| Cionel Pérez              | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 33.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         32.5
+  Carry over into next game: 0.0

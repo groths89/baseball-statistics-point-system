@@ -1,0 +1,31 @@
+Game 745005 (2024-06-17): Mets @ Rangers  14-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.0 | Hits (4): +2.0 | Runs (3): +3.0
+| Jose Iglesias             | SS       |      0.0 | 
+| Brandon Nimmo             | LF       |      5.5 | Hits (3): +1.5 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5
+| J.D. Martinez             | DH       |      0.5 | Hits (1): +0.5
+| Luis Torrens              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      7.5 | Hits (3): +1.5 | Runs (1): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| DJ Stewart                | RF       |     12.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Tyrone Taylor             | LF       |      1.0 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      4.5 | Hits (3): +1.5 | Runs (2): +2.0 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      5.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jeff McNeil               | 2B       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0
+| David Peterson            | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 2 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Adam Ottavino             | P        |      0.0 | 
+| Drew Smith                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 55.0
+  Team points:   9.0  (includes 0.0 carried over)
+  TOTAL:         64.0
+  Carry over into next game: 0.0

@@ -1,0 +1,34 @@
+Game 824902 (2026-07-05): Mets @ Braves  10-9 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.5 | Hits (1): +0.5 | Runs (3): +3.0 | Walks (1): +1.0
+| Juan Soto                 | DH       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Bo Bichette               | 3B       |      8.5 | Hits (3): +1.5 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Mark Vientos              | 1B       |      0.0 | Walks (1): +1.0 | Error (1): -1.0
+| Jared Young               | 1B       |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Carson Benge              | RF       |      0.0 | 
+| Tyrone Taylor             | LF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| A.J. Ewing                | CF       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Brett Baty                | 2B       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | 2 Out Hit (1): +1.0
+| Nolan McLean              | P        |      0.0 | Error (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brooks Raley              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luke Weaver               | P        |      0.0 | 
+| Huascar Brazobán          | P        |     -1.0 | Error (1): -1.0
+| Devin Williams            | P        |      2.0 | Save (3 H, 0 BB): +3.0 | Wild Pitch (1): -1.0
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 37.0
+  Team points:   9.0  (includes 0.0 carried over)
+  TOTAL:         46.0
+  Carry over into next game: 0.0

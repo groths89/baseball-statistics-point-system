@@ -1,0 +1,77 @@
+---
+const apiBase = (import.meta.env.PUBLIC_API_URL ?? 'http://localhost:8000').replace(/\/$/, '');
+---
+
+<footer>
+  <div class="inner">
+    <div class="group">
+      <span class="dot"></span>
+      <span>DiamondMetrics Point System</span>
+      <span class="sep">•</span>
+      <span>Data: MLB Stats API</span>
+    </div>
+    <div class="group links">
+      <a href="/rubric">Points Rubric</a>
+      <a href={`${apiBase}/docs`} target="_blank" rel="noreferrer">API Docs</a>
+      <a href="https://github.com/groths89/baseball-statistics-point-system" target="_blank" rel="noreferrer">Source</a>
+      <span class="copy">© {new Date().getFullYear()} DiamondMetrics Engine</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    width: 100%;
+    background: var(--header-bg);
+    border-top: 1px solid var(--border);
+    padding: 12px 1rem;
+    color: var(--muted);
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+  }
+  .inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .links {
+    gap: 16px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #34d399;
+  }
+  .copy,
+  .group span {
+    white-space: nowrap;
+  }
+  .sep {
+    opacity: 0.5;
+  }
+  a:hover {
+    color: var(--text);
+  }
+  @media (min-width: 768px) {
+    .inner {
+      flex-direction: row;
+    }
+  }
+  @media (min-width: 1024px) {
+    footer {
+      padding: 12px 1.5rem;
+    }
+  }
+</style>

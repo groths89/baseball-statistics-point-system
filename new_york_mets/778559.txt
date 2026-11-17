@@ -1,0 +1,32 @@
+Game 778559 (2025-03-27): Mets @ Astros  1-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Walks (2): +2.0
+| Mark Vientos              | 3B       |      2.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Starling Marte            | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | 2B       |      4.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (12): +4.0 | Error (1): -1.0
+| Luis Torrens              | C        |      0.5 | Hits (1): +0.5
+| Jesse Winker              | PH       |      0.0 | 
+| Hayden Senger             | C        |      0.0 | 
+| Clay Holmes               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Danny Young               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (6): +2.0
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (8): -1.0
+
+### Team Totals ###
+  Player points: 19.0
+  Team points:   8.0  (includes 0.0 carried over)
+  TOTAL:         27.0
+  Carry over into next game: 0.0

@@ -1,0 +1,27 @@
+Game 746863 (2024-06-22): Mets @ Cubs  1-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| J.D. Martinez             | DH       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| DJ Stewart                | RF       |      0.0 | 
+| Starling Marte            | RF       |      0.0 | 
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Jose Iglesias             | 3B       |      0.0 | 
+| Tylor Megill              | P        |     -2.0 | Starter Under 4 IP (3.0 IP): -1.0 | Wild Pitch (1): -1.0
+| Danny Young               | P        |      0.0 | 
+| Adrian Houser             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (14): -5.0
+
+### Team Totals ###
+  Player points: 7.5
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         2.5
+  Carry over into next game: 0.0

@@ -1,0 +1,26 @@
+Game 823581 (2026-08-27): Mets vs Brewers  2-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | CF       |      0.0 | 
+| Francisco Lindor          | SS       |      0.0 | 
+| Carson Benge              | RF       |      0.0 | 
+| Luis Robert Jr.           | LF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Jared Young               | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Marcus Semien             | 2B       |      1.0 | Walks (1): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| Christopher Morel         | DH       |      4.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Sean Manaea               | P        |      0.0 | 
+| Xzavion Curry             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Austin Warren             | P        |      0.0 | Error (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 11.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         11.5
+  Carry over into next game: 0.0

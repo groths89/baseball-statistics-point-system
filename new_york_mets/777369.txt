@@ -1,0 +1,31 @@
+Game 777369 (2025-06-25): Mets vs Braves  7-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Juan Soto                 | RF       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | CF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Starling Marte            | DH       |      2.5 | Hits (1): +0.5 | Sac Fly Scores Run (1): +2.0
+| Brett Baty                | 3B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Ronny Mauricio            | 2B       |      6.5 | Hits (3): +1.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Hayden Senger             | C        |      0.5 | Hits (1): +0.5
+| Clay Holmes               | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Brandon Waddell           | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| José Buttó                | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Jonathan Pintaro          | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 36.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         35.5
+  Carry over into next game: 0.0

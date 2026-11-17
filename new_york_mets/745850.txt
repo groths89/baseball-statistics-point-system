@@ -1,0 +1,31 @@
+Game 745850 (2024-03-30): Mets vs Brewers  6-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Francisco Lindor          | SS       |      0.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Pete Alonso               | 1B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | RF       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| DJ Stewart                | RF       |      0.0 | 
+| Starling Marte            | DH       |      5.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | 2B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      7.5 | Hits (3): +1.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Zack Short                | 3B       |     -0.5 | Hits (1): +0.5 | Error (1): -1.0
+| Brett Baty                | 3B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5
+| Luis Severino             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jake Diekman              | P        |      0.0 | 
+| Yohan Ramírez             | P        |      0.0 | 
+| Jorge López               | P        |     -1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| Adam Ottavino             | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 24.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         24.0
+  Carry over into next game: 0.0

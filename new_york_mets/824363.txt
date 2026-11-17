@@ -1,0 +1,29 @@
+Game 824363 (2026-05-04): Mets @ Rockies  4-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Juan Soto                 | LF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Bo Bichette               | SS       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| MJ Melendez               | RF       |      0.0 | 
+| Tyrone Taylor             | RF       |      0.0 | 
+| Mark Vientos              | 1B       |      5.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Brett Baty                | 3B       |      0.0 | 
+| Marcus Semien             | 2B       |      0.0 | 
+| Carson Benge              | CF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Francisco Alvarez         | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Luis Torrens              | C        |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | Starter Under 4 IP (1.0 IP): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Austin Warren             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| David Peterson            | P        |      0.0 | 
+| Craig Kimbrel             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Devin Williams            | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 23.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         23.0
+  Carry over into next game: 0.0

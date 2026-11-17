@@ -1,0 +1,30 @@
+Game 777423 (2025-06-21): Mets @ Phillies  11-4 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      8.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Brandon Nimmo             | LF       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Juan Soto                 | RF       |     15.0 | Hits (4): +2.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Pete Alonso               | 1B       |      3.0 | Hits (2): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Jeff McNeil               | 2B       |     -1.0 | Error (1): -1.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Jared Young               | DH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Francisco Alvarez         | C        |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0
+| Brett Baty                | 3B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Ronny Mauricio            | 2B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | CF       |      2.5 | Hits (1): +0.5 | Runs (2): +2.0
+| Griffin Canning           | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryne Stanek               | P        |      0.0 | 
+| Chris Devenski            | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 45.5
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         52.5
+  Carry over into next game: 0.0

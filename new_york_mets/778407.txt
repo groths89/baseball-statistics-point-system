@@ -1,0 +1,30 @@
+Game 778407 (2025-04-08): Mets vs Marlins  10-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.5 | Hits (1): +0.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Sac Fly Scores Run (1): +2.0
+| Juan Soto                 | RF       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Jose Siri                 | CF       |      0.0 | 
+| Pete Alonso               | 1B       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brandon Nimmo             | LF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Starling Marte            | DH       |      8.0 | Hits (2): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Brett Baty                | 2B       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | 2B       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Stolen Base (1): +1.0
+| Hayden Senger             | C        |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Advances Runner Into Scoring Position (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Clay Holmes               | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| A.J. Minter               | P        |      0.0 | 
+| Danny Young               | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 38.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         40.5
+  Carry over into next game: 0.0

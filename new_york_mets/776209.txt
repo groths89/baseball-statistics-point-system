@@ -1,0 +1,33 @@
+Game 776209 (2025-09-23): Mets @ Cubs  9-7 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      8.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brandon Nimmo             | LF       |     12.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | 3B       |      2.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Starling Marte            | LF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jose Siri                 | CF       |      0.0 | 
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0 | Error (1): -1.0
+| Francisco Alvarez         | C        |     11.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| David Peterson            | P        |     -1.0 | Starter Under 4 IP (1.1 IP): -1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Gregory Soto              | P        |      0.0 | 
+| Tyler Rogers              | P        |     -3.0 | Blown Save (BS, 2): -2.0 | Reliever Walks First Batter (1): -1.0
+| Brooks Raley              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Edwin Díaz                | P        |      5.0 | Save without a hit or walk (0 H, 0 BB): +5.0
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 47.5
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         48.5
+  Carry over into next game: 0.0

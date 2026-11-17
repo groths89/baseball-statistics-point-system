@@ -1,0 +1,28 @@
+Game 776678 (2025-08-19): Mets @ Nationals  8-1 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Juan Soto                 | RF       |      4.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0
+| Brandon Nimmo             | LF       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jeff McNeil               | 2B       |     14.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Mark Vientos              | DH       |      9.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Brett Baty                | 3B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Luis Torrens              | C        |      0.5 | Hits (1): +0.5
+| Cedric Mullins            | CF       |      1.5 | Hits (1): +0.5 | Stolen Base (1): +1.0
+| David Peterson            | P        |     12.0 | Starter 2 Runs or Less (min 5 IP) (8.0 IP, 1 R): +5.0 | Starter 7+ IP (8.0 IP): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Ryne Stanek               | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (1): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 53.5
+  Team points:   11.0  (includes 0.0 carried over)
+  TOTAL:         64.5
+  Carry over into next game: 0.0

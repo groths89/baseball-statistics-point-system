@@ -1,0 +1,32 @@
+Game 776490 (2025-09-02): Mets @ Tigers  12-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Juan Soto                 | RF       |      8.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | Outfield Assist (1): +1.0
+| Pete Alonso               | 1B       |     10.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Jared Young               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      4.5 | Hits (3): +1.5 | Runs (2): +2.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Luisangel Acuña           | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | DH       |      5.5 | Hits (3): +1.5 | Runs (1): +1.0 | Advances On Errant Throw (1): +1.0 | Stolen Base (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Cedric Mullins            | CF       |      3.0 | Runs (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Luis Torrens              | C        |     14.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | Stolen Base (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Brett Baty                | 2B       |      4.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Nolan McLean              | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 2 R): +5.0
+| Kevin Herget              | P        |     -1.0 | Wild Pitch (1): -1.0
+| Ryne Stanek               | P        |      0.0 | 
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 59.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         64.5
+  Carry over into next game: 0.0

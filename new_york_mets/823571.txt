@@ -1,0 +1,33 @@
+Game 823571 (2026-09-19): Mets vs Phillies  10-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Juan Soto                 | LF       |      0.5 | Hits (1): +0.5
+| Bo Bichette               | 3B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Carson Benge              | RF       |      6.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| A.J. Ewing                | CF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Marcus Semien             | 2B       |      4.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (2): +2.0
+| Brett Baty                | 1B       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Ronny Mauricio            | DH       |      1.0 | Walks (1): +1.0
+| Nick Morabito             | DH       |      1.0 | Runs (1): +1.0
+| Christian Scott           | P        |      0.0 | 
+| Jefry Yan                 | P        |      0.0 | 
+| Cionel Pérez              | P        |     -1.0 | Wild Pitch (1): -1.0
+| Jonathan Pintaro          | P        |      0.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+| Dedniel Núñez             | P        |      0.0 | 
+| Tobias Myers              | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Pitching     Bullpen Gives Up 0 Runs (5): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+
+### Team Totals ###
+  Player points: 26.5
+  Team points:   8.0  (includes 0.0 carried over)
+  TOTAL:         34.5
+  Carry over into next game: 0.0

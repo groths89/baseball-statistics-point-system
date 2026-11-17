@@ -1,395 +1,153 @@
-def calculate_solo_homerun_points_for_player(lineups, player_points_map):
-    POINTS_PER_HR = 1.0
+"""Box score based player rules (sections I, III and IV of the README)."""
+from data_utils import add_points, parse_ip_to_outs, set_play_context, to_int
+from situational_rules import play_snapshot
 
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
-                        
-            if player.get('position') == 'P': continue
+BASIC = 'Basic Stats'
+PITCHING = 'Pitching'
+UNUSUAL = 'Unusual'
+DEDUCTION = 'Deduction'
 
-            if not mlb_id or not isinstance(stats, dict):
-                continue
 
-            try:
-                hrs = int(stats.get('homeRuns', '0') or '0')
-            except ValueError:
-                hrs = 0
+def _batters(players):
+    return [p for p in players if p.get('batting')]
 
-            if hrs > 0:
-                points_awarded = hrs * POINTS_PER_HR
-                player_points_map[mlb_id]['total_points'] += points_awarded
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Basic Stats',
-                    'rule_name': 'Solo Homerun',
-                    'value': hrs,
-                    'points': points_awarded,
-                })
 
-    return player_points_map
-
-def calculate_total_hits_points_for_player(lineups, player_points_map):
+def calculate_total_hits_points_for_player(players, pm):
     POINTS_PER_HIT = 0.5
+    for p in _batters(players):
+        hits = to_int(p['batting'].get('h'))
+        if hits > 0:
+            add_points(pm, p['mlb_id'], BASIC, 'Hits', hits, hits * POINTS_PER_HIT)
 
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
 
-            if player.get('position') == 'P': continue
-
-            if not mlb_id or not isinstance(stats, dict):
-                continue
-
-            try:
-                hits_recorded = int(stats.get('h', '0') or '0')
-            except ValueError:
-                hits_recorded = 0
-
-            if hits_recorded > 0:
-                points_awarded = float(hits_recorded * POINTS_PER_HIT)
-                player_points_map[mlb_id]['total_points'] += points_awarded
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Basic Stats',
-                    'rule_name': 'Hits',
-                    'value': hits_recorded,
-                    'points': points_awarded,
-                })
-
-    return player_points_map
-
-def calculate_total_triples_points_for_player(lineups, player_points_map):
+def calculate_total_triples_points_for_player(players, pm):
     POINTS_PER_TRIPLE = 3.0
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
+    for p in _batters(players):
+        triples = to_int(p['batting'].get('triples'))
+        if triples > 0:
+            add_points(pm, p['mlb_id'], BASIC, 'Triples', triples, triples * POINTS_PER_TRIPLE)
 
-            if player.get('position') == 'P': continue
 
-            if not mlb_id or not isinstance(stats, dict):
-                continue
-
-            try:
-                triples_recorded = int(stats.get('triple', '0') or '0')
-            except ValueError:
-                triples_recorded = 0
-
-            if triples_recorded > 0:
-                points_awarded = float(triples_recorded * POINTS_PER_TRIPLE)
-                player_points_map[mlb_id]['total_points'] += points_awarded
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Basic Stats',
-                    'rule_name': 'Triples',
-                    'value': triples_recorded,
-                    'points': points_awarded,
-                })
-
-    return player_points_map
-
-def calculate_total_runs_points_for_player(lineups, player_points_map):
+def calculate_total_runs_points_for_player(players, pm):
     POINTS_PER_RUN = 1.0
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
+    for p in _batters(players):
+        runs = to_int(p['batting'].get('r'))
+        if runs > 0:
+            add_points(pm, p['mlb_id'], BASIC, 'Runs', runs, runs * POINTS_PER_RUN)
 
-            if player.get('position') == 'P': continue
 
-            if not mlb_id or not isinstance(stats, dict):
-                continue
-
-            try:
-                runs_recorded = int(stats.get('r', '0') or '0')
-            except ValueError:
-                runs_recorded = 0
-
-            if runs_recorded > 0:
-                points_awarded = float(runs_recorded * POINTS_PER_RUN)
-                player_points_map[mlb_id]['total_points'] += points_awarded
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Basic Stats',
-                    'rule_name': 'Runs',
-                    'value': runs_recorded,
-                    'points': points_awarded,
-                })
-
-    return player_points_map
-
-def calculate_total_walks_points_for_player(lineups, player_points_map):
+def calculate_total_walks_points_for_player(players, pm):
     POINTS_PER_WALK = 1.0
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
-
-            if player.get('position') == 'P': continue
-
-            if not mlb_id or not isinstance(stats, dict):
-                continue
+    for p in _batters(players):
+        walks = to_int(p['batting'].get('bb'))
+        if walks > 0:
+            add_points(pm, p['mlb_id'], BASIC, 'Walks', walks, walks * POINTS_PER_WALK)
 
 
-            try:
-                walks_recorded = int(stats.get('bb', '0') or '0')
-            except ValueError:
-                walks_recorded = 0
+def calculate_starter_points(players, pm, starter_id):
+    """Starter rules: <=2 runs (min 5 IP), 7+ IP, complete game, and the <4 IP deduction."""
+    POINTS_LOW_RUNS = 5.0
+    POINTS_SEVEN_IP = 5.0
+    POINTS_COMPLETE_GAME = 10.0
+    MIN_OUTS_LOW_RUNS = 15
+    SEVEN_IP_OUTS = 21
+    COMPLETE_GAME_OUTS = 27
+    SHORT_START_OUTS = 12
 
-            if walks_recorded > 0:
-                points_awarded = float(walks_recorded * POINTS_PER_WALK)
-                player_points_map[mlb_id]['total_points'] += points_awarded
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Basic Stats',
-                    'rule_name': 'Walks',
-                    'value': walks_recorded,
-                    'points': points_awarded,
-                })
+    starter = next((p for p in players if p['mlb_id'] == starter_id and p.get('pitching')), None)
+    if starter is None:
+        return
 
-    return player_points_map
+    stats = starter['pitching']
+    outs = parse_ip_to_outs(stats.get('ip'))
+    runs = to_int(stats.get('r'), default=99)
+    ip = stats.get('ip')
+    only_pitcher = sum(1 for p in players if p.get('pitching')) == 1
 
-def calculate_strikeouts_points_for_pitcher(lineups, player_points_map):
-    """Awards 0.5 points for each strikeout by a pitcher only"""
-    POINTS_PER_STRIKEOUT = 0.0
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
-
-            if player.get('position') != 'P': continue
-
-            if not mlb_id or not isinstance(stats, dict): continue
-
-            try:
-                strikeouts_recorded = int(stats.get('k', '0') or '0')
-            except ValueError:
-                strikeouts_recorded = 0
-
-            if strikeouts_recorded > 0:
-                points_awarded = float(strikeouts_recorded * POINTS_PER_STRIKEOUT)
-                player_points_map[mlb_id]['total_points'] += points_awarded
-
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Pitching',
-                    'rule_name': 'Strikeout(s)',
-                    'value': strikeouts_recorded,
-                    'points': points_awarded,
-                })
-
-    return player_points_map
+    if outs >= MIN_OUTS_LOW_RUNS and runs <= 2:
+        add_points(pm, starter_id, PITCHING, 'Starter 2 Runs or Less (min 5 IP)', f'{ip} IP, {runs} R', POINTS_LOW_RUNS)
+    if outs >= SEVEN_IP_OUTS:
+        add_points(pm, starter_id, PITCHING, 'Starter 7+ IP', f'{ip} IP', POINTS_SEVEN_IP)
+    if outs >= COMPLETE_GAME_OUTS or (only_pitcher and outs >= 24):
+        add_points(pm, starter_id, PITCHING, 'Starter Complete Game', f'{ip} IP', POINTS_COMPLETE_GAME)
+    if outs < SHORT_START_OUTS:
+        add_points(pm, starter_id, DEDUCTION, 'Starter Under 4 IP', f'{ip} IP', -1.0)
 
 
-
-def calculate_starter_ip_points_for_player(lineups, player_points_map, boxscore_data):
-    POINTS_FOR_7_IP = 5.0
-    MIN_IP_OUTS = 21
-
-    starters = {}
-
-    try:
-        starters['home'] = boxscore_data.get('homePitchers', [{}][0]).get('personId')
-        starters['away'] = boxscore_data.get('awayPitchers', [{}][0]).get('personId')
-    except (IndexError, AttributeError):
-        return player_points_map
-    
-    for player in (p for team_lineup in lineups.values() for p in team_lineup):
-        mlb_id = player['mlb_id']
-        stats = player['game_stats']
-
-        if not mlb_id or not isinstance(stats, dict):
-            continue
-
-        is_starter = (mlb_id == starters.get('home') or mlb_id == starters.get('away'))
-
-        if is_starter:
-            try:
-                ip_string = stats.get('ip')
-
-                full_innings, partial_outs = map(int, ip_string.split('.'))
-                total_outs = full_innings * 3 + partial_outs
-
-            except (ValueError, AttributeError):
-                total_outs = 0
-
-            if total_outs >= MIN_IP_OUTS:
-                points_awarded = POINTS_FOR_7_IP
-
-                player_points_map[mlb_id]['total_points'] += points_awarded
-
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Pitching',
-                    'rule_name': 'Starter 7+ IP',
-                    'value': ip_string,
-                    'points': points_awarded,
-                })
-                
-    return player_points_map
-
-def calculate_starter_two_runs_or_less_points_for_player(lineups, player_points_map, boxscore_data):
-    "Awards +5 to a pitcher if they are the starter AND give up less than 2 Earned Runs AND a minimum of 5.0 innings pitched"
-    POINTS_FOR_STARTER_LOW_ER = 5.0
-    MIN_IP_OUTS = 15
-    MAX_EARNED_RUNS = 2.0
-
-    starters = {}
-
-    try:
-        starters['home'] = boxscore_data.get('homePitchers', [{}])[0].get('personId')
-        starters['away'] = boxscore_data.get('awayPitchers', [{}])[0].get('personId')
-    except (IndexError, AttributeError):
-        return player_points_map
-    
-    for player in (p for team_lineup in lineups.values() for p in team_lineup):
-        mlb_id = player['mlb_id']
-        stats = player['game_stats']
-
-        if not mlb_id or not isinstance(stats, dict):
-            continue
-
-        is_starter = (mlb_id == starters.get('home') or mlb_id == starters.get('away'))
-
-        if is_starter:
-            try:
-                earned_runs = float(stats.get('er', '3') or '3')
-                ip_string = stats.get('ip', '0.0')
-
-                full_innings, partial_outs = map(int, ip_string.split('.'))
-                total_outs = (full_innings * 3) + partial_outs
-                
-            except (ValueError, AttributeError):
-                total_outs = 0
-                earned_runs = 0
-
-            if total_outs >= MIN_IP_OUTS and earned_runs <= MAX_EARNED_RUNS:
-                points_awarded = POINTS_FOR_STARTER_LOW_ER
-
-                player_points_map[mlb_id]['total_points'] += points_awarded
-
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Pitching',
-                    'rule_name': 'Starter Two Runs or Less (min 5 IP)',
-                    'value': f'{ip_string} IP, {earned_runs} ER',
-                    'points': points_awarded,
-                })
-                
-    return player_points_map
-
-def calculate_starter_pitches_complete_game_points_for_player(lineups, player_points_map, boxscore_data):
-    POINTS_FOR_STARTER_COMPLETE_GAME = 10.0
-    MIN_IP_OUTS = 27
-
-    starters = {}
-
-    try:
-        starters['home'] = boxscore_data.get('homePitchers', [{}])[0].get('personId')
-        starters['away'] = boxscore_data.get('awayPitchers', [{}])[0].get('personId')
-    except (IndexError, AttributeError):
-        return player_points_map
-    
-    for player in (p for team_lineup in lineups.values() for p in team_lineup):
-        mlb_id = player['mlb_id']
-        stats = player['game_stats']
-
-        is_starter = (mlb_id == starters.get('home') or mlb_id == starters.get('away'))
-
-        if not mlb_id or not isinstance(stats, dict):
-            continue
-
-    if is_starter:
-        try:
-            ip_string = stats.get('ip', '0.0')
-            full_innings, partial_outs = map(int, ip_string.split('.'))
-
-            total_outs = (full_innings * 3) + partial_outs
-
-        except (ValueError, AttributeError):
-            total_outs = 0
-
-        if total_outs == MIN_IP_OUTS:
-            points_awarded = POINTS_FOR_STARTER_COMPLETE_GAME
-            player_points_map[mlb_id]['total_points'] += points_awarded
-
-            player_points_map[mlb_id]['breakdown'].append({
-                'rule_category': 'Pitching',
-                'rule_name': 'Starter Complete Game',
-                'value': f'{ip_string} IP',
-                'points': points_awarded,
-            })
-            
-    return player_points_map
-
-def calculate_save_points_for_player(lineups, final_points_map):
+def calculate_save_points_for_player(players, pm):
+    """Save: +3, save without a hit or walk: +5, blown save: -2. Parsed from the pitcher note, e.g. '(S, 5)'."""
     SAVE_POINTS = 3.0
     CLEAN_SAVE_POINTS = 5.0
+    BLOWN_SAVE_POINTS = -2.0
 
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player['mlb_id']
-            stats = player['game_stats']
+    for p in players:
+        stats = p.get('pitching')
+        if not stats:
+            continue
+        note = (stats.get('note') or '').strip('() ')
+        tags = [t.strip() for t in note.split(',')]
 
-            pitching_note = stats.get('pitching', {}).get('note', '')
-
-            if 'S' not in pitching_note:
-                continue
-
-            pitching_stats = stats.get('pitching', {})
-
-            hits_allowed = int(pitching_stats.get('h', 1) or 1)
-            walks_allowed = int(pitching_stats.get('bb', 1) or 1)
-
-            points_awarded = 0.0
-            rule_name = ""
-
-            if hits_allowed == 0 and walks_allowed == 0:
-                points_awarded = CLEAN_SAVE_POINTS
-                rule_name = "Save without a hit or walk"
+        if 'BS' in tags:
+            add_points(pm, p['mlb_id'], DEDUCTION, 'Blown Save', note, BLOWN_SAVE_POINTS)
+        if 'S' in tags:
+            hits, walks = to_int(stats.get('h'), 1), to_int(stats.get('bb'), 1)
+            if hits == 0 and walks == 0:
+                add_points(pm, p['mlb_id'], PITCHING, 'Save without a hit or walk', '0 H, 0 BB', CLEAN_SAVE_POINTS)
             else:
-                points_awarded = SAVE_POINTS
-                rule_name = "Save"
+                add_points(pm, p['mlb_id'], PITCHING, 'Save', f'{hits} H, {walks} BB', SAVE_POINTS)
 
-            final_points_map[mlb_id]['total_points'] += points_awarded
-            final_points_map[mlb_id]['breakdown'].append({
-                'rule_category': 'Pitching',
-                'rule_name': rule_name,
-                'value': f"{hits_allowed} H, {walks_allowed} BB",
-                'points': points_awarded,
-            })
 
-            return final_points_map
-        
-    return final_points_map
+def calculate_strikeout_tracking_for_pitcher(players, pm):
+    """Strikeouts score at the team level (16+); record them per pitcher for reporting and the 12+ rule."""
+    POINTS_TWELVE_K = 5.0
+    for p in players:
+        stats = p.get('pitching')
+        if not stats:
+            continue
+        strikeouts = to_int(stats.get('k'))
+        if strikeouts > 0:
+            add_points(pm, p['mlb_id'], PITCHING, 'Strikeout(s)', strikeouts, 0.0)
+        if strikeouts >= 12:
+            add_points(pm, p['mlb_id'], UNUSUAL, 'Pitcher 12+ Strikeouts', strikeouts, POINTS_TWELVE_K)
 
-def track_earned_runs_for_player(lineups, player_points_map):
-    """
-    Tracks the count of Earned Runs (ER) allowed by every pitcher 
-    and adds it to their breakdown for reporting/future rule use.
-    """
-    for team in ['away', 'home']:
-        for player in lineups.get(team, []):
-            mlb_id = player.get('mlb_id')
-            stats = player.get('game_stats')
-            position = player.get('position')
 
-            if position != 'P':
-                continue
+def track_earned_runs_for_player(players, pm):
+    for p in players:
+        if p.get('pitching'):
+            add_points(pm, p['mlb_id'], PITCHING, 'Earned Runs', to_int(p['pitching'].get('er')), 0.0)
 
-            if mlb_id not in player_points_map:
-                player_points_map[mlb_id] = {
-                    'total_points': 0.0,
-                    'breakdown': []
-                }
 
-            try:
-                earned_runs = int(stats.get('er', '0') or '0')
-            except ValueError:
-                earned_runs = 0
+def calculate_unusual_batting_points(players, pm):
+    """Cycle: +10, 3+ home runs: +5."""
+    for p in _batters(players):
+        b = p['batting']
+        hits, doubles, triples, hrs = (to_int(b.get(k)) for k in ('h', 'doubles', 'triples', 'hr'))
+        singles = hits - doubles - triples - hrs
 
-            if earned_runs >= 0:
-                player_points_map[mlb_id]['breakdown'].append({
-                    'rule_category': 'Pitching',
-                    'rule_name': 'Earned Runs',
-                    'value': earned_runs,
-                    'points': 0.0
-                })
+        if singles > 0 and doubles > 0 and triples > 0 and hrs > 0:
+            add_points(pm, p['mlb_id'], UNUSUAL, 'Hit for the Cycle', 1, 10.0)
+        if hrs >= 3:
+            add_points(pm, p['mlb_id'], UNUSUAL, '3+ Home Runs', hrs, 5.0)
 
-    return player_points_map
 
-    
+def calculate_batter_strikeout_deduction(players, pm):
+    for p in _batters(players):
+        strikeouts = to_int(p['batting'].get('k'))
+        if strikeouts >= 4:
+            add_points(pm, p['mlb_id'], DEDUCTION, 'Struck Out 4+ Times', strikeouts, -4.0)
+
+
+def calculate_relief_first_batter_walk_deduction(plays, side, starter_id, pm):
+    """Relief pitcher walks the first batter he faces: -1 (play-by-play)."""
+    seen = set()
+    for ctx in plays:
+        if ctx['side'] == side or not ctx['is_pa']:
+            continue
+        pitcher = ctx['pitcher_id']
+        if pitcher in seen:
+            continue
+        seen.add(pitcher)
+        if pitcher != starter_id and ctx['event_type'] in ('walk', 'intent_walk'):
+            set_play_context(play_snapshot(ctx))
+            add_points(pm, pitcher, DEDUCTION, 'Reliever Walks First Batter', 1, -1.0)
+            set_play_context(None)

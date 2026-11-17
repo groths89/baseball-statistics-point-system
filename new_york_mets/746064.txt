@@ -1,0 +1,29 @@
+Game 746064 (2024-05-19): Mets @ Marlins  7-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (2): +2.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | DH       |     10.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| DJ Stewart                | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Starling Marte            | RF       |      1.0 | Runs (1): +1.0
+| Tyrone Taylor             | LF       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      5.5 | Hits (1): +0.5 | Walks (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      6.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Omar Narváez              | C        |      2.5 | Hits (1): +0.5 | Long At-Bat (10+ Pitches) (11): +2.0
+| Sean Manaea               | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Sean Reid-Foley           | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jake Diekman              | P        |      0.0 | 
+| Reed Garrett              | P        |      3.0 | Save (1 H, 0 BB): +3.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 46.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         47.0
+  Carry over into next game: 0.0

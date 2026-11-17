@@ -1,0 +1,32 @@
+Game 745715 (2024-07-23): Mets @ Yankees  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| J.D. Martinez             | DH       |      0.0 | 
+| Pete Alonso               | 1B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Jose Iglesias             | 3B       |      0.0 | 
+| Jeff McNeil               | 2B       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Luis Torrens              | C        |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Tyrone Taylor             | RF       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5
+| Jose Quintana             | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Wild Pitch (1): -1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Adam Ottavino             | P        |      0.0 | 
+| Alex Young                | P        |      0.0 | 
+| Dedniel Núñez             | P        |     -1.0 | Error (1): -1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Phil Maton                | P        |      0.0 | 
+| Jake Diekman              | P        |      3.0 | Save (0 H, 1 BB): +3.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (8): -4.0
+
+### Team Totals ###
+  Player points: 21.5
+  Team points:   -4.0  (includes 0.0 carried over)
+  TOTAL:         17.5
+  Carry over into next game: 0.0

@@ -1,0 +1,27 @@
+Game 777250 (2025-07-04): Mets vs Yankees  6-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Lindor          | SS       |      0.0 | 
+| Juan Soto                 | RF       |      5.5 | Hits (3): +1.5 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0
+| Pete Alonso               | 1B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | 2B       |     10.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Advances Runner Into Scoring Position (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Luis Torrens              | C        |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Ronny Mauricio            | DH       |      1.5 | Hits (1): +0.5 | Advances On Errant Throw (1): +1.0
+| Tyrone Taylor             | CF       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Justin Hagenman           | P        |      0.0 | 
+| Austin Warren             | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Reed Garrett              | P        |      3.0 | Save (1 H, 0 BB): +3.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 33.0
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         35.0
+  Carry over into next game: 0.0

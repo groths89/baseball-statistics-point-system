@@ -1,0 +1,28 @@
+Game 824886 (2026-08-11): Mets @ Braves  0-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | LF       |      0.0 | 
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Bo Bichette               | 3B       |      1.0 | Walks (1): +1.0
+| Luis Robert Jr.           | CF       |      0.5 | Hits (1): +0.5
+| Carson Benge              | RF       |      1.0 | Hits (2): +1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Francisco Alvarez         | C        |      2.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jorge Polanco             | DH       |      0.0 | 
+| Gabriel Arias             | 1B       |      0.0 | 
+| Nolan McLean              | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0
+| Jefry Yan                 | P        |     -2.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| Chayce McDermott          | P        |     -1.0 | Wild Pitch (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 9.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         8.0
+  Carry over into next game: 0.0

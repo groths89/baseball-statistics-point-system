@@ -1,0 +1,31 @@
+Game 745479 (2024-07-05): Mets @ Pirates  2-14 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      1.0 | Walks (1): +1.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Pete Alonso               | 1B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Ben Gamel                 | PH       |      0.0 | 
+| DJ Stewart                | RF       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jose Iglesias             | 3B       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | 2B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Luis Severino             | P        |      0.0 | Error (1): -1.0 | Pickoff (1): +1.0
+| Jake Diekman              | P        |      0.0 | 
+| Ty Adcock                 | P        |      0.0 | 
+| Luis Torrens              | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 13.5
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         14.5
+  Carry over into next game: 0.0

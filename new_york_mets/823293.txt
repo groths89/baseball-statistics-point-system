@@ -1,0 +1,29 @@
+Game 823293 (2026-06-05): Mets @ Padres  5-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      0.0 | 
+| Bo Bichette               | SS       |      8.0 | Hits (2): +1.0 | Triples (1): +3.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | 2 Out Hit (1): +1.0
+| Juan Soto                 | LF       |      0.0 | 
+| Jared Young               | 1B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| A.J. Ewing                | CF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Stolen Base (1): +1.0 | Stolen Base (1): +1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Brett Baty                | 3B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Error (1): -1.0
+| MJ Melendez               | DH       |      0.0 | 
+| Mark Vientos              | DH       |      0.0 | 
+| Luis Torrens              | C        |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Homerun With Runners On (1 on): +2.0
+| Christian Scott           | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 0 R): +5.0
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Luke Weaver               | P        |      0.0 | 
+| A.J. Minter               | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 30.5
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         37.5
+  Carry over into next game: 0.0

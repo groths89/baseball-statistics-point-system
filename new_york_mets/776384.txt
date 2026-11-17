@@ -1,0 +1,31 @@
+Game 776384 (2025-09-10): Mets @ Phillies  3-11 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Ronny Mauricio            | SS       |      1.0 | Walks (1): +1.0
+| Juan Soto                 | RF       |      5.5 | Hits (3): +1.5 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0
+| Mark Vientos              | 3B       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Starling Marte            | DH       |      1.0 | Hits (2): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Hayden Senger             | PH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Jose Siri                 | CF       |      0.0 | 
+| Cedric Mullins            | CF       |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Brett Baty                | 2B       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Clay Holmes               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Gregory Soto              | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Ryan Helsley              | P        |     -1.0 | Wild Pitch (1): -1.0
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 18.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         18.5
+  Carry over into next game: 0.0

@@ -1,0 +1,30 @@
+Game 745100 (2024-05-04): Mets @ Rays  1-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Starling Marte            | RF       |      5.0 | Hits (2): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances On Passed Ball (1): +1.0 | Stolen Base (1): +1.0
+| Francisco Lindor          | SS       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| J.D. Martinez             | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Harrison Bader            | CF       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Tomás Nido                | C        |     -2.0 | Error (1): -1.0 | Error (1): -1.0
+| DJ Stewart                | PH       |      0.0 | 
+| Christian Scott           | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.2 IP, 1 R): +5.0
+| Reed Garrett              | P        |      0.0 | 
+| Adam Ottavino             | P        |      0.0 | 
+| Sean Reid-Foley           | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (8): -1.0
+
+### Team Totals ###
+  Player points: 15.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         16.0
+  Carry over into next game: 0.0

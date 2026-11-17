@@ -1,0 +1,36 @@
+Game 745776 (2024-09-04): Mets vs Red Sox  8-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      5.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Jose Iglesias             | 3B       |      1.0 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jesse Winker              | DH       |      8.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Grand Slam (3 on): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Tyrone Taylor             | RF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      2.5 | Hits (1): +0.5 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Harrison Bader            | CF       |      2.0 | Sac Fly Scores Run (1): +2.0
+| Tylor Megill              | P        |      0.0 | 
+| Alex Young                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Reliever Walks First Batter (1): -1.0
+| Danny Young               | P        |      0.0 | 
+| Phil Maton                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Edwin Díaz                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (6): +2.0
+  Pitching     Bullpen Gives Up 0 Runs (5): +5.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 29.5
+  Team points:   16.0  (includes 0.0 carried over)
+  TOTAL:         45.5
+  Carry over into next game: 0.0

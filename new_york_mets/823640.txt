@@ -1,0 +1,29 @@
+Game 823640 (2026-04-21): Mets vs Twins  3-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Marcus Semien             | 2B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Francisco Lindor          | SS       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Luis Robert Jr.           | CF       |      0.0 | 
+| Bo Bichette               | 3B       |      0.5 | Hits (1): +0.5
+| MJ Melendez               | DH       |      0.0 | 
+| Luis Torrens              | DH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | RF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Mark Vientos              | 1B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Carson Benge              | LF       |      2.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Nolan McLean              | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Devin Williams            | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Austin Warren             | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 12.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         11.0
+  Carry over into next game: 0.0

@@ -1,0 +1,31 @@
+Game 822931 (2026-09-02): Mets @ Rays  10-4 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Juan Soto                 | DH       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Bo Bichette               | 3B       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Carson Benge              | RF       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Jared Young               | 1B       |      8.5 | Hits (1): +0.5 | Runs (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Marcus Semien             | 2B       |      6.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| A.J. Ewing                | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brett Baty                | LF       |      7.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Mark Vientos              | PH       |      0.5 | Hits (1): +0.5
+| Nick Morabito             | LF       |     10.0 | Hits (2): +1.0 | Advances On Errant Throw (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      1.0 | Walks (1): +1.0
+| Justin Hagenman           | P        |     -1.0 | Starter Under 4 IP (3.0 IP): -1.0
+| Chris Devenski            | P        |      0.0 | 
+| Dedniel Núñez             | P        |      0.0 | 
+| Nate Lavender             | P        |      0.0 | 
+| Daniel Duarte             | P        |      0.0 | 
+| Jonathan Pintaro          | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 51.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         51.0
+  Carry over into next game: 0.0

@@ -1,0 +1,31 @@
+Game 745376 (2024-08-25): Mets @ Padres  2-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 3B       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Starling Marte            | RF       |      0.0 | 
+| Tyrone Taylor             | RF       |      0.0 | 
+| J.D. Martinez             | DH       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jose Iglesias             | 2B       |      3.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Stolen Base (1): +1.0
+| Luis Torrens              | C        |      2.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jesse Winker              | PH       |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Harrison Bader            | CF       |      1.0 | Walks (1): +1.0
+| Jose Quintana             | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.1 IP, 0 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| José Buttó                | P        |     -1.0 | Blown Save (BS, 2): -2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Phil Maton                | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+
+### Team Totals ###
+  Player points: 24.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         24.5
+  Carry over into next game: 0.0

@@ -1,0 +1,40 @@
+Game 777808 (2025-05-23): Mets vs Dodgers  5-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Walks (2): +2.0
+| Starling Marte            | DH       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Advances Runner Into Scoring Position (1): +1.0
+| Juan Soto                 | RF       |      4.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Outfield Assist (1): +1.0 | Outfield Assist (1): +1.0
+| Pete Alonso               | 1B       |      4.0 | Runs (1): +1.0 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| José Azócar               | PR       |      0.0 | 
+| Luis Torrens              | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.0 | 
+| Jeff McNeil               | LF       |      4.5 | Hits (1): +0.5 | Triples (1): +3.0 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      2.0 | Hits (2): +1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      2.0 | Walks (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Brett Baty                | 3B       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Griffin Canning           | P        |      0.0 | Starter Under 4 IP (2.2 IP): -1.0 | Pickoff (1): +1.0
+| Max Kranick               | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| José Buttó                | P        |      0.0 | 
+| José Castillo             | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Génesis Cabrera           | P        |      0.0 | 
+| Edwin Díaz                | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Reed Garrett              | P        |      3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Huascar Brazobán          | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play To End Inning And Prevent Runs (1): +3.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 31.5
+  Team points:   3.0  (includes 0.0 carried over)
+  TOTAL:         34.5
+  Carry over into next game: 0.0

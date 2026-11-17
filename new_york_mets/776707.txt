@@ -1,0 +1,31 @@
+Game 776707 (2025-08-17): Mets vs Mariners  7-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      5.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Juan Soto                 | RF       |      4.0 | Walks (3): +3.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Pete Alonso               | 1B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Jeff McNeil               | DH       |      3.0 | Hits (2): +1.0 | Runs (2): +2.0
+| Francisco Alvarez         | C        |      4.5 | Hits (3): +1.5 | Runs (2): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 3B       |     13.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Sac Fly Scores Run (1): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Cedric Mullins            | CF       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Clay Holmes               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0
+| Brooks Raley              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Ryan Helsley              | P        |      0.0 | 
+| Tyler Rogers              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 43.0
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         47.0
+  Carry over into next game: 0.0

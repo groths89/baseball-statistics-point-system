@@ -1,0 +1,31 @@
+Game 745822 (2024-05-24): Mets vs Giants  7-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Tyrone Taylor             | PR       |      1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| J.D. Martinez             | DH       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Mark Vientos              | 3B       |      7.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Starling Marte            | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Harrison Bader            | CF       |      4.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Stolen Base (1): +1.0
+| DJ Stewart                | PH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Tomás Nido                | C        |      2.0 | Sac Fly Scores Run (1): +2.0
+| Brett Baty                | PH       |      0.0 | 
+| Christian Scott           | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 2 R): +5.0
+| Edwin Díaz                | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Jorge López               | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+
+### Team Totals ###
+  Player points: 37.5
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         36.5
+  Carry over into next game: 0.0

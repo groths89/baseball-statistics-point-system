@@ -1,0 +1,29 @@
+Game 777686 (2025-06-01): Mets vs Rockies  5-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Starling Marte            | LF       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      0.0 | 
+| Juan Soto                 | RF       |      5.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Pete Alonso               | 1B       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Mark Vientos              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | CF       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Clay Holmes               | P        |      5.0 | Starter 7+ IP (7.0 IP): +5.0
+| Reed Garrett              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Edwin Díaz                | P        |      3.0 | Save (1 H, 0 BB): +3.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+
+### Team Totals ###
+  Player points: 27.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         32.5
+  Carry over into next game: 0.0

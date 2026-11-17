@@ -1,0 +1,32 @@
+Game 745580 (2024-05-16): Mets @ Phillies  6-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Tyrone Taylor             | LF       |      1.0 | Runs (1): +1.0 | Stolen Base (1): +1.0 | Error (1): -1.0
+| Pete Alonso               | 1B       |      6.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Francisco Lindor          | SS       |      1.0 | Runs (1): +1.0
+| J.D. Martinez             | DH       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| DJ Stewart                | LF       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Harrison Bader            | CF       |      4.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Starling Marte            | RF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 3B       |      0.0 | 
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Omar Narváez              | C        |      0.0 | 
+| Jose Quintana             | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 2 R): +5.0
+| Reed Garrett              | P        |     -2.0 | Blown Save (BS, 2): -2.0
+| Adam Ottavino             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Edwin Díaz                | P        |     -4.0 | Blown Save (BS, 3): -2.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| Jorge López               | P        |      1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Reliever Walks First Batter (1): -1.0
+| Jake Diekman              | P        |      3.0 | Save (1 H, 1 BB): +3.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (13): -4.0
+
+### Team Totals ###
+  Player points: 28.0
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         26.0
+  Carry over into next game: 0.0

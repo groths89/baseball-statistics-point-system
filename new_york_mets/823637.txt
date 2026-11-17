@@ -1,0 +1,31 @@
+Game 823637 (2026-04-26): Mets vs Rockies  0-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Bo Bichette               | 3B       |      0.0 | 
+| Juan Soto                 | DH       |      5.5 | Hits (1): +0.5 | Walks (2): +2.0 | Advances On Passed Ball (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | 1B       |      0.0 | Walks (1): +1.0 | Error (1): -1.0
+| MJ Melendez               | LF       |      0.5 | Hits (1): +0.5
+| Marcus Semien             | 2B       |      0.5 | Hits (1): +0.5
+| Carson Benge              | RF       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Ronny Mauricio            | SS       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | CF       |      0.0 | 
+| Kodai Senga               | P        |     -1.0 | Starter Under 4 IP (2.2 IP): -1.0
+| Carl Edwards Jr.          | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Luke Weaver               | P        |      1.0 | Pickoff (1): +1.0
+| Brooks Raley              | P        |      0.0 | 
+| Devin Williams            | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 8.0
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         12.0
+  Carry over into next game: 0.0

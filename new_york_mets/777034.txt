@@ -1,0 +1,29 @@
+Game 777034 (2025-07-23): Mets vs Angels  6-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Lindor          | SS       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Juan Soto                 | RF       |      0.0 | 
+| Pete Alonso               | 1B       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0
+| Starling Marte            | DH       |      1.0 | Hits (2): +1.0
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | 3B       |      0.5 | Hits (1): +0.5
+| Luisangel Acuña           | 2B       |      0.0 | 
+| Luis Torrens              | C        |      1.0 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Sean Manaea               | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 1 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Huascar Brazobán          | P        |      0.0 | 
+| José Buttó                | P        |     -1.0 | Wild Pitch (1): -1.0
+| Brooks Raley              | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |      7.0 | Save without a hit or walk (0 H, 0 BB): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 34.0
+  Team points:   -1.0  (includes 0.0 carried over)
+  TOTAL:         33.0
+  Carry over into next game: 0.0

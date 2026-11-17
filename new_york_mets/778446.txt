@@ -1,0 +1,32 @@
+Game 778446 (2025-04-05): Mets vs Blue Jays  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Juan Soto                 | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      0.0 | 
+| Jesse Winker              | DH       |     13.5 | Hits (3): +1.5 | Triples (2): +6.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Mark Vientos              | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Brett Baty                | 2B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jose Siri                 | CF       |      3.0 | Runs (1): +1.0 | Walks (2): +2.0
+| Hayden Senger             | C        |      0.0 | 
+| Starling Marte            | PH       |      0.0 | 
+| Luis Torrens              | C        |      0.5 | Hits (1): +0.5
+| Griffin Canning           | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| José Buttó                | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Unusual      Walk-Off Win (1): +5.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 28.0
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         32.0
+  Carry over into next game: 2.0

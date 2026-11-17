@@ -1,0 +1,28 @@
+Game 777111 (2025-07-18): Mets vs Reds  4-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Mark Vientos              | DH       |      0.0 | 
+| Juan Soto                 | RF       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Brandon Nimmo             | LF       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Ronny Mauricio            | 3B       |      1.0 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Brett Baty                | PH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      5.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Sean Manaea               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Alex Carrillo             | P        |     -1.0 | Wild Pitch (1): -1.0
+| Brandon Waddell           | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 22.5
+  Team points:   -4.0  (includes 0.0 carried over)
+  TOTAL:         18.5
+  Carry over into next game: 0.0

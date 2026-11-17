@@ -1,0 +1,32 @@
+Game 824362 (2026-05-07): Mets @ Rockies  2-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Juan Soto                 | DH       |      3.5 | Hits (1): +0.5 | Triples (1): +3.0
+| Bo Bichette               | 3B       |      1.0 | Walks (1): +1.0
+| Mark Vientos              | 1B       |      0.0 | 
+| Austin Slater             | RF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brett Baty                | RF       |      0.0 | 
+| Marcus Semien             | 2B       |      3.0 | Runs (1): +1.0 | Walks (2): +2.0
+| Andy Ibáñez               | LF       |      3.0 | Sac Fly Scores Run (1): +2.0 | Advances Runner Into Scoring Position (1): +1.0
+| Carson Benge              | LF       |      0.5 | Hits (1): +0.5
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | Walks (1): +1.0
+| Tyrone Taylor             | CF       |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Advances Runner Into Scoring Position (1): +1.0
+| MJ Melendez               | PH       |      0.0 | 
+| Vidal Bruján              | SS       |      1.0 | Walks (1): +1.0
+| Christian Scott           | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |     -1.0 | Wild Pitch (1): -1.0
+| Austin Warren             | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Craig Kimbrel             | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 20.0
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         18.0
+  Carry over into next game: 0.0

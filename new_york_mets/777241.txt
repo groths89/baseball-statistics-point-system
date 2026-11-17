@@ -1,0 +1,31 @@
+Game 777241 (2025-07-05): Mets vs Yankees  12-6 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Starling Marte            | DH       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Ronny Mauricio            | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Lindor          | SS       |      8.0 | Hits (2): +1.0 | Runs (4): +4.0 | Walks (2): +2.0 | Stolen Base (1): +1.0
+| Juan Soto                 | RF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |     14.0 | Hits (2): +1.0 | Runs (3): +3.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Brandon Nimmo             | LF       |      9.0 | Hits (2): +1.0 | Runs (1): +1.0 | Grand Slam (3 on): +4.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Brett Baty                | 3B       |      0.0 | 
+| Luis Torrens              | C        |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | 2B       |      0.0 | 
+| Tyrone Taylor             | CF       |      1.0 | Runs (1): +1.0
+| Frankie Montas            | P        |      0.0 | 
+| Richard Lovelady          | P        |      0.0 | 
+| Chris Devenski            | P        |      0.0 | 
+| Ryne Stanek               | P        |     -2.0 | Wild Pitch (1): -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+
+### Team Totals ###
+  Player points: 39.0
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         43.0
+  Carry over into next game: 0.0

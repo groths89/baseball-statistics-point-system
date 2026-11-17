@@ -1,0 +1,27 @@
+Game 778497 (2025-04-01): Mets @ Marlins  2-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |     -0.5 | Hits (1): +0.5 | Stolen Base (1): +1.0 | Error (1): -1.0 | Error (1): -1.0
+| Juan Soto                 | RF       |      1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brandon Nimmo             | LF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Jesse Winker              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Luisangel Acuña           | 2B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brett Baty                | 2B       |      0.0 | 
+| Jose Siri                 | CF       |      0.0 | 
+| Kodai Senga               | P        |      0.0 | 
+| Max Kranick               | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (1): +5.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 8.5
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         12.5
+  Carry over into next game: 0.0

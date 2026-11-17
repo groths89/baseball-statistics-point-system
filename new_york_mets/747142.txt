@@ -1,0 +1,34 @@
+Game 747142 (2024-04-08): Mets @ Braves  8-7 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | CF       |     11.0 | Hits (4): +2.0 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Francisco Lindor          | SS       |      1.0 | Walks (1): +1.0
+| Pete Alonso               | 1B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Brett Baty                | 3B       |      2.5 | Hits (3): +1.5 | Runs (1): +1.0
+| Starling Marte            | RF       |      0.5 | Hits (1): +0.5
+| DJ Stewart                | DH       |     13.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jeff McNeil               | 2B       |      5.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Joey Wendle               | 2B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Tyrone Taylor             | LF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Julio Teheran             | P        |     -1.0 | Starter Under 4 IP (2.2 IP): -1.0
+| Reed Garrett              | P        |      0.0 | 
+| Cole Sulser               | P        |      0.0 | 
+| Jake Diekman              | P        |      0.0 | 
+| Drew Smith                | P        |     -1.0 | Wild Pitch (1): -1.0
+| Jorge López               | P        |      3.0 | Save (2 H, 0 BB): +3.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 40.5
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         45.5
+  Carry over into next game: 0.0

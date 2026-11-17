@@ -1,0 +1,30 @@
+Game 776439 (2025-09-06): Mets @ Reds  3-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.5 | Hits (3): +1.5 | Runs (1): +1.0 | Walks (1): +1.0
+| Juan Soto                 | RF       |      4.0 | Hits (2): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      4.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Pete Alonso               | 1B       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | DH       |      1.0 | Walks (1): +1.0
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Luis Torrens              | C        |      1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Jared Young               | PH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Cedric Mullins            | CF       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Jonah Tong                | P        |      0.0 | 
+| Ryne Stanek               | P        |      0.0 | 
+| Kevin Herget              | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+
+### Team Totals ###
+  Player points: 21.5
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         19.5
+  Carry over into next game: 0.0

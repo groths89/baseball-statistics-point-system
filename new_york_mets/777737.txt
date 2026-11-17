@@ -1,0 +1,29 @@
+Game 777737 (2025-05-28): Mets vs White Sox  4-9 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Brandon Nimmo             | CF       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (2): +2.0
+| Juan Soto                 | RF       |      4.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Brett Baty                | 3B       |      1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Error (1): -1.0
+| Mark Vientos              | DH       |     10.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Jeff McNeil               | 2B       |      0.5 | Hits (1): +0.5 | Walks (1): +1.0 | Error (1): -1.0
+| Luis Torrens              | C        |      3.0 | Walks (3): +3.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Jared Young               | LF       |      0.0 | 
+| Griffin Canning           | P        |     -1.0 | Starter Under 4 IP (3.0 IP): -1.0
+| Brandon Waddell           | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryne Stanek               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (8): +2.0
+  Deduction    Team Struck Out 10+ Times (14): -5.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+
+### Team Totals ###
+  Player points: 28.5
+  Team points:   -5.0  (includes 0.0 carried over)
+  TOTAL:         23.5
+  Carry over into next game: 0.0

@@ -1,129 +1,113 @@
-from collections import defaultdict
+"""Team level rules and aggregation (sections I, III, IV and V of the README)."""
+from data_utils import opposite, parse_ip_to_outs, to_int
+from situational_rules import REACH_EVENTS
 
-def calculate_basic_team_points(boxscore, playbyplay, location):
-    basic_batting_points = 0
+BASIC = 'Basic Stats'
+PITCHING = 'Pitching'
+UNUSUAL = 'Unusual'
+DEDUCTION = 'Deduction'
+CARRY = 'Carry Over'
 
-    batting_totals = boxscore[f'{location}BattingTotals']
-    basic_batting_points += int(batting_totals['r'])
 
-    triples_from_plays = 0
-    is_top_inning = (location == 'away')
-    hits_points = int(batting_totals['h']) / 2
-    homerun_points = 0
-    walks = 0
+def calculate_team_walks_bonus(boxscore, side, team_events):
+    walks = to_int(boxscore[f'{side}BattingTotals'].get('bb'))
+    if walks > 5:
+        team_events.append((BASIC, 'Team Walks (more than 5)', walks, 2.0))
 
-    for play in playbyplay['liveData']['plays']['allPlays']:
-        if play['about']['isTopInning'] == is_top_inning:
-            event = play['result']['event']
-            if event in ['Walk', 'Hit By Pitch']:
-                walks += 1
-            elif play['result']['type'] == 'atBat':
-                if event == 'Triple':
-                    triples_from_plays += 1
-                elif event == 'Home Run':
-                    runners_on_base = 0
-                    for runner in play.get('runners', []):
-                        if runner.get('movement', {}).get('originBase') is not None:
-                            runners_on_base += 1
-                
-                    if runners_on_base == 0: # Solo HR
-                        homerun_points += 1
-                    elif 0 < runners_on_base < 3: # 2-run or 3-run HR
-                        homerun_points += 2
-                    elif runners_on_base == 3: # Grand Slam
-                        homerun_points += 4
 
-    basic_batting_points += walks
-    if walks >= 5:
-        basic_batting_points += 2
-    basic_batting_points += hits_points
-    basic_batting_points += triples_from_plays * 3
-    basic_batting_points += homerun_points
-    print(f"Basic Batting Points: {basic_batting_points}")
-    return basic_batting_points
+def calculate_team_strikeout_for_pitchers_bonus(boxscore, side, team_events):
+    strikeouts = to_int(boxscore[f'{side}PitchingTotals'].get('k'))
+    if strikeouts >= 16:
+        team_events.append((PITCHING, 'Team Pitchers 16+ Strikeouts', strikeouts, 1.0))
 
-def calculate_team_totals(final_points_map, lineups):
-    """Aggregates individual player scores into total team scores."""
-    team_totals = defaultdict(float)
 
-    team_map = {}
-    for location, players in lineups.items():
-        team_key = f"{location.capitalize()} Total"
-        for player in players:
-            team_map[player['mlb_id']] = team_key
+def calculate_bullpen_zero_runs_bonus(players, starter_id, team_events):
+    relievers = [p for p in players if p.get('pitching') and p['mlb_id'] != starter_id]
+    if relievers and sum(to_int(p['pitching'].get('r'), 1) for p in relievers) == 0:
+        team_events.append((PITCHING, 'Bullpen Gives Up 0 Runs', len(relievers), 5.0))
 
-    for mlb_id, data in final_points_map.items():
-        if not isinstance(mlb_id, int):
-             continue
 
-        if not isinstance(data, dict):
-             continue 
+def calculate_team_deductions(boxscore, side, linescore_innings, team_events):
+    batting_k = to_int(boxscore[f'{side}BattingTotals'].get('k'))
+    if batting_k >= 10:
+        team_events.append((DEDUCTION, 'Team Struck Out 10+ Times', batting_k, -(batting_k - 9.0)))
 
-        team_key = team_map.get(mlb_id)
-        total_points = data.get('total_points', 0.0)
+    walks_issued = to_int(boxscore[f'{side}PitchingTotals'].get('bb'))
+    if walks_issued >= 5:
+        team_events.append((DEDUCTION, 'Pitchers Walk 5+ Batters', walks_issued, -(walks_issued - 4.0)))
 
-        if team_key:
-             team_totals[team_key] += total_points
+    longest_drought = current = 0
+    for inning in linescore_innings:
+        runs = inning.get(side, {}).get('runs')
+        if runs == 0:
+            current += 1
+            longest_drought = max(longest_drought, current)
+        else:
+            current = 0
+    if longest_drought >= 6:
+        team_events.append((DEDUCTION, 'No Runs For 6+ Innings', longest_drought, -1.0))
 
-    return team_totals
 
-def calculate_team_strikeout_for_pitchers_bonus(final_points_map, lineups, team_totals, TEAM_LOCATION, team_total_key):
-    """Awards +1 point to the team total of the pitchers get 16 or more strikeouts"""
-    BONUS_POINTS = 1.0
-    MIN_STRIKEOUTS = 16
-    team_strikeouts = 0
+def calculate_unusual_team_events(plays, boxscore, side, players, team_events):
+    """No-hitter/perfect game, comeback wins and walk-offs. Returns the carry over points for the next game."""
+    carry_out = 0.0
+    other = opposite(side)
 
-    if TEAM_LOCATION not in ['home', 'away']:
-        return team_totals
+    pitching_totals = boxscore[f'{side}PitchingTotals']
+    outs = sum(parse_ip_to_outs(p['pitching'].get('ip')) for p in players if p.get('pitching'))
+    if outs >= 27 and to_int(pitching_totals.get('h')) == 0:
+        opponent_reached = any(c['side'] == other and c['event_type'] in REACH_EVENTS for c in plays)
+        name = 'Pitchers Throw No-Hitter' if opponent_reached else 'Pitchers Throw Perfect Game'
+        team_events.append((UNUSUAL, name, 1, 10.0))
+        carry_out += 2.0
 
-    for player in lineups[TEAM_LOCATION]:
-        mlb_id = player.get('mlb_id')
-        player_data = final_points_map.get(mlb_id, {})
-        
-        for item in player_data.get('breakdown', []):
-            if item.get('rule_category') == 'Pitching' and item.get('rule_name') == 'Strikeout(s)':
-                team_strikeouts += item.get('value', 0)
-                break 
+    if not plays:
+        return carry_out
 
-    if team_strikeouts >= MIN_STRIKEOUTS:
-        if team_total_key not in team_totals:
-            team_totals[team_total_key] = 0.0
+    final = plays[-1]
+    won = final['score_after'][side] > final['score_after'][other]
+    if not won:
+        return carry_out
 
-        team_totals[team_total_key] += BONUS_POINTS
-        
-        print(f"✅ TEAM STRIKEOUT BONUS: +{BONUS_POINTS} added to team total for recording {team_strikeouts} strikeouts.")
-    else:
-        print(f"❌ TEAM STRIKEOUT CHECK: {team_strikeouts} strikeouts recorded, falling short of the {MIN_STRIKEOUTS} minimum.")
-    
-    return team_totals
+    last_inning = final['inning']
 
-def calculate_bullpen_zero_runs_bonus(final_points_map, lineups, team_totals, starters, TEAM_LOCATION, team_total_key):
-    BONUS_POINTS = 5.0
+    def max_deficit(first_inning):
+        deficits = [0]
+        for c in plays:
+            if c['inning'] >= first_inning:
+                deficits.append(c['score_before'][other] - c['score_before'][side])
+        return max(deficits)
 
-    if TEAM_LOCATION not in ['home', 'away']:
-        return team_totals
-    
-    team_bullpen_er = 0
-    starter_id = starters.get(TEAM_LOCATION)
+    if max_deficit(last_inning) >= 5:
+        team_events.append((UNUSUAL, 'Comeback From 5+ Run Deficit In Last Inning', max_deficit(last_inning), 20.0))
+        carry_out += 2.0
+    elif max_deficit(last_inning - 1) >= 10:
+        team_events.append((UNUSUAL, 'Comeback From 10+ Run Deficit In Last 2 Innings', max_deficit(last_inning - 1), 20.0))
+        carry_out += 2.0
 
-    for player in lineups[TEAM_LOCATION]:
-        mlb_id = player.get('mlb_id')
-        position = player.get('position')
-        
-        if position == 'P' and mlb_id == starter_id:
-            continue
+    if side == 'home' and not final['is_top'] and final['score_before'][side] <= final['score_before'][other]:
+        team_events.append((UNUSUAL, 'Walk-Off Win', 1, 5.0))
+        carry_out += 2.0
 
-        player_data = final_points_map.get(mlb_id, {})
+    return carry_out
 
-        for item in player_data.get('breakdown', []):
-            if item.get('rule_name') == 'Earned Runs':
-                team_bullpen_er += item.get('value', 0)
-                break
 
-    if team_bullpen_er == 0:
-        team_totals[team_total_key] += BONUS_POINTS
-        print(f"✅ BULLPEN ZERO RUNS BONUS: +{BONUS_POINTS} added to team total for recording {team_bullpen_er} earned runs.")
-    else:
-        print(f"❌ BULLPEN ZERO RUNS CHECK: {team_bullpen_er} earned runs recorded, falling short of the 0 minimum.")
+def summarize_team(player_points_map, team_events, carry_in, carry_out):
+    """Combines player points, team level events and carry over points into the team's game total."""
+    player_points = sum(d['total_points'] for d in player_points_map.values())
+    breakdown = [
+        {'rule_category': e[0], 'rule_name': e[1], 'value': e[2], 'points': e[3], 'play': e[4] if len(e) > 4 else None}
+        for e in team_events
+    ]
+    if carry_in:
+        breakdown.append({'rule_category': CARRY, 'rule_name': 'Carry Over From Previous Game', 'value': carry_in, 'points': carry_in, 'play': None})
 
-    return team_totals
+    team_points = sum(item['points'] for item in breakdown)
+    return {
+        'player_points': player_points,
+        'team_points': team_points,
+        'team_breakdown': breakdown,
+        'carry_in': carry_in,
+        'carry_out': carry_out,
+        'total': player_points + team_points,
+    }

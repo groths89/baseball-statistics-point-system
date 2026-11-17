@@ -1,0 +1,29 @@
+Game 746065 (2024-05-17): Mets @ Marlins  0-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Tyrone Taylor             | LF       |      0.0 | 
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| J.D. Martinez             | DH       |      3.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| DJ Stewart                | PH       |      0.0 | 
+| Mark Vientos              | 3B       |      1.0 | Walks (1): +1.0
+| Starling Marte            | RF       |      0.0 | 
+| Brett Baty                | PH       |      0.0 | 
+| Harrison Bader            | CF       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | 2B       |     -0.5 | Hits (1): +0.5 | Error (1): -1.0
+| Tomás Nido                | C        |      0.0 | 
+| Christian Scott           | P        |      3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Josh Walker               | P        |      0.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Grant Hartwig             | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 10.0
+  Team points:   1.0  (includes 0.0 carried over)
+  TOTAL:         11.0
+  Carry over into next game: 0.0

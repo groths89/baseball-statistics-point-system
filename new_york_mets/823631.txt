@@ -1,0 +1,34 @@
+Game 823631 (2026-05-13): Mets vs Tigers  3-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      4.5 | Hits (3): +1.5 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Bo Bichette               | SS       |      3.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Juan Soto                 | DH       |      0.0 | 
+| MJ Melendez               | DH       |      0.0 | 
+| Mark Vientos              | 1B       |      0.5 | Hits (1): +0.5 | Runs (1): +1.0 | Error (1): -1.0
+| Marcus Semien             | 2B       |      0.0 | 
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | LF       |      0.0 | 
+| A.J. Ewing                | CF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Luis Torrens              | C        |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Christian Scott           | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      0.0 | 
+| Luke Weaver               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Devin Williams            | P        |      0.0 | 
+| Brooks Raley              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Unusual      Walk-Off Win (1): +5.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 19.5
+  Team points:   10.0  (includes 0.0 carried over)
+  TOTAL:         29.5
+  Carry over into next game: 2.0

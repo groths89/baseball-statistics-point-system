@@ -1,0 +1,29 @@
+Game 776911 (2025-08-02): Mets vs Giants  12-6 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      6.5 | Hits (3): +1.5 | Runs (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Francisco Lindor          | SS       |     11.5 | Hits (3): +1.5 | Runs (1): +1.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Juan Soto                 | RF       |      0.5 | Hits (1): +0.5
+| Pete Alonso               | 1B       |      7.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Jeff McNeil               | DH       |      0.5 | Hits (1): +0.5
+| Ronny Mauricio            | 3B       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Cedric Mullins            | CF       |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Stolen Base (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brett Baty                | 2B       |      6.5 | Hits (1): +0.5 | Runs (3): +3.0 | Walks (2): +2.0 | 2 Out Hit (1): +1.0
+| Kodai Senga               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Gregory Soto              | P        |      0.0 | 
+| Tyler Rogers              | P        |      0.0 | 
+| Brooks Raley              | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Rico Garcia               | P        |      0.0 | 
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 41.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         43.5
+  Carry over into next game: 0.0

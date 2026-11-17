@@ -1,0 +1,28 @@
+Game 777389 (2025-06-23): Mets vs Braves  2-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Brandon Nimmo             | LF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0
+| Juan Soto                 | RF       |      8.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Pete Alonso               | 1B       |      0.0 | 
+| Jeff McNeil               | 2B       |      0.0 | 
+| Tyrone Taylor             | CF       |      0.0 | 
+| Jared Young               | DH       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Brett Baty                | 3B       |      1.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | Error (1): -1.0
+| Paul Blackburn            | P        |      1.0 | Wild Pitch (1): -1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| José Buttó                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Ryne Stanek               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Edwin Díaz                | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+
+### Team Totals ###
+  Player points: 21.0
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         26.0
+  Carry over into next game: 0.0

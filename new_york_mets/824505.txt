@@ -1,0 +1,32 @@
+Game 824505 (2026-06-15): Mets @ Reds  0-12 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      0.5 | Hits (1): +0.5
+| Bo Bichette               | SS       |      1.5 | Hits (3): +1.5
+| Juan Soto                 | LF       |      2.0 | Walks (2): +2.0
+| Vidal Bruján              | LF       |      0.0 | 
+| Jared Young               | 1B       |      0.0 | 
+| Eric Wagaman              | 1B       |      1.0 | Walks (1): +1.0
+| A.J. Ewing                | CF       |      1.0 | Walks (1): +1.0
+| Marcus Semien             | 2B       |      1.0 | Walks (1): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| MJ Melendez               | DH       |      1.0 | Walks (1): +1.0
+| Mark Vientos              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      0.5 | Hits (1): +0.5
+| Tobias Myers              | P        |     -1.0 | Starter Under 4 IP (1.1 IP): -1.0
+| Jonathan Pintaro          | P        |      2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| David Peterson            | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (6): +2.0
+  Deduction    Team Struck Out 10+ Times (11): -2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 11.0
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         9.0
+  Carry over into next game: 0.0

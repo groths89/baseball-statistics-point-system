@@ -1,0 +1,31 @@
+Game 777968 (2025-05-11): Mets vs Cubs  6-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Juan Soto                 | RF       |      0.0 | 
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      7.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| José Azócar               | PR       |      1.0 | Runs (1): +1.0
+| Brett Baty                | 3B       |      0.0 | 
+| Brandon Nimmo             | LF       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0
+| Starling Marte            | DH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Jeff McNeil               | DH       |      0.0 | 
+| Luis Torrens              | C        |      7.5 | Hits (1): +0.5 | Triples (1): +3.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Francisco Alvarez         | C        |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Luisangel Acuña           | 2B       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | CF       |      0.0 | 
+| Griffin Canning           | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 1 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Reed Garrett              | P        |     -3.0 | Blown Save (BS, 1): -2.0 | Reliever Walks First Batter (1): -1.0
+| Ryne Stanek               | P        |      0.0 | 
+| Edwin Díaz                | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 35.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         35.0
+  Carry over into next game: 0.0

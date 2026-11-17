@@ -1,0 +1,28 @@
+Game 823077 (2026-03-31): Mets @ Cardinals  0-3 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Walks (1): +1.0
+| Juan Soto                 | LF       |      2.0 | Hits (2): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Bo Bichette               | 3B       |      1.0 | Walks (1): +1.0
+| Luis Robert Jr.           | CF       |      1.0 | Walks (1): +1.0
+| Jared Young               | 1B       |      0.5 | Hits (1): +0.5
+| Mark Vientos              | DH       |      0.0 | 
+| Brett Baty                | DH       |      0.0 | 
+| Marcus Semien             | 2B       |      1.0 | Walks (1): +1.0
+| Carson Benge              | RF       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Francisco Alvarez         | C        |      0.0 | 
+| Kodai Senga               | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (6.0 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Richard Lovelady          | P        |      0.0 | 
+
+### Team Events ###
+  Deduction    Passed Ball (1): -1.0
+  Deduction    No Runs For 6+ Innings (9): -1.0
+
+### Team Totals ###
+  Player points: 13.5
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         11.5
+  Carry over into next game: 0.0

@@ -1,0 +1,32 @@
+Game 747161 (2024-08-28): Mets @ D-backs  5-8 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Starling Marte            | RF       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Brandon Nimmo             | LF       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Pete Alonso               | 1B       |      3.0 | Advances Runner Into Scoring Position (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| J.D. Martinez             | DH       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Jose Iglesias             | 2B       |      0.0 | 
+| Jesse Winker              | PH       |      0.0 | 
+| Francisco Alvarez         | C        |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Error (1): -1.0
+| Harrison Bader            | CF       |      8.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Luis Severino             | P        |      0.0 | 
+| Huascar Brazobán          | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Danny Young               | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+| Phil Maton                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Edwin Díaz                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+
+### Team Totals ###
+  Player points: 24.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         24.0
+  Carry over into next game: 0.0

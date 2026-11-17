@@ -1,0 +1,27 @@
+Game 825089 (2026-05-09): Mets @ D-backs  1-2 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Juan Soto                 | LF       |      1.0 | Walks (1): +1.0
+| Bo Bichette               | SS       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| MJ Melendez               | DH       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Mark Vientos              | 1B       |      0.0 | 
+| Carson Benge              | RF       |      0.0 | 
+| Marcus Semien             | 2B       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      4.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Francisco Alvarez         | C        |      0.0 | 
+| Tyrone Taylor             | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Clay Holmes               | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 2 R): +5.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Austin Warren             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Craig Kimbrel             | P        |      1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Deduction    No Runs For 6+ Innings (7): -1.0
+
+### Team Totals ###
+  Player points: 22.5
+  Team points:   4.0  (includes 0.0 carried over)
+  TOTAL:         26.5
+  Carry over into next game: 0.0

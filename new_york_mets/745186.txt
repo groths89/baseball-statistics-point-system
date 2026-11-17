@@ -1,0 +1,33 @@
+Game 745186 (2024-05-07): Mets @ Cardinals  7-5 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (2 on): +2.0
+| Starling Marte            | RF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Francisco Lindor          | SS       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Pete Alonso               | 1B       |      5.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| DJ Stewart                | LF       |      0.0 | 
+| Harrison Bader            | CF       |      0.0 | 
+| J.D. Martinez             | DH       |      2.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jeff McNeil               | 2B       |      4.5 | Hits (3): +1.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Tomás Nido                | C        |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| José Buttó                | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Cole Sulser               | P        |      0.0 | 
+| Sean Reid-Foley           | P        |      0.0 | 
+| Jorge López               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Reed Garrett              | P        |      0.0 | 
+| Adam Ottavino             | P        |      3.0 | Save (2 H, 1 BB): +3.0
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (5): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (5): -1.0
+
+### Team Totals ###
+  Player points: 30.0
+  Team points:   5.0  (includes 0.0 carried over)
+  TOTAL:         35.0
+  Carry over into next game: 0.0

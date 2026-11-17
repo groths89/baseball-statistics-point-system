@@ -1,0 +1,267 @@
+---
+import { getSeasons } from '../lib/api';
+
+interface Props {
+  season?: number | string | null;
+}
+
+const { season: seasonProp } = Astro.props;
+const season = seasonProp ?? (await getSeasons())?.[0] ?? null;
+const path = Astro.url.pathname;
+const onGames = path === '/' || path.startsWith('/game/');
+const onTrends = path.startsWith('/season-trends');
+const onInsights = path.startsWith('/insights');
+const onRules = path.startsWith('/rubric');
+const apiBase = (import.meta.env.PUBLIC_API_URL ?? 'http://localhost:8000').replace(/\/$/, '');
+---
+
+<header class="top">
+  <div class="inner">
+    <div class="left">
+      <a href="/" class="brand">
+        <span class="mark">STATCAST</span>
+        <span class="name">DiamondMetrics</span>
+      </a>
+      <nav class="hide-sm">
+        <a href="/" class:list={[{ active: onGames }]}>Game Breakdown</a>
+        <a href="/season-trends" class:list={[{ active: onTrends }]}>Season Trends</a>
+        <a href="/insights" class:list={[{ active: onInsights }]}>Insights</a>
+        <a href="/rubric" class:list={[{ active: onRules }]}>Points Rubric</a>
+      </nav>
+    </div>
+    <div class="right">
+      <div class="search hide-sm" data-api={apiBase}>
+        <input id="site-search" type="search" placeholder="Search player, team, game..." autocomplete="off" aria-label="Search" />
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <div id="search-results" class="results" hidden></div>
+      </div>
+      {season && <span class="season">{season} Regular Season</span>}
+      <button id="theme-toggle" class="btn icon" type="button" aria-label="Toggle light and dark theme">
+        <svg class="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        <svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+      </button>
+    </div>
+  </div>
+  <slot />
+</header>
+
+<script>
+  const button = document.getElementById('theme-toggle');
+  button?.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+
+  const box = document.querySelector<HTMLElement>('.search');
+  const input = document.getElementById('site-search') as HTMLInputElement | null;
+  const results = document.getElementById('search-results');
+  let timer: ReturnType<typeof setTimeout>;
+  let seq = 0;
+
+  const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+
+  async function run(q: string) {
+    if (!box || !results) return;
+    const mine = ++seq;
+    try {
+      const res = await fetch(`${box.dataset.api}/search?q=${encodeURIComponent(q)}&limit=6`);
+      if (!res.ok || mine !== seq) return;
+      const data = await res.json();
+      const rows: string[] = [];
+      for (const p of data.players) {
+        rows.push(`<a href="/game/${p.team_id}/${p.last_game_id}"><b>${esc(p.name)}</b><small>Player · ${p.games} games · latest ${esc(p.last_date ?? '')}</small></a>`);
+      }
+      for (const g of data.games) {
+        const label = g.home_away === 'away' ? `${g.team_name} @ ${g.opponent}` : `${g.opponent} @ ${g.team_name}`;
+        rows.push(`<a href="/game/${g.team_id}/${g.game_id}"><b>${esc(label)}</b><small>Game · ${esc(g.game_date ?? '')} · ${g.runs_for}-${g.runs_against}</small></a>`);
+      }
+      results.innerHTML = rows.length ? rows.join('') : '<p>No matches</p>';
+      results.hidden = false;
+    } catch {
+      results.innerHTML = '<p>Search is unavailable</p>';
+      results.hidden = false;
+    }
+  }
+
+  input?.addEventListener('input', () => {
+    clearTimeout(timer);
+    const q = input.value.trim();
+    if (q.length < 2) {
+      if (results) results.hidden = true;
+      return;
+    }
+    timer = setTimeout(() => run(q), 200);
+  });
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && results) results.hidden = true;
+  });
+  document.addEventListener('click', (e) => {
+    if (results && !box?.contains(e.target as Node)) results.hidden = true;
+  });
+</script>
+
+<style>
+  .search {
+    position: relative;
+    width: 16rem;
+  }
+  .search input {
+    width: 100%;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 12px;
+    padding: 5px 28px 5px 10px;
+  }
+  .search input:focus {
+    outline: none;
+    border-color: var(--link);
+  }
+  .search svg {
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    color: var(--muted);
+    pointer-events: none;
+  }
+  .results {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    width: 24rem;
+    max-width: 90vw;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    z-index: 60;
+  }
+  .results :global(a) {
+    display: grid;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .results :global(a:hover) {
+    background: var(--pill-bg);
+  }
+  .results :global(small) {
+    color: var(--muted);
+    font-size: 11px;
+  }
+  .results :global(p) {
+    margin: 0;
+    padding: 10px 12px;
+    color: var(--muted);
+  }
+  .top {
+    z-index: 50;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  @media (min-width: 768px) {
+    .top {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (min-width: 1024px) {
+    .inner {
+      padding: 0 1.5rem;
+    }
+  }
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .right {
+    gap: 0.75rem;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mark {
+    background: #d62828;
+    color: #fff;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .name {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--header-text);
+  }
+  nav {
+    display: flex;
+    gap: 4px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  nav a {
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border-bottom: 1px solid transparent;
+  }
+  nav a:hover {
+    color: var(--text);
+    background: var(--pill-bg);
+  }
+  nav a.active {
+    color: var(--text);
+    background: var(--surface-2);
+    font-weight: 600;
+    border-bottom-color: var(--link);
+  }
+  .season {
+    white-space: nowrap;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    color: var(--muted);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .icon {
+    width: 30px;
+    height: 28px;
+    padding: 0;
+    justify-content: center;
+  }
+  @media (max-width: 767px) {
+    .hide-sm {
+      display: none;
+    }
+  }
+  @media (max-width: 1023px) {
+    nav.hide-sm {
+      display: none;
+    }
+  }
+  :global(:root[data-theme='dark']) .sun,
+  :global(:root[data-theme='light']) .moon {
+    display: none;
+  }
+</style>

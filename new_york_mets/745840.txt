@@ -1,0 +1,29 @@
+Game 745840 (2024-04-15): Mets vs Pirates  6-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      0.0 | 
+| Starling Marte            | RF       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Lindor          | SS       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Pete Alonso               | 1B       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Francisco Alvarez         | C        |      3.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | 2B       |      2.0 | Runs (1): +1.0 | Stolen Base (1): +1.0
+| Tyrone Taylor             | DH       |      0.5 | Hits (1): +0.5
+| DJ Stewart                | DH       |      6.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Stolen Base (1): +1.0
+| Harrison Bader            | CF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Stolen Base (1): +1.0
+| Adrian Houser             | P        |      7.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Drew Smith                | P        |     -1.0 | Reliever Walks First Batter (1): -1.0
+| Brooks Raley              | P        |      0.0 | 
+| Adam Ottavino             | P        |      0.0 | 
+| Edwin Díaz                | P        |      3.0 | Save (0 H, 1 BB): +3.0
+
+### Team Events ###
+  Deduction    Pitchers Walk 5+ Batters (7): -3.0
+
+### Team Totals ###
+  Player points: 35.0
+  Team points:   -3.0  (includes 0.0 carried over)
+  TOTAL:         32.0
+  Carry over into next game: 0.0

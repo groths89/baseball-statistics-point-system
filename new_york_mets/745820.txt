@@ -1,0 +1,28 @@
+Game 745820 (2024-05-31): Mets vs D-backs  10-9 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Pete Alonso               | 1B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |      3.0 | Hits (2): +1.0 | Runs (2): +2.0
+| J.D. Martinez             | DH       |      8.0 | Hits (2): +1.0 | Runs (3): +3.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0
+| Starling Marte            | RF       |     10.0 | Hits (2): +1.0 | Triples (1): +3.0 | Runs (1): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Mark Vientos              | 3B       |      5.5 | Hits (3): +1.5 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Harrison Bader            | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Jose Iglesias             | 2B       |     -0.5 | Hits (1): +0.5 | Error (1): -1.0
+| Tomás Nido                | C        |      3.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (1): +1.0
+| Luis Severino             | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Dedniel Núñez             | P        |      0.0 | 
+| Jake Diekman              | P        |      0.0 | 
+| Sean Reid-Foley           | P        |      0.0 | 
+| Reed Garrett              | P        |      0.0 | 
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+
+### Team Totals ###
+  Player points: 38.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         40.5
+  Carry over into next game: 0.0

@@ -1,0 +1,29 @@
+Game 745792 (2024-07-26): Mets vs Braves  8-4 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.0 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |      4.0 | Runs (2): +2.0 | Walks (2): +2.0
+| J.D. Martinez             | DH       |      7.5 | Hits (3): +1.5 | Runs (1): +1.0 | Grand Slam (3 on): +4.0 | Hit Scores Run To Take The Lead (1): +1.0
+| DJ Stewart                | DH       |      0.0 | 
+| Pete Alonso               | 1B       |      1.0 | Walks (1): +1.0
+| Jeff McNeil               | RF       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Mark Vientos              | 3B       |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0
+| Jose Iglesias             | 2B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Francisco Alvarez         | C        |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Tyrone Taylor             | CF       |      1.0 | Runs (1): +1.0
+| Kodai Senga               | P        |      6.0 | Starter 2 Runs or Less (min 5 IP) (5.1 IP, 2 R): +5.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Eric Orze                 | P        |      0.0 | 
+| Adam Ottavino             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Jake Diekman              | P        |      0.0 | 
+
+### Team Events ###
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 36.0
+  Team points:   4.0  (includes 2.0 carried over)
+  TOTAL:         40.0
+  Carry over into next game: 0.0

@@ -1,0 +1,28 @@
+Game 823629 (2026-05-15): Mets vs Yankees  2-5 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |      0.0 | 
+| Bo Bichette               | SS       |      0.0 | 
+| Juan Soto                 | LF       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0
+| Mark Vientos              | 1B       |      0.0 | 
+| MJ Melendez               | DH       |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Brett Baty                | 3B       |      7.0 | Hits (2): +1.0 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| Marcus Semien             | 2B       |      3.5 | Hits (1): +0.5 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0 | 2 Out Hit (1): +1.0
+| A.J. Ewing                | CF       |      0.0 | 
+| Luis Torrens              | C        |      0.0 | 
+| Clay Holmes               | P        |      3.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Austin Warren             | P        |      0.0 | 
+| Tobias Myers              | P        |      0.0 | 
+| Craig Kimbrel             | P        |      1.0 | Pickoff (1): +1.0
+
+### Team Events ###
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 20.5
+  Team points:   -2.0  (includes 0.0 carried over)
+  TOTAL:         18.5
+  Carry over into next game: 0.0

@@ -1,0 +1,37 @@
+Game 822734 (2026-05-18): Mets @ Nationals  16-7 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | RF       |     11.5 | Hits (3): +1.5 | Runs (3): +3.0 | Walks (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Bo Bichette               | 3B       |     10.5 | Hits (3): +1.5 | Runs (2): +2.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Juan Soto                 | DH       |      5.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (2): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Mark Vientos              | 1B       |      0.0 | 
+| Vidal Bruján              | SS       |      2.5 | Hits (1): +0.5 | Runs (2): +2.0
+| Brett Baty                | 1B       |      4.0 | Hits (2): +1.0 | Runs (2): +2.0 | Solo Homerun (0 on): +1.0
+| Marcus Semien             | 2B       |      3.5 | Hits (1): +0.5 | Runs (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| A.J. Ewing                | CF       |      4.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | Advances On Errant Throw (1): +1.0
+| Tyrone Taylor             | LF       |      6.0 | Hits (2): +1.0 | Runs (2): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Luis Torrens              | C        |      6.0 | Hits (2): +1.0 | Runs (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0
+| MJ Melendez               | PH       |      0.0 | 
+| Hayden Senger             | C        |      2.5 | Hits (1): +0.5 | Runs (1): +1.0 | 2 Out Hit (1): +1.0
+| Christian Scott           | P        |      0.0 | 
+| Austin Warren             | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Tobias Myers              | P        |     -3.0 | Blown Save (BS, 1): -2.0 | Reliever Walks First Batter (1): -1.0
+| Luke Weaver               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Huascar Brazobán          | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Craig Kimbrel             | P        |      0.0 | 
+
+### Team Events ###
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Deduction    Pitchers Walk 5+ Batters (9): -5.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 55.5
+  Team points:   3.0  (includes 2.0 carried over)
+  TOTAL:         58.5
+  Carry over into next game: 0.0

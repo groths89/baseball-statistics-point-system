@@ -1,0 +1,27 @@
+Game 777555 (2025-06-11): Mets vs Nationals  5-0 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Brandon Nimmo             | LF       |      7.0 | Hits (2): +1.0 | Runs (3): +3.0 | Walks (1): +1.0 | Solo Homerun (0 on): +1.0 | Solo Homerun (0 on): +1.0
+| Juan Soto                 | RF       |      9.0 | Hits (2): +1.0 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0
+| Pete Alonso               | 1B       |      6.5 | Hits (1): +0.5 | Walks (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jeff McNeil               | CF       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Tyrone Taylor             | CF       |      1.0 | Outfield Assist (1): +1.0
+| Jared Young               | DH       |      1.0 | Walks (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Brett Baty                | 3B       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Ronny Mauricio            | 3B       |      0.0 | 
+| Luisangel Acuña           | 2B       |      0.0 | 
+| David Peterson            | P        |     23.0 | Starter 2 Runs or Less (min 5 IP) (9.0 IP, 0 R): +5.0 | Starter 7+ IP (9.0 IP): +5.0 | Starter Complete Game (9.0 IP): +10.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Carry Over   Carry Over From Previous Game (2.0): +2.0
+
+### Team Totals ###
+  Player points: 52.5
+  Team points:   4.0  (includes 2.0 carried over)
+  TOTAL:         56.5
+  Carry over into next game: 0.0

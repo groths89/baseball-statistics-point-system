@@ -1,0 +1,31 @@
+Game 777216 (2025-07-06): Mets vs Yankees  4-6 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Starling Marte            | LF       |      3.5 | Hits (3): +1.5 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Francisco Lindor          | SS       |      0.5 | Hits (1): +0.5
+| Juan Soto                 | RF       |      0.0 | 
+| Pete Alonso               | 1B       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Brandon Nimmo             | DH       |      3.0 | Runs (1): +1.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Mark Vientos              | 3B       |      0.0 | 
+| Ronny Mauricio            | 2B       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Tyrone Taylor             | CF       |      0.0 | 
+| Brett Baty                | 3B       |      0.5 | Hits (1): +0.5
+| Jeff McNeil               | CF       |      2.0 | Hits (2): +1.0 | Runs (1): +1.0
+| Hayden Senger             | C        |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Luis Torrens              | PH       |      0.0 | 
+| Chris Devenski            | P        |     -1.0 | Starter Under 4 IP (2.0 IP): -1.0
+| Zach Pop                  | P        |      0.0 | 
+| Brandon Waddell           | P        |      0.0 | 
+| Huascar Brazobán          | P        |      0.0 | 
+| Rico Garcia               | P        |      0.0 | 
+
+### Team Events ###
+  (none)
+
+### Team Totals ###
+  Player points: 14.0
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         14.0
+  Carry over into next game: 0.0

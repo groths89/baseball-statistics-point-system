@@ -1,0 +1,32 @@
+Game 745827 (2024-05-10): Mets vs Braves  2-4 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| Starling Marte            | RF       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Francisco Lindor          | SS       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0 | Error (1): -1.0
+| Pete Alonso               | 1B       |      4.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (1): +2.0
+| J.D. Martinez             | DH       |      0.0 | 
+| Jeff McNeil               | 2B       |      1.0 | Walks (1): +1.0
+| Harrison Bader            | CF       |      0.0 | 
+| Brett Baty                | 3B       |      0.0 | 
+| Tyrone Taylor             | PH       |      0.0 | 
+| Joey Wendle               | 3B       |      0.0 | 
+| Tomás Nido                | C        |      0.0 | 
+| Jose Quintana             | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Yohan Ramírez             | P        |      0.0 | 
+| Adrian Houser             | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Reliever Walks First Batter (1): -1.0
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (2): +5.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+  Deduction    Team Struck Out 10+ Times (10): -1.0
+  Deduction    No Runs For 6+ Innings (6): -1.0
+
+### Team Totals ###
+  Player points: 12.0
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         19.0
+  Carry over into next game: 0.0

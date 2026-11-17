@@ -1,0 +1,33 @@
+Game 823238 (2026-04-05): Mets @ Giants  5-2 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      0.0 | 
+| Bo Bichette               | 3B       |      3.0 | Walks (1): +1.0 | Long At-Bat And Reaches Base (10): +2.0
+| Jorge Polanco             | DH       |      1.0 | Hits (2): +1.0
+| Tyrone Taylor             | LF       |      1.0 | Runs (1): +1.0
+| Luis Robert Jr.           | CF       |      6.5 | Hits (3): +1.5 | Runs (2): +2.0 | Stolen Base (1): +1.0 | Stolen Base (1): +1.0 | 2 Out Hit (1): +1.0
+| Jared Young               | LF       |      2.5 | Hits (3): +1.5 | Outfield Assist (1): +1.0
+| Luis Torrens              | C        |      4.5 | Hits (1): +0.5 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0 | Advances On Errant Throw (1): +1.0 | Catcher Throws Out Runner Stealing (1): +1.0
+| Mark Vientos              | 1B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Hit Scores Run To Take The Lead (1): +1.0
+| Marcus Semien             | 2B       |      0.5 | Hits (1): +0.5
+| Carson Benge              | RF       |      2.0 | Walks (1): +1.0 | Stolen Base (1): +1.0
+| Francisco Alvarez         | C        |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Luke Weaver               | P        |      0.0 | 
+| Devin Williams            | P        |      3.0 | Save (2 H, 0 BB): +3.0
+| Kodai Senga               | P        |      5.0 | Starter 2 Runs or Less (min 5 IP) (5.2 IP, 2 R): +5.0
+| Huascar Brazobán          | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Situational  5+ Straight Hits/Walks (5): +2.0
+  Situational  4+ Runs In A Row Without An Out (4): +2.0
+  Defense      Double Play (1): +2.0
+  Defense      Double Play (1): +2.0
+
+### Team Totals ###
+  Player points: 33.5
+  Team points:   13.0  (includes 0.0 carried over)
+  TOTAL:         46.5
+  Carry over into next game: 0.0

@@ -1,0 +1,4 @@
+.DS_STORE
+__pycache__/
+*.pyc
+new_york_mets/points.db

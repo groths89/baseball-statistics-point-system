@@ -1,0 +1,29 @@
+Game 823625 (2026-05-25): Mets vs Reds  2-7 L
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Carson Benge              | DH       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Bo Bichette               | SS       |      4.5 | Hits (3): +1.5 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0 | 2 Out Hit (1): +1.0
+| Mark Vientos              | 1B       |      1.5 | Hits (1): +0.5 | 2 Out Hit (1): +1.0
+| Marcus Semien             | 2B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Solo Homerun (0 on): +1.0
+| A.J. Ewing                | CF       |      0.5 | Hits (1): +0.5
+| Tyrone Taylor             | RF       |      1.0 | Advances Runner Into Scoring Position (1): +1.0
+| MJ Melendez               | LF       |      0.0 | 
+| Nick Morabito             | RF       |      0.0 | 
+| Brett Baty                | 3B       |      1.5 | Hits (1): +0.5 | Runs (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Nolan McLean              | P        |     -2.0 | Starter Under 4 IP (3.1 IP): -1.0 | Wild Pitch (1): -1.0
+| Austin Warren             | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Jonathan Pintaro          | P        |      0.0 | 
+| Tobias Myers              | P        |      0.0 | 
+
+### Team Events ###
+  Pitching     Bullpen Gives Up 0 Runs (3): +5.0
+  Deduction    Team Struck Out 10+ Times (12): -3.0
+
+### Team Totals ###
+  Player points: 13.5
+  Team points:   2.0  (includes 0.0 carried over)
+  TOTAL:         15.5
+  Carry over into next game: 0.0

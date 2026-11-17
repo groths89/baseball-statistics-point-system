@@ -1,0 +1,31 @@
+Game 823599 (2026-07-26): Mets vs Dodgers  8-3 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| A.J. Ewing                | CF       |      6.5 | Hits (1): +0.5 | Runs (2): +2.0 | Walks (2): +2.0 | Advances On Passed Ball (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Francisco Lindor          | SS       |      2.5 | Hits (1): +0.5 | Hit Scores Run To Take The Lead (1): +1.0 | Advances Runner Into Scoring Position (1): +1.0
+| Bo Bichette               | 3B       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Advances On Passed Ball (1): +1.0
+| Carson Benge              | RF       |      4.0 | Runs (1): +1.0 | Walks (2): +2.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Jorge Polanco             | DH       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Jared Young               | 1B       |     -1.0 | Error (1): -1.0
+| Luis Robert Jr.           | PH       |      2.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Marcus Semien             | 2B       |     10.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (3): +6.0
+| Tyrone Taylor             | LF       |      5.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (2 on): +2.0 | Hit Scores Run To Take The Lead (1): +1.0 | Outfield Assist (1): +1.0
+| Brett Baty                | 1B       |      2.0 | Walks (1): +1.0 | Walk With 2 Outs And Bases Empty (1): +1.0
+| Luis Torrens              | C        |      0.0 | 
+| Freddy Peralta            | P        |      2.0 | Escapes Inning With 0 Outs And Runner(s) In Scoring Position (1): +2.0
+| Cionel Pérez              | P        |      0.0 | 
+| Brooks Raley              | P        |      0.0 | 
+| Luke Weaver               | P        |      1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| Devin Williams            | P        |      0.0 | 
+
+### Team Events ###
+  Basic Stats  Team Walks (more than 5) (7): +2.0
+  Pitching     Bullpen Gives Up 0 Runs (4): +5.0
+
+### Team Totals ###
+  Player points: 40.0
+  Team points:   7.0  (includes 0.0 carried over)
+  TOTAL:         47.0
+  Carry over into next game: 0.0

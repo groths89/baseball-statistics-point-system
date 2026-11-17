@@ -1,0 +1,30 @@
+Game 746034 (2024-07-22): Mets @ Marlins  6-4 W
+
+### Individual Player Points (Applied Rules) ###
+| Player                    | Pos      |   Points | Details
+--------------------------------------------------------------------------------------------------------------
+| Francisco Lindor          | SS       |      8.0 | Hits (2): +1.0 | Runs (2): +2.0 | Walks (1): +1.0 | Homerun With Runners On (1 on): +2.0 | Solo Homerun (0 on): +1.0 | Stolen Base (1): +1.0
+| Brandon Nimmo             | LF       |      0.5 | Hits (1): +0.5
+| J.D. Martinez             | DH       |      3.0 | Hits (2): +1.0 | Runs (1): +1.0 | Walks (1): +1.0
+| Ben Gamel                 | DH       |      0.0 | 
+| Pete Alonso               | 1B       |      2.0 | Hits (2): +1.0 | Walks (1): +1.0
+| DJ Stewart                | RF       |      4.0 | Runs (1): +1.0 | Walks (2): +2.0 | Outfield Assist (1): +1.0
+| Tyrone Taylor             | RF       |      0.0 | 
+| Francisco Alvarez         | C        |     -1.0 | Error (1): -1.0
+| Jose Iglesias             | 3B       |      4.5 | Hits (1): +0.5 | Triples (1): +3.0 | Runs (1): +1.0
+| Jeff McNeil               | 2B       |     11.5 | Hits (1): +0.5 | Runs (1): +1.0 | Homerun With Runners On (1 on): +2.0 | 2 Out Hit (1): +1.0 | 2 Out Hit Scores Run(s) (2): +4.0 | Hit Scores Run To Take The Lead (1): +1.0 | Sac Fly Scores Run (1): +2.0
+| Harrison Bader            | CF       |      3.0 | Hits (2): +1.0 | 2 Out Hit (1): +1.0 | Stolen Base (1): +1.0
+| David Peterson            | P        |      8.0 | Starter 2 Runs or Less (min 5 IP) (5.0 IP, 2 R): +5.0 | Pickoff (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0 | Escapes Inning With Runner(s) In Scoring Position (1): +1.0
+| José Buttó                | P        |      0.0 | 
+| Phil Maton                | P        |      0.0 | 
+| Edwin Díaz                | P        |      3.0 | Save (2 H, 1 BB): +3.0
+
+### Team Events ###
+  Defense      Double Play (1): +2.0
+  Deduction    Pitchers Walk 5+ Batters (6): -2.0
+
+### Team Totals ###
+  Player points: 46.5
+  Team points:   0.0  (includes 0.0 carried over)
+  TOTAL:         46.5
+  Carry over into next game: 0.0
